@@ -77,7 +77,6 @@ slider.oninput = function() {
   $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
 }
 
-
 //
 var addr = [
     "12JyurJDarDCbtxdcMjfE59BQUyAP7Db5h",
