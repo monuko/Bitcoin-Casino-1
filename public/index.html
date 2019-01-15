@@ -70,6 +70,7 @@ var output = document.getElementById("demo");
 var output2 = document.getElementById("demo2");
 output.innerHTML = slider.value;
 slider.oninput = function() {
+  beep(10, 1000, 100);	
   output.innerHTML = this.value;
   output2.innerHTML = (99/this.value);
   document.getElementById("addrvalue").value = addr[this.value];
