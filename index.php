@@ -47,7 +47,7 @@
 	    </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">How Fast You Process Payouts ?</i>Second</div>
+      <div class="collapsible-header"><i class="material-icons">blur_on</i>How Fast You Process Payouts ?</div>
       <div class="collapsible-body"><span>When Your Transaction has 5+ Confirmation on blockchain, It Automatically gets sent to you.</span></div>
     </li>
     <li>
