@@ -27,10 +27,7 @@
 
      <div class="container">
    <div class="row">
-	   <div class="col s3">1> Deposit </div>   
-	   <div class="col s3">2> Confirmation</div> 
-	   <div class="col s3">3> Onchain Roll</div>   
-	   <div class="col s3">4> Payout </div>   
+  <div class="col s12">1> Deposit 2> Confirmation 3> Onchain Rol 4> Payout</div>   
   <div class="col s12">
     <div class="card horizontal">
       <div class="card-image">
