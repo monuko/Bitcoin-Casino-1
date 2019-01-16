@@ -94,7 +94,7 @@ output.innerHTML = slider.value;
 slider.oninput = function() {
   beep(10, 1000, 100);	
   output.innerHTML = this.value;
-  output2.innerHTML = (99/this.value);
+  output2.innerHTML = (98/this.value);
   document.getElementById("addrvalue").value = addr[this.value];
   $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
 }
