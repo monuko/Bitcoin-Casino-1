@@ -80,13 +80,13 @@
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<script>  
-		
-		  $(document).ready(function(){
+//ui script		
+$(document).ready(function(){
     $('.collapsible').collapsible();
   });
 		
 		
-		
+//core starts		
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 var output2 = document.getElementById("demo2");
@@ -94,12 +94,12 @@ output.innerHTML = slider.value;
 slider.oninput = function() {
   beep(10, 1000, 100);	
   output.innerHTML = this.value;
-  output2.innerHTML = (98/this.value);
+  output2.innerHTML = parseFloat((98/this.value)).toFixed(3);
   document.getElementById("addrvalue").value = addr[this.value];
   $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
 }
 
-//
+//address
 var addr = [
     "12JyurJDarDCbtxdcMjfE59BQUyAP7Db5h",
     "12JyurJDarDCbtxdcMjfE59BQUyAP7Db5h",
