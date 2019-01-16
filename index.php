@@ -56,6 +56,10 @@
       <div class="collapsible-header"><i class="material-icons">whatshot</i>What Details SKOBET Store ?</div>
       <div class="collapsible-body"><span>Nothing, No IP, No Logs, No Registeration, No Logins, We Do Not Store Anything. You are 100% anonymous on our SKOBET.</span></div>
     </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">attach_money</i>FAQ House Edge/Fees</div>
+      <div class="collapsible-body"><span>House Edge : 2% + Bitcoin Transaction Payout Fees ( Depends On Network ) Usually 0.00000500 BTC </span></div>
+    </li>
   </ul>
         
 	   
