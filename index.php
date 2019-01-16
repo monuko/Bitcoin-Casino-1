@@ -47,7 +47,7 @@
     <li>
       <div class="collapsible-header"><i class="material-icons">blur_on</i>FAQ Payouts </div>
       <div class="collapsible-body"><span>When Your Transaction has 5+ Confirmation on blockchain, Payout is Automatically sent to you. 
-	    Its Sent To Same Address From Which You Send, if multiple inputs are used then winnigs are sent to the 1st Input.
+	    Its Sent To Same Address From Which You Send, if multiple inputs are used then winnings are sent to the 1st Input.
 	     </span></div>
     </li>
     <li>
