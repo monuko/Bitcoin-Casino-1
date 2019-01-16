@@ -49,36 +49,29 @@
 	    </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div class="collapsible-header"><i class="material-icons">How Roll is Genrated ?</i>Second</div>
+      <div class="collapsible-body"><span>Here is the PHP Code Used .</span><br>
+	      
+$trxn = "Transaction hash";
+$blockhash = "blockhash of transaction";	      
+$imphash = hash('sha512', hash('sha512',$trxn).hash('sha512',$blockhash)  );
+$roll_number_hex = substr($imphash, 0, 4);
+$roll = hexdec($roll_number_hex);
+$roll = $roll%(10000);
+$roll = $roll/100;
+echo $roll;
+
+	    </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Wheres Payout Sent ?</div>
+      <div class="collapsible-body"><span>Its Sent To Same Address, if multiple inputs are used then winnigs are sent to the 1st Input.</span></div>
     </li>
   </ul>
         
 	   
 	   
-	   
-  <center><div class="col s12">Set Your Bet Multiplier Below, Deposit Bitcoin Only !</div> </center> 
-  <div class="col s12">
-    <div class="card horizontal">
-      <div class="card-image">
-        <img id="addrimg" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx" />
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-	    <input id="addrvalue" type="text" class="form-control" value="1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx">
-            <p class="range-field"><input type="range" id="myRange" min="1" max="20" /> </p>    
-        </div>
-        <div class="card-action">
-        Multiplier : <span id="demo">20</span>X - Winchance : <span id="demo2">4.95</span>%
-        </div>
-      </div>
-    </div>
-  </div>
-  <center><div class="col s12">Never Deposit From A Exchange, Winnings Are Sent Back To Same Address !</div> </center> 
+	 
 
 	   
 	   
