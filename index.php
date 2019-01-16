@@ -241,7 +241,7 @@ function fetch5(fetch5) {
   var cell2 = row.insertCell(2);
   var tempk = (99/fetch5.winroll) + "X";
 	
-  cell0.innerHTML = `<img width=120px height=120px src="https://flathash.com/${fetch5.sender}" />`;
+  cell0.innerHTML = `<img width=100px height=100px src="https://flathash.com/${fetch5.sender}" />`;
   cell1.innerHTML = `${fetch5.sender}<br>
   Roll : ${fetch5.roll} < ${fetch5.winroll}<br>
   Bet : ${fetch5.amount} | Won : ${fetch5.winamount} <br>
