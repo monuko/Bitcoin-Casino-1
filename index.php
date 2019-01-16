@@ -27,7 +27,7 @@
 
      <div class="container">
    <div class="row">
-  <div class="col s12">1> Deposit 2> Confirmation 3> Onchain Rol 4> Payout</div>   
+  <center><div class="col s12">> Deposit > Confirmation > Onchain-Rol > Payout</div> </center> 
   <div class="col s12">
     <div class="card horizontal">
       <div class="card-image">
