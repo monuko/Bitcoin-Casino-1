@@ -130,7 +130,7 @@ ws.onclose = function() {
 
 
 // init & fetch JSON
-$.getJSON('https://api.smartbit.com.au/v1/blockchain/address/1dice8EMZmqKvrGE4Qc9bUFf9PX3xaYDp?dir=dasc&limit=999').done(function(datax) {
+$.getJSON('https://api.smartbit.com.au/v1/blockchain/address/1dice8EMZmqKvrGE4Qc9bUFf9PX3xaYDp?dir=dasc&limit=500').done(function(datax) {
  var p = 0;
  setInterval(function() {
   tempx = datax.address.transactions[p].txid;
