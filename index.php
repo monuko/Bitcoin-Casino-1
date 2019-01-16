@@ -30,15 +30,15 @@
       <div class="collapsible-body">
 	    
 <div class="card horizontal"><div class="card-image">
-        <img id="addrimg" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx" />
+        <img id="addrimg" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1AAaWxpoDr8uJ6uzhEfk1MMc7dyRHCcQRN" />
       </div>
       <div class="card-stacked">
         <div class="card-content">
-	    <input id="addrvalue" type="text" class="form-control" value="1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx">
+	    <input id="addrvalue" type="text" class="form-control" value="1AAaWxpoDr8uJ6uzhEfk1MMc7dyRHCcQRN">
             <p class="range-field"><input type="range" id="myRange" min="1" max="20" /> </p>    
         </div>
         <div class="card-action">
-        Multiplier : <span id="demo">20</span>X - Winchance : <span id="demo2">4.95</span>%
+        Multiplier : <span id="demo">7</span>X - Winchance : <span id="demo2">14</span>%
         </div>
       </div>
     </div>
