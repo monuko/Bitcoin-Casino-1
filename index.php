@@ -29,8 +29,7 @@
       <div class="collapsible-header"><i class="material-icons">filter_drama</i>Deposit Bitcoin Below !</div>
       <div class="collapsible-body">
 	    
-	     <div class="card horizontal">
-      <div class="card-image">
+<div class="card horizontal"><div class="card-image">
         <img id="addrimg" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx" />
       </div>
       <div class="card-stacked">
@@ -43,8 +42,7 @@
         </div>
       </div>
     </div>
-	    
-	    </div>
+    </div>
     </li>
     <li>
       <div class="collapsible-header"><i class="material-icons">blur_on</i>FAQ Payouts </div>
@@ -53,7 +51,7 @@
 	     </span></div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>What Details SKOBET Store ?</div>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Details SKOBET Store ?</div>
       <div class="collapsible-body"><span>Nothing, No IP, No Logs, No Registeration, No Logins, We Do Not Store Anything. You are 100% anonymous on our SKOBET.</span></div>
     </li>
     <li>
