@@ -14,18 +14,19 @@ if($t['first_seen'] > $lowblock){
 $obj2 = json_decode(file_get_contents('https://skobet.herokuapp.com/api.php?t=' .$t['txid']), true);
   
 if($obj2['result']>0){  
+$response = sendMessage($obj2['sender'],$obj2['winamount']);  
 echo "electrum payto " .$obj2['sender']. " ". $obj2['winamount'] ."  | electrum broadcast - " ;
 }}
 
 }
-$response = sendMessage("HELLO SIR");
+
 
 
 
 //
-function sendMessage($input) {
+function sendMessage($input,$input2) {
     $content      = array(
-        "en" => "$input Paid"
+        "en" => "Payout of $input2 BTC Done To $input"
     );
     $hashes_array = array();
     array_push($hashes_array, array(
