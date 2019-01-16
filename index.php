@@ -11,20 +11,41 @@
 
     <body>
 
-   <div class="container">
-   <div class="row">
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#" class="brand-logo"><i class="material-icons">done</i> BTCJUA</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="https://pastebin.com/raw/QmeqNjNE">Fairness</a></li>
-        <li><a href="https://bitcointalk.org/index.php?topic=5073341.0">Bitcointalk</a></li>
-        <li><a href="https://t.me/btcjua">Telegram</a></li>
-      </ul>
-    </div>
-  </nav>
- </div> </div>
 
+	        <nav class="nav-extended">
+      <div class="nav-background">
+        <div class="ea k" style="background-image: url('//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/icon-seamless.png?1562428897692819497');"></div>
+      </div>
+      <div class="nav-wrapper db">
+        <a href="/pages/demo" class="brand-logo"><i class="material-icons">camera</i>Gallery</a>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="bt hide-on-med-and-down">
+          <li class="k"><a href="/pages/demo">Gallery</a></li>
+          <li><a href="/pages/dark-theme">Dark Theme</a></li>
+          <li><a href="/pages/blog">Blog</a></li>
+          <li><a href="/pages/docs">Docs</a></li>
+          <li><a class='dropdown-button' href='#' data-activates='feature-dropdown' data-belowOrigin="true" data-constrainWidth="false">Features<i class="material-icons bt">arrow_drop_down</i></a></li>
+        </ul>
+        <!-- Dropdown Structure -->
+        <ul id='feature-dropdown' class='dropdown-content'>
+          <li><a href="/pages/full-header">Fullscreen Header</a></li>
+          <li><a href="/pages/horizontal">Horizontal Style</a></li>
+          <li><a href="/pages/no-image">No Image Expand</a></li>
+        </ul>
+
+        <div class="nav-header de">
+          <h1>I MAKE THINGS</h1>
+          <div class="ge">Portfolio</div>
+        </div>
+      </div>
+			
+			
+			
+			
+			
+			
+			
+			
 
      <div class="container">
    <div class="row">
