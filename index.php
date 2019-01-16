@@ -24,7 +24,8 @@
 
      <div class="container">
    <div class="row">
-  <center><div class="col s12">> Deposit > Confirmation > Onchain-Rol > Payout</div> </center> 
+  <center><div class="col s12"> > Deposit > Confirmation > Onchain-Rol > Payout</div> </center> 
+  <center><div class="col s12"> Set Your Bet Multiplier Below</div> </center> 
   <div class="col s12">
     <div class="card horizontal">
       <div class="card-image">
@@ -33,7 +34,8 @@
       <div class="card-stacked">
         <div class="card-content">
 	    <input id="addrvalue" type="text" class="form-control" value="1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx">
-        <p class="range-field"><input type="range" id="myRange" min="1" max="20" /> </p>          
+            <p class="range-field"><input type="range" id="myRange" min="1" max="20" /> </p>    
+             Set Your Bet Multiplier & Deposit Bitcoin !
         </div>
         <div class="card-action">
         Multiplier : <span id="demo">20</span>X - Winchance : <span id="demo2">4.95</span>%
