@@ -47,12 +47,14 @@
 	    </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">blur_on</i>How Fast You Process Payouts ?</div>
-      <div class="collapsible-body"><span>When Your Transaction has 5+ Confirmation on blockchain, It Automatically gets sent to you.</span></div>
+      <div class="collapsible-header"><i class="material-icons">blur_on</i>FAQ Payouts </div>
+      <div class="collapsible-body"><span>When Your Transaction has 5+ Confirmation on blockchain, Payout is Automatically gets sent to you.  
+	    Its Sent To Same Address From Which You Send, if multiple inputs are used then winnigs are sent to the 1st Input.
+	     </span></div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">whatshot</i>Wheres Payout Sent ?</div>
-      <div class="collapsible-body"><span>Its Sent To Same Address From Which You Send, if multiple inputs are used then winnigs are sent to the 1st Input.</span></div>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>What Details SKOBET Store ?</div>
+      <div class="collapsible-body"><span>Nothing, No IP, No Logs, No Registeration, No Logins, We Do Not Store Anything. You are 100% anonymous on our SKOBET.</span></div>
     </li>
   </ul>
         
