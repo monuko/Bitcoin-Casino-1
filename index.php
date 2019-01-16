@@ -250,7 +250,7 @@ function fetch5(fetch5) {
   var table = document.getElementById("myTable");
 
   if(0 > addr.indexOf(fetch5.sender)){
-  var row = table.insertRow(1);
+  var row = table.insertRow(-1);
   }
 
   var cell0 = row.insertCell(0);
