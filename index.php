@@ -228,11 +228,11 @@ function fetch5(fetch5) {
 
   if (fetch5.result > 0) {
    row.setAttribute('class', 'table-success');
-     cell2.innerHTML = `<a class="waves-effect waves-light btn" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
-    <a class="waves-effect waves-light btn pulse" target="_blank" href="https://tradeblock.com/bitcoin/address/${fetch5.sender}" >Output</a>`;	  
+     cell2.innerHTML = `<a class="waves-effect waves-light btn-small" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
+    <a class="waves-effect waves-light btn-small pulse" target="_blank" href="https://tradeblock.com/bitcoin/address/${fetch5.sender}" >Output</a>`;	  
   } else {
    row.setAttribute('class', 'table-danger');
-     cell2.innerHTML = `<a class="waves-effect waves-light btn" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
+     cell2.innerHTML = `<a class="waves-effect waves-light btn-small" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
   }
   // plot
   xplot(fetch5.roll,fetch5.winroll);
