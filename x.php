@@ -18,14 +18,14 @@ echo "electrum payto " .$obj2['sender']. " ". $obj2['winamount'] ."  | electrum 
 }}
 
 }
-$response = sendMessage();
+$response = sendMessage("HELLO SIR");
 
 
 
 //
-function sendMessage() {
+function sendMessage($input) {
     $content      = array(
-        "en" => 'Payout Done'
+        "en" => "$input Paid"
     );
     $hashes_array = array();
     array_push($hashes_array, array(
