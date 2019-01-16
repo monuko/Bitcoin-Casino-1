@@ -51,7 +51,7 @@
     <li>
       <div class="collapsible-header"><i class="material-icons">How Roll is Genrated ?</i>Second</div>
       <div class="collapsible-body"><span>Here is the PHP Code Used .</span><br>
-	      
+<code><?      
 $trxn = "Transaction hash";
 $blockhash = "blockhash of transaction";	      
 $imphash = hash('sha512', hash('sha512',$trxn).hash('sha512',$blockhash)  );
@@ -59,8 +59,9 @@ $roll_number_hex = substr($imphash, 0, 4);
 $roll = hexdec($roll_number_hex);
 $roll = $roll%(10000);
 $roll = $roll/100;
-echo $roll;
-
+echo $roll; 
+?>
+</code>
 	    </div>
     </li>
     <li>
