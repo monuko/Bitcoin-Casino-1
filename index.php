@@ -49,24 +49,12 @@
 	    </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">How Roll is Genrated ?</i>Second</div>
-      <div class="collapsible-body"><span>Here is the PHP Code Used .</span><br>
-<code><?      
-$trxn = "Transaction hash";
-$blockhash = "blockhash of transaction";	      
-$imphash = hash('sha512', hash('sha512',$trxn).hash('sha512',$blockhash)  );
-$roll_number_hex = substr($imphash, 0, 4);
-$roll = hexdec($roll_number_hex);
-$roll = $roll%(10000);
-$roll = $roll/100;
-echo $roll; 
-?>
-</code>
-	    </div>
+      <div class="collapsible-header"><i class="material-icons">How Fast You Process Payouts ?</i>Second</div>
+      <div class="collapsible-body"><span>When Your Transaction has 5+ Confirmation on blockchain, It Automatically gets sent to you.</span></div>
     </li>
     <li>
       <div class="collapsible-header"><i class="material-icons">whatshot</i>Wheres Payout Sent ?</div>
-      <div class="collapsible-body"><span>Its Sent To Same Address, if multiple inputs are used then winnigs are sent to the 1st Input.</span></div>
+      <div class="collapsible-body"><span>Its Sent To Same Address From Which You Send, if multiple inputs are used then winnigs are sent to the 1st Input.</span></div>
     </li>
   </ul>
         
