@@ -27,9 +27,26 @@
    <div class="row">
 	   
   <ul class="collapsible popout">
-    <li>
-      <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    <li class="active">
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Deposit Bitcoin Below !</div>
+      <div class="collapsible-body">
+	    
+	     <div class="card horizontal">
+      <div class="card-image">
+        <img id="addrimg" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx" />
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+	    <input id="addrvalue" type="text" class="form-control" value="1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx">
+            <p class="range-field"><input type="range" id="myRange" min="1" max="20" /> </p>    
+        </div>
+        <div class="card-action">
+        Multiplier : <span id="demo">20</span>X - Winchance : <span id="demo2">4.95</span>%
+        </div>
+      </div>
+    </div>
+	    
+	    </div>
     </li>
     <li>
       <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
