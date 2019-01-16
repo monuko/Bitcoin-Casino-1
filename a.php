@@ -59,9 +59,9 @@ $url = 'https://api.smartbit.com.au/v1/blockchain/block/'.$blocknum;
 $obj = json_decode(file_get_contents($url), true);
 $blockhash =  $obj['block']['hash'];
 $blocktime =  $obj['block']['time'];
-$imphash = hash('sha256', hash('sha256',$trxn).hash('sha256',$trxn)  );
+$imphash = hash('sha512', hash('sha256',$trxn).hash('sha256',$trxn)  );
 }else{
-$imphash = hash('sha256', $trxn);   
+$imphash = hash('sha512', $trxn);   
 }
 
 $roll_number_hex = substr($imphash, 0, 4);
