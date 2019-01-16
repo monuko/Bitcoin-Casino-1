@@ -12,8 +12,8 @@
     <body>
 
 
-	
- <div class="navbar-fixed container">
+     <div class="container">	
+ <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo">SKOBET</a>
@@ -23,7 +23,7 @@
         </ul>
       </div>
     </nav>
-  </div>
+  </div>  </div>
         	
 			
 
