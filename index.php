@@ -13,7 +13,7 @@
 
 
 	
- <div class="navbar-fixed">
+ <div class="navbar-fixed container">
     <nav>
       <div class="nav-wrapper">
         <a href="#!" class="brand-logo">SKOBET</a>
