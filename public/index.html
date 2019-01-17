@@ -256,23 +256,26 @@ function fetch5(fetch5) {
   var cell0 = row.insertCell(0);
   var cell1 = row.insertCell(1);
   var cell2 = row.insertCell(2);
+  var cell3 = row.insertCell(3);
+  var cell4 = row.insertCell(4);
+  var cellb = row.insertCell(2);
   var tempk = (98/fetch5.winroll) + "X";
 	
   cell0.innerHTML = `<img width=50px height=50px src="https://flathash.com/${fetch5.sender}" />`;
-  cell1.innerHTML = `${fetch5.sender}<br>
-  Roll : ${fetch5.roll} < ${fetch5.winroll}<br>
-  Bet : ${fetch5.amount} | Won : ${fetch5.winamount} <br>
-  Multiplier : ${tempk} | Block : ${fetch5.blocknum}
-  `;	
+  cell1.innerHTML = `${fetch5.sender}`;
+  cell2.innerHTML = `${fetch5.roll} < ${fetch5.winroll}`;	
+  cell3.innerHTML = `Bet : ${fetch5.amount} | Won : ${fetch5.winamount}`;
+  cell4.innerHTML = ` Multiplier : ${tempk} | Block : ${fetch5.blocknum}`;
+
 
   if (fetch5.confirmation < 1) {
-  cell2.innerHTML = `<a class="waves-effect waves-light btn-small" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Unconfirmed</a>`;  
+  cellb.innerHTML = `<a class="waves-effect waves-light btn-small" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Unconfirmed</a>`;  
   }else{
   if (fetch5.result > 0) {
-     cell2.innerHTML = `<a class="waves-effect waves-light btn-small" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
+     cellb.innerHTML = `<a class="waves-effect waves-light btn-small" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
     <a class="waves-effect waves-light btn-small pulse" target="_blank" href="https://tradeblock.com/bitcoin/address/${fetch5.sender}" >Output</a>`;	  
   } else {
-     cell2.innerHTML = `<a class="waves-effect waves-light btn-small" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
+     cellb.innerHTML = `<a class="waves-effect waves-light btn-small" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
   }
   }
 
