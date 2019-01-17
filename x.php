@@ -36,7 +36,7 @@ function sendMessage($input,$input2) {
         "url" => "https://skobet.herokuapp.com"
     ));
     $fields = array(
-        'app_id' => "e73f244e-19a3-4aa1-9c17-7c3de9f34b72",
+        'app_id' => "56e2278b-0156-4823-8c51-53b991849d78",
         'included_segments' => array(
             'All'
         ),
@@ -53,7 +53,7 @@ function sendMessage($input,$input2) {
     curl_setopt($ch, CURLOPT_URL, "https://onesignal.com/api/v1/notifications");
     curl_setopt($ch, CURLOPT_HTTPHEADER, array(
         'Content-Type: application/json; charset=utf-8',
-        'Authorization: Basic NmY2NjY1MGItYjYyNS00OGU1LThhMjYtNDRjOTFiYWU5OTlh'
+        'Authorization: Basic ZGY4ZTAyYTktYmRlNi00OTE1LWFmYzgtZjczZjBlZWE5ZjJl'
     ));
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
     curl_setopt($ch, CURLOPT_HEADER, FALSE);
