@@ -12,7 +12,7 @@ $lowblock = $blockobj['transaction']['first_seen'];
 
 
 foreach ($scrape2['address']['transactions'] as $t) {
-if($t['first_seen'] > $lowblock){  
+if($t['first_seen'] < $lowblock){  
 
 $url = 'https://api.smartbit.com.au/v1/blockchain/tx/'. $trxn;
 $obj = json_decode(file_get_contents($url), true);
