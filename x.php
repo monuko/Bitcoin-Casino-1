@@ -6,13 +6,13 @@ $scrape2 = json_decode(file_get_contents('https://api.smartbit.com.au/v1/blockch
 $matches = array();
 preg_match('/[a-fA-F0-9]{64}/', $scrape, $matches);
 //$blockobj = json_decode(file_get_contents('https://api.smartbit.com.au/v1/blockchain/tx/' . $matches[0]), true);
-$blockobj = json_decode(file_get_contents('https://api.smartbit.com.au/v1/blockchain/tx/42c61e1e3a86c0bffc4d2df8c6a06825984c9cd33d79ca79197f087fbc5441972019'), true);
+$blockobj = json_decode(file_get_contents('https://api.smartbit.com.au/v1/blockchain/tx/42c61e1e3a86c0bffc4d2df8c6a06825984c9cd33d79ca79197f087fbc544197'), true);
 $lowblock = $blockobj['transaction']['first_seen'];
 
 
 
 foreach ($scrape2['address']['transactions'] as $t) {
-if($t['first_seen'] < $lowblock){  
+if($t['first_seen'] > $lowblock){  
 
 $url = 'https://api.smartbit.com.au/v1/blockchain/tx/'. $trxn;
 $obj = json_decode(file_get_contents($url), true);
