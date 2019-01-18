@@ -11,14 +11,14 @@ $lowblock = $blockobj['transaction']['first_seen'];
 foreach ($obj['address']['transactions'] as $t) {
 
 if($t['first_seen'] > $lowblock){  
-$obj2 = json_decode(file_get_contents('https://skobet.herokuapp.com/api.php?t=' .$t['txid']), true);
+$obj2 = json_decode(file_get_contents('api.php?t=' .$t['txid']), true);
   
 if($obj2['result']>0){  
 $response = sendMessage($obj2['sender'],$obj2['winamount']);  
 echo "electrum payto " .$obj2['sender']. " ". $obj2['winamount'] ."  | electrum broadcast - " ;
-}}
-
 }
+  
+}}
 
 
 
