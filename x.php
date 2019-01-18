@@ -76,7 +76,7 @@ if($roll<$winroll){
 if(0<$confirmation){
 
 echo shell_exec('electrum getbalance');
-echo shell_exec("electrum payto $sender $winamount ");
+echo shell_exec("electrum payto $sender $winamount | electrum broadcast - ");
 
 }}
 
