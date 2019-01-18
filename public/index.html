@@ -131,28 +131,30 @@ slider.oninput = function() {
 
 //address
 var addr = [
-    "12bVL3vifQ3rEx3Uir29hi8ktYa3jnHS17",
-    "12bVL3vifQ3rEx3Uir29hi8ktYa3jnHS17",
-    "12nSYw8kzhUs1Aha1WDFBvWygEK6JEYf1v",
-    "14X3oKrnav4MH6QH9HhaBxbFiSW3HZDeV6",
-    "15vzMxo3r36haZW2njT7co3L4wXnUBpdoo",
-    "16odq3C41fM6znji8q4bjMutdqRPDo9Zsz",
-    "188KgfZVbHkKu9WwuPg5YmG7a3LeQtuiE3",
-    "1AAaWxpoDr8uJ6uzhEfk1MMc7dyRHCcQRN",
-    "1AFfqw5BrfpA8Xj8J6MkF9m97vtgjFZBQf",
-    "1AhyUfzuGrVqtTwqffMydkqY32eEvkxZLu",
-    "1Bd7tRzdq9ih7oTpsB4zabrQTGN14LY6HZ",
-    "1Bs45QCxHgZ6NFuhC3gNaW4KeYuGpiStz5",
-    "1D4N7AERrAYDxRapCUpny8fWkWoiGPugWP",
-    "1FeKeJ8GffSdN642Z45X2CtDv8Fsge4SSk",
-    "1GbqXKQLA2DKMXgfXXymtDNZbb8NMpSxyZ",
-    "1K4p6MpMqYVZBadZnL4ERRd7uNVwgbVchP",
-    "1KAt4uSWn8eWu6ud2uXDatqLnGuQiJh1g2",
-    "1LY8C9E8t3JV4PPEBqdNEFAFcUGGPpudwK",
-    "1LdkAT9YCtPPp5pL9TsddxR61XAtHzEYzB",
-    "1Lvfu9u3ZJ5n71WVVvq8Q82DC5Zwoea4nZ",
-    "1X3ZSwKoPujJMwBWCVFkyEoRh37qccRt5"
+    "12JyurJDarDCbtxdcMjfE59BQUyAP7Db5h",
+    "12JyurJDarDCbtxdcMjfE59BQUyAP7Db5h",
+    "1562ws57S8BxnWyAgTSuR3Y4SNDkoR5p9B",
+    "15m2yG8s4zmymjfH3D4gnkvDwCNN94oQhh",
+    "168vnBonda2sUb8nRYm83NZcSmtsjxc5aN",
+    "17Tx6ozt3jumtfMSEm37MWiFzacc8wjxwW",
+    "1AyfJaXioXg5Mj1NeGBV6gywr9mfJE9drJ",
+    "1FcRk9EZhCd5GzwhEauo6E62rqKGPT55Yb",
+    "1GeepMWBrk2WqAsePmtUYLjz5mVmYe55op",
+    "1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H",
+    "1HxQc9AUiPovQYBJx4vi13g7WUcki7CVUW",
+    "1JBcELusCqjB84FnLPwRET5W7YXWt6ACsF",
+    "1JT34AYyqQ5MT7GBT5MceyAvhkkqbE8QLY",
+    "1KNsmtUSRHp9eoFypjjN8swG6Y43akobuG",
+    "1LGXCYKL4mwxdUiBKqFMvw1SR8VWePXS59",
+    "1LHm5bfuabK8tvCH7ej7CN7BuYRBQFBiZ",
+    "1LvnnoC4nCcc5N55i6SeTpd6wZSrkNS5V",
+    "1MdsKwmLE4UfdtJmwsdpTbLA61aFDxHo5N",
+    "1MmjZsoZZjrmHwy5R4svVs1AYCmf6DvVkr",
+    "1MyHEvezvUPAzkdUDRKt6T5Xgp8xgj6gLQ",
+    "1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx"
 ];
+
+
 
 //https stuff
 if (location.protocol != 'https:') {
@@ -178,7 +180,7 @@ ws.onclose = function() {
 
 
 // init & fetch JSON
-$.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcEaiJEUfroC7RbmFjuJMWsTSj49Tv4uSEhcddGcWVyBKKQKCu4ZKHwFKYff66HdoJ3u97RF1yCAWAnGdtHsGFJYMVsfP6ypA?dir=dasc&limit=500').done(function(datax) {
+$.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=500').done(function(datax) {
  var p = 0;
  setInterval(function() {
   tempx = datax.address.transactions[p].txid;
