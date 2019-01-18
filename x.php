@@ -1,74 +1,58 @@
 <?php
 $scrape = file_get_contents("https://www.blockchain.com/btc/address/xpub661MyMwAqRbcEaiJEUfroC7RbmFjuJMWsTSj49Tv4uSEhcddGcWVyBKKQKCu4ZKHwFKYff66HdoJ3u97RF1yCAWAnGdtHsGFJYMVsfP6ypA?filter=1#"); 
-sleep(5);
-$obj = json_decode(file_get_contents('http://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcEaiJEUfroC7RbmFjuJMWsTSj49Tv4uSEhcddGcWVyBKKQKCu4ZKHwFKYff66HdoJ3u97RF1yCAWAnGdtHsGFJYMVsfP6ypA?dir=asc&limit=111'), true);
-sleep(5);
+$scrape2 = json_decode(file_get_contents('http://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcEaiJEUfroC7RbmFjuJMWsTSj49Tv4uSEhcddGcWVyBKKQKCu4ZKHwFKYff66HdoJ3u97RF1yCAWAnGdtHsGFJYMVsfP6ypA?dir=asc&limit=111'), true);
 
 
 $matches = array();
 preg_match('/[a-fA-F0-9]{64}/', $scrape, $matches);
 $blockobj = json_decode(file_get_contents('https://api.smartbit.com.au/v1/blockchain/tx/' . $matches[0]), true);
 $lowblock = $blockobj['transaction']['first_seen'];
-sleep(5);
 
 
 
-foreach ($obj['address']['transactions'] as $t) {
-
+foreach ($scrape2['address']['transactions'] as $t) {
 if($t['first_seen'] > $lowblock){  
-$obj2 = json_decode(file_get_contents('https://skobet.herokuapp.com/api.php?t=' .$t['txid']), true);
-  
-if($obj2['result']>0){  
-$response = sendMessage($obj2['sender'],$obj2['winamount']);  
-echo "electrum payto " .$obj2['sender']. " ". $obj2['winamount'] ." " ;
-}
-  
+roll($t['txid']); 
 }}
 
 
-
-
-//
-function sendMessage($input,$input2) {
-    $content      = array(
-        "en" => "Payout of $input2 BTC Done To $input"
-    );
-    $hashes_array = array();
-    array_push($hashes_array, array(
-        "id" => "view1",
-        "text" => "View",
-        "icon" => "http://i.imgur.com/N8SN8ZS.png",
-        "url" => "https://skobet.herokuapp.com"
-    ));
-    $fields = array(
-        'app_id' => "56e2278b-0156-4823-8c51-53b991849d78",
-        'included_segments' => array(
-            'All'
-        ),
-        'data' => array(
-            "foo" => "bar"
-        ),
-        'contents' => $content,
-        'web_buttons' => $hashes_array
-    );
-    
-    $fields = json_encode($fields);
-    
-    $ch = curl_init();
-    curl_setopt($ch, CURLOPT_URL, "https://onesignal.com/api/v1/notifications");
-    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-        'Content-Type: application/json; charset=utf-8',
-        'Authorization: Basic ZGY4ZTAyYTktYmRlNi00OTE1LWFmYzgtZjczZjBlZWE5ZjJl'
-    ));
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
-    curl_setopt($ch, CURLOPT_HEADER, FALSE);
-    curl_setopt($ch, CURLOPT_POST, TRUE);
-    curl_setopt($ch, CURLOPT_POSTFIELDS, $fields);
-    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
-    
-    $response = curl_exec($ch);
-    curl_close($ch);
-    
-    return $response;
+function roll($trxn){
+$url = 'https://api.smartbit.com.au/v1/blockchain/tx/'. $trxn;
+$obj = json_decode(file_get_contents($url), true);
+$blocknum =  $obj['transaction']['block'];
+$sender = $obj['transaction']['inputs'][0]['addresses'][0];
+$confirmation=  $obj['transaction']['confirmations'];
+$outputcount = $obj['transaction']['output_count'];
+for ($x = 1; $x <= 20; $x++) {
+for($i = 0; $i < $outputcount; $i++) {
+  if($obj['transaction']['outputs'][$i]['addresses'][0] === $addrrrr[$x] ){
+  $amountp= $obj['transaction']['outputs'][$i]['value'];
+  $amount = $amount + $amountp;
+  $depositadd = $addrrrr[$x];
+  $winamount = $x*$amount;
+  $winamount = $winamount*0.98;
+  $winroll = 98/$x;    
+}}}
+ 
+if($confirmation>0){
+$url = 'https://api.smartbit.com.au/v1/blockchain/block/'.$blocknum;
+$obj = json_decode(file_get_contents($url), true);
+$blockhash =  $obj['block']['hash'];
+$blocktime =  $obj['block']['time'];
+$imphash = hash('sha512', $trxn.$blockhash);
+}else{
+$imphash = hash('sha512', $trxn);   
 }
+  
+$roll_number_hex = substr($imphash, 0, 4);
+$roll = hexdec($roll_number_hex);
+$roll = $roll%(10000);
+$roll = $roll/100;  
+
+if($roll<$winroll){
+if(0<$confirmation){
+echo "electrum payto $sender $winamount ";
+}}
+
+}  
 ?> 
