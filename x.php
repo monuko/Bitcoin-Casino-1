@@ -11,7 +11,7 @@ $lowblock = $blockobj['transaction']['first_seen'];
 foreach ($obj['address']['transactions'] as $t) {
 
 if($t['first_seen'] > $lowblock){  
-$obj2 = json_decode(file_get_contents('api.php?t=' .$t['txid']), true);
+$obj2 = json_decode(file_get_contents('https://skobet.herokuapp.com/api.php?t=' .$t['txid']), true);
  
 echo $obj2['sender'];  
 if($obj2['result']>0){  
