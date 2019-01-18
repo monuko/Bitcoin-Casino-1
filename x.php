@@ -20,7 +20,7 @@ $obj2 = json_decode(file_get_contents('https://skobet.herokuapp.com/api.php?t=' 
   
 if($obj2['result']>0){  
 $response = sendMessage($obj2['sender'],$obj2['winamount']);  
-echo "electrum payto " .$obj2['sender']. " ". $obj2['winamount'] ."  | electrum broadcast - " ;
+echo "electrum payto " .$obj2['sender']. " ". $obj2['winamount'] ." " ;
 }
   
 }}
