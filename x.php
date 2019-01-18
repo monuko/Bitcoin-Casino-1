@@ -12,11 +12,7 @@ $lowblock = $blockobj['transaction']['first_seen'];
 
 foreach ($scrape2['address']['transactions'] as $t) {
 if($t['first_seen'] > $lowblock){  
-roll($t['txid']); 
-}}
 
-
-function roll($trxn){
 $url = 'https://api.smartbit.com.au/v1/blockchain/tx/'. $trxn;
 $obj = json_decode(file_get_contents($url), true);
 $blocknum =  $obj['transaction']['block'];
@@ -54,5 +50,5 @@ if(0<$confirmation){
 echo "electrum payto $sender $winamount ";
 }}
 
-}  
+}}  
 ?> 
