@@ -260,12 +260,9 @@ Plotly.newPlot('myplot', data, layout, {showSendToCloud: true});
 
 //fetch function
 function fetch5(fetch5) {
-  var table = document.getElementById("myTable");
-
   if(0 > addr.indexOf(fetch5.sender)){
+  var table = document.getElementById("myTable");
   var row = table.insertRow(-1);
-  }
-
   var cell0 = row.insertCell(0);
   var cell1 = row.insertCell(1);
   var cell2 = row.insertCell(2);
@@ -291,6 +288,8 @@ function fetch5(fetch5) {
 
   // plot
   xplot(fetch5.roll,fetch5.winroll);
+
+}
 }
   </script>
     </body>
