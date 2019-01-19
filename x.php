@@ -76,8 +76,55 @@ if($roll<$winroll){
 if(0<$confirmation){
 
 echo shell_exec("electrum payto $sender $winamount | electrum broadcast - ");
+$response = sendMessage($sender,$winamount);  
 
 }}
 
 }}  
+
+
+
+//
+function sendMessage($input,$input2) {
+    $content      = array(
+        "en" => "Payout of $input2 BTC Done To $input"
+    );
+    $hashes_array = array();
+    array_push($hashes_array, array(
+        "id" => "view1",
+        "text" => "View",
+        "icon" => "http://i.imgur.com/N8SN8ZS.png",
+        "url" => "https://skobet.herokuapp.com"
+    ));
+    $fields = array(
+        'app_id' => "56e2278b-0156-4823-8c51-53b991849d78",
+        'included_segments' => array(
+            'All'
+        ),
+        'data' => array(
+            "foo" => "bar"
+        ),
+        'contents' => $content,
+        'web_buttons' => $hashes_array
+    );
+    
+    $fields = json_encode($fields);
+    
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, "https://onesignal.com/api/v1/notifications");
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+        'Content-Type: application/json; charset=utf-8',
+        'Authorization: Basic ZGY4ZTAyYTktYmRlNi00OTE1LWFmYzgtZjczZjBlZWE5ZjJl'
+    ));
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
+    curl_setopt($ch, CURLOPT_HEADER, FALSE);
+    curl_setopt($ch, CURLOPT_POST, TRUE);
+    curl_setopt($ch, CURLOPT_POSTFIELDS, $fields);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+    
+    $response = curl_exec($ch);
+    curl_close($ch);
+    
+    return $response;
+}
 ?> 
