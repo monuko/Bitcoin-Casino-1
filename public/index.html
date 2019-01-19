@@ -107,19 +107,6 @@
     </div></div>
 
 
-<div class="fixed-action-btn">
-  <a class="btn-floating btn-large red">
-    <i class="large material-icons">chat</i>
-  </a>
-  <ul>
-    <li><a class="btn-floating red"><i class="material-icons">group_add</i></a></li>
-    <li><a class="btn-floating blue"><i class="material-icons">email</i></a></li>
-  </ul>
-</div>
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -127,7 +114,6 @@
 //ui script		
 $(document).ready(function(){
     $('.collapsible').collapsible();
-    $('.fixed-action-btn').floatingActionButton();
   });
 		
 		
@@ -179,7 +165,7 @@ if (location.protocol != 'https:') {
 var ws = new WebSocket("wss://ws.blockchain.info/inv");
 
 ws.onopen = function() {
- ws.send('{"op":"blocks_sub"}')
+ ws.send('{"op":"blocks_sub"}');
 };
 
 ws.onmessage = function(evt) {
@@ -189,7 +175,7 @@ ws.onmessage = function(evt) {
 };
 
 ws.onclose = function() {
- window.location.reload(true)
+ window.location.reload(true);
 };
 
 
