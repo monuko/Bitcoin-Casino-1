@@ -32,68 +32,73 @@
     });
   });
 </script>
-	    
-    </head>
-
-	  
-    <body>
-
-
-   <div class="container"><div class="row"><nav>
-    <div class="nav-wrapper">
-      <a href="" onClick="window.location.href=window.location.href" class="brand-logo"><i class="material-icons">dehaze</i> SKOBET</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a target="_blank" href="https://pastebin.com/raw/fTs1tUdz">Fairness</a></li>
-        <li><a target="_blank" href="https://www.blockchain.com/btc/xpub/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7">Block Explorer</a></li>
-      </ul>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <nav>
+            <div class="nav-wrapper">
+                <a href="" onClick="window.location.href=window.location.href" class="brand-logo"><i class="material-icons">dehaze</i> SKOBET</a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a target="_blank" href="https://pastebin.com/raw/fTs1tUdz">Fairness</a></li>
+                    <li><a target="_blank" href="https://www.blockchain.com/btc/xpub/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7">Block Explorer</a></li>
+                </ul>
+            </div>
+        </nav>
     </div>
-  </nav></div> </div>
-        	
-			
-   <div class="container"><div class="row">	    
-<div class="col s12 l6">	   
+</div>
 
-  <ul class="collapsible popout">
-    <li class="active">
-      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Deposit Bitcoin Below !</div>
-      <div class="collapsible-body">
-	    
-<div class="card horizontal"><div class="card-image">
-        <img id="addrimg" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx" />
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-	    <input id="addrvalue" type="text" class="form-control" value="1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx">
-            <p class="range-field"><input type="range" id="myRange" min="1" max="20" /> </p>    
-	     Multiplier : <span id="demo">7</span>X - Winchance : <span id="demo2">14</span>%
-	
-        </div>
-      </div>
-    </div>
-	      
-    </div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">blur_on</i>FAQ Payouts </div>
-      <div class="collapsible-body"><span>When Your Transaction has 5+ Confirmation on blockchain, Payout is Automatically sent to you. 
+<div class="container">
+    <div class="row">
+        <div class="col s12 l6">
+
+            <ul class="collapsible popout">
+                <li class="active">
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Deposit Bitcoin Below !</div>
+                    <div class="collapsible-body">
+
+                        <div class="card horizontal">
+                            <div class="card-image">
+                                <img id="addrimg" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx" />
+                            </div>
+                            <div class="card-stacked">
+                                <div class="card-content">
+                                    <input id="addrvalue" type="text" class="form-control" value="1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx">
+                                    <p class="range-field">
+                                        <input type="range" id="myRange" min="1" max="20" /> </p>
+                                    Multiplier : <span id="demo">7</span>X - Winchance : <span id="demo2">14</span>%
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">blur_on</i>FAQ Payouts </div>
+                    <div class="collapsible-body"><span>When Your Transaction has 5+ Confirmation on blockchain, Payout is Automatically sent to you. 
 	    Its Sent To Same Address From Which You Send, if multiple inputs are used then winnings are sent to the 1st Input.
 	     </span></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">attach_money</i>FAQ House Edge/Fees</div>
-      <div class="collapsible-body"><span>House Edge : 2% + Bitcoin Transaction Payout Fees ( Depends On Network ) Usually 0.00000500 BTC </span></div>
-    </li>
-  </ul>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">attach_money</i>FAQ House Edge/Fees</div>
+                    <div class="collapsible-body"><span>House Edge : 2% + Bitcoin Transaction Payout Fees ( Depends On Network ) Usually 0.00000500 BTC </span></div>
+                </li>
+            </ul>
 
-<div id="myplot"></div>
-</div>     
-	   
-<div class="col s12 l6"><div class="responsive-table"> 
-<table class="responsive-table highlight"  id="myTable" ></table></div>
-<div class="progress"><div class="indeterminate"></div></div>
+            <div id="myplot"></div>
+        </div>
+
+        <div class="col s12 l6">
+            <div class="responsive-table">
+                <table class="responsive-table highlight" id="myTable"></table>
+            </div>
+            <div class="progress">
+                <div class="indeterminate"></div>
+            </div>
+        </div>
+    </div>
 </div>
-	    </div></div>
-
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
