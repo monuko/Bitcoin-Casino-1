@@ -50,7 +50,7 @@
   </nav></div> </div>
         	
 			
-	    
+<div class="row">	    
 <div class="col s12 l6">	   
 
   <ul class="collapsible popout">
@@ -92,7 +92,7 @@
 <table class="responsive-table highlight"  id="myTable" ></table></div>
 <div class="progress"><div class="indeterminate"></div></div>
 </div>
-
+	    </div>
 
 
 
