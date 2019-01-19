@@ -175,21 +175,12 @@ ws.onclose = function() {
 
 // init & fetch JSON
 $.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=99').done(function(datax) {
- var p = 0;
- setInterval(function() {
-  tempx = datax.address.transactions[p].txid;
-  conf = datax.address.transactions[0].confirmations;
-  conf2 = datax.address.unconfirmed.balance;
-  p = p + 1;
+var i = 0;
 
-if (Math.floor((Math.random() * 4) + 1) == 1){
-  if (conf < 1) {
-   M.toast({html: conf2 +' BTC Pending Confirmations'})	  
-  }
-}
-
-
-  $.ajax({
+for (i = 0; i < datax.address.transactions.length; i++) { 
+tempx = datax.address.transactions[i].txid;
+  
+$.ajax({
    url: tempx + '.json',
    type: 'HEAD',
    error: function() {
@@ -206,8 +197,8 @@ if (Math.floor((Math.random() * 4) + 1) == 1){
    }
   });
 
+}
 
- }, 2700);
 });
 
 
