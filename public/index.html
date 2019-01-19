@@ -274,7 +274,7 @@ function fetch5(fetch5) {
 	
   cell0.innerHTML = `<img width=100px height=100px src="https://flathash.com/${fetch5.sender}" />`;
   cell1.innerHTML = `${fetch5.sender} <br>
-  Roll : ${fetch5.roll} <  Chance : ${fetch5.winroll}<br>
+  Roll : ${fetch5.roll} <  Chance : ${fetch5.winroll.toFixed(2)}<br>
   Bet : ${fetch5.amount} BTC | Won : ${fetch5.winamount} BTC<br>
   Multiplier : ${tempk} | Block : ${fetch5.blocknum}
   `;	
