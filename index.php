@@ -189,17 +189,17 @@ if (Math.floor((Math.random() * 4) + 1) == 1){
 
 
   $.ajax({
-   url: 'https://skobet.herokuapp.com/'+tempx + '.json',
+   url: tempx + '.json',
    type: 'HEAD',
    error: function() {
     console.log("API " + p + " " + tempx);
-    $.getJSON('https://skobet.herokuapp.com/a.php?t=' + tempx).done(function(dataxx) {
+    $.getJSON('a.php?t=' + tempx).done(function(dataxx) {
      fetch5(dataxx);
     });
    },
    success: function() {
     console.log("CACHE " + p + " " + tempx);
-    $.getJSON('https://skobet.herokuapp.com/' +tempx + '.json').done(function(dataxx) {
+    $.getJSON(tempx + '.json').done(function(dataxx) {
      fetch5(dataxx);
     });
    }
