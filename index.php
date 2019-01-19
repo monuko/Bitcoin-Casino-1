@@ -184,13 +184,13 @@ $.ajax({
    url: tempx + '.json',
    type: 'HEAD',
    error: function() {
-    console.log("API " + p + " " + tempx);
+    console.log("API " + i + " " + tempx);
     $.getJSON('a.php?t=' + tempx).done(function(dataxx) {
      fetch5(dataxx);
     });
    },
    success: function() {
-    console.log("CACHE " + p + " " + tempx);
+    console.log("CACHE " + i + " " + tempx);
     $.getJSON(tempx + '.json').done(function(dataxx) {
      fetch5(dataxx);
     });
