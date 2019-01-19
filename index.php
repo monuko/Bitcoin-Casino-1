@@ -49,31 +49,11 @@
     </div>
   </nav></div> </div>
         	
+			
+   <div class="container"><div class="row">	    
+<div class="col s12 l6">	   
 
-
- <div class="row">
-
-      <div class="col s12 m4 l3"> <!-- Note that "m4 l3" was added -->
-
-<div class="card horizontal"><div class="card-image">
-        <img id="addrimg" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx" />
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-	    <input id="addrvalue" type="text" class="form-control" value="1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx">
-            <p class="range-field"><input type="range" id="myRange" min="1" max="20" /> </p>    
-	     Multiplier : <span id="demo">7</span>X - Winchance : <span id="demo2">14</span>%
-	
-        </div>
-      </div>
-    </div>
-
-
-      </div>
-
-      <div class="col s12 m8 l9"> <!-- Note that "m8 l9" was added -->
-   
-	        <ul class="collapsible popout">
+  <ul class="collapsible popout">
     <li class="active">
       <div class="collapsible-header"><i class="material-icons">filter_drama</i>Deposit Bitcoin Below !</div>
       <div class="collapsible-body">
@@ -106,18 +86,13 @@
   </ul>
 
 <div id="myplot"></div>
-	      
-<div class="responsive-table"> 
-<table class="responsive-table highlight"  id="myTable" ></table></div>	      
-	      
-	      
-      </div>
-
-    </div>
-
-
-
-		
+</div>     
+	   
+<div class="col s12 l6"><div class="responsive-table"> 
+<table class="responsive-table highlight"  id="myTable" ></table></div>
+<div class="progress"><div class="indeterminate"></div></div>
+</div>
+	    </div></div>
 
 
 
