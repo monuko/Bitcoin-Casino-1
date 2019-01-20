@@ -176,20 +176,19 @@ ws.onclose = function() {
 // init & fetch JSON
 $.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=99').done(function(datax) {
 tempx = datax.address.transactions;
-	
 tempx.forEach(function(elementp) {
 
 $.ajax({
    url: elementp.txid + '.json',
    type: 'HEAD',
    error: function() {
-    console.log("API " +tempx);
+    console.log("API " + elementp.txid);
     $.getJSON('a.php?t=' + elementp.txid).done(function(dataxx) {
      fetch5(dataxx);
     });
    },
    success: function() {
-    console.log("CACHE " + tempx);
+    console.log("CACHE " + elementp.txid);
     $.getJSON(elementp.txid + '.json').done(function(dataxx) {
      fetch5(dataxx);
     });
