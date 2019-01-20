@@ -66,12 +66,12 @@
                                     <input id="addrvalue" type="text" class="form-control" value="1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx">
                                     <p class="range-field">
                                         <input type="range" id="myRange" min="1" max="20" /> </p>
-                                    Multiplier : <span id="demo">7</span>X - Winchance : <span id="demo2">14</span>%
+                                     Multiplier : <span id="demo">7</span>X - Winchance : <span id="demo2">14</span>%
 
                                 </div>
                             </div>
                         </div>
-
+<div class="progress"><div class="indeterminate"></div></div>
                     </div>
                 </li>
                 <li>
