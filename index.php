@@ -102,12 +102,6 @@
 
 
 
-  <div class="tap-target" data-target="menu">
-    <div class="tap-target-content">
-      <h5>Deposit Bitcoins</h5>
-      <p>Select your Multiplier & Deposit Bitcoins, if Your roll is less then your chance then you will get X times your deposit amount,</p>
-    </div>
-  </div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -117,7 +111,6 @@
 //ui script		
 $(document).ready(function(){
     $('.collapsible').collapsible();
-    $('.tap-target').tapTarget();	
   });
 		
 		
