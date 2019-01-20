@@ -267,7 +267,7 @@ function fetch5(fetch5) {
   `;	
 
   if (fetch5.confirmation < 3) {
-  cell2.innerHTML = `<a class="waves-effect waves-light btn-small" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
+  cell2.innerHTML = `<a class="waves-effect waves-light btn-small red" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
   }else{
   if (fetch5.result > 0) {
      cell2.innerHTML = `<a class="waves-effect waves-light btn-small" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
