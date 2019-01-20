@@ -54,7 +54,7 @@ if($obj['transaction']['outputs'][$i]['addresses'][0] === $addrrrr[$x] ){
   $depositadd = $addrrrr[$x];
   $winamount = $x*$amount;
   $winamount = $winamount*0.98;
-  $winroll = 98/$x;    
+  $winroll = 99/$x;    
 }}}
  
 if($confirmation>0){
