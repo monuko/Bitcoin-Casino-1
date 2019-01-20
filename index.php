@@ -66,7 +66,7 @@
                                     <input id="addrvalue" type="text" class="form-control" value="1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx">
                                     <p class="range-field">
                                         <input type="range" id="myRange" min="1" max="20" /> </p>
-                                     Multiplier : <span id="demo">7</span>X - Winchance : <span id="demo2">14</span>%
+                                     Multiplier : <span class="new badge" id="demo">7</span> - Winchance : <span id="demo2" class="new badge">14</span>
 
                                 </div>
                             </div>
@@ -120,8 +120,8 @@ var output = document.getElementById("demo");
 var output2 = document.getElementById("demo2");
 output.innerHTML = slider.value;
 slider.oninput = function() {
-  output.innerHTML = this.value;
-  output2.innerHTML = parseFloat((98/this.value)).toFixed(3);
+  output.innerHTML = this.value +"X";
+  output2.innerHTML = parseFloat((98/this.value)).toFixed(3) +"%";
   document.getElementById("addrvalue").value = addr[this.value];
   $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
 }
