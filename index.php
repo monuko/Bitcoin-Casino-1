@@ -68,7 +68,7 @@
                                     <input id="addrvalue" type="text" class="form-control" value="1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx">
                                     <p class="range-field">
                                        <input type="range" id="myRange" min="1" max="20" /> </p>
-                                     Multiplier : <span id="demo">7</span> - Winchance : <span id="demo2">14</span>
+                                       Multiplier : <span id="demo">7</span> - Winchance : <span id="demo2">14</span>
 
                                 </div>
                             </div>
@@ -84,7 +84,7 @@
                 </li>
                 <li>
                     <div class="collapsible-header"><i class="material-icons">attach_money</i>FAQ House Edge/Fees</div>
-                    <div class="collapsible-body"><span>House Edge : 2% + Bitcoin Transaction Payout Fees ( Depends On Network ) Usually 0.00000500 BTC </span></div>
+                    <div class="collapsible-body"><span>House Edge : 1% </span></div>
                 </li>
             </ul>
 
@@ -121,7 +121,7 @@ var output2 = document.getElementById("demo2");
 output.innerHTML = slider.value;
 slider.oninput = function() {
   output.innerHTML = this.value +"X";
-  output2.innerHTML = parseFloat((98/this.value)).toFixed(3) +"%";
+  output2.innerHTML = parseFloat((99/this.value)).toFixed(3) +"%";
   document.getElementById("addrvalue").value = addr[this.value];
   $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
 }
@@ -257,7 +257,7 @@ function fetch5(fetch5) {
   var cell0 = row.insertCell(0);
   var cell1 = row.insertCell(1);
   var cell2 = row.insertCell(2);
-  var tempk = (98/fetch5.winroll) + "X";
+  var tempk = (99/fetch5.winroll) + "X";
 	
   cell0.innerHTML = `<img width=100px height=100px src="https://flathash.com/${fetch5.sender}" />`;
   cell1.innerHTML = `${fetch5.sender} <br>
