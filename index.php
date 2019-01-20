@@ -253,7 +253,7 @@ Plotly.newPlot('myplot', data, layout, {showSendToCloud: true});
 function fetch5(fetch5) {
   if(0 > addr.indexOf(fetch5.sender)){
   var table = document.getElementById("myTable");
-  var row = table.insertRow(-1);
+  var row = table.insertRow(fetch5.blocknum);
   var cell0 = row.insertCell(0);
   var cell1 = row.insertCell(1);
   var cell2 = row.insertCell(2);
