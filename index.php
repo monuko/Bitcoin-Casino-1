@@ -175,39 +175,33 @@ ws.onclose = function() {
 
 // init & fetch JSON
 $.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=99').done(function(datax) {
-loop2(datax.address.transactions);
-});
-
-
-
-
-// loop
-function loop2(loop22) {
-p = 0;
+tempx = datax.address.transactions;
 	
-while (p < 100) {
-tempx = loop22[p].txid;
-p = p +1;	
-	
+tempx.forEach(function(elementp) {
+
 $.ajax({
-   url: tempx + '.json',
+   url: elementp.txid + '.json',
    type: 'HEAD',
    error: function() {
-    console.log("API " + p + " " + tempx);
-    $.getJSON('a.php?t=' + tempx).done(function(dataxx) {
+    console.log("API " +tempx);
+    $.getJSON('a.php?t=' + elementp.txid).done(function(dataxx) {
      fetch5(dataxx);
     });
    },
    success: function() {
-    console.log("CACHE " + p + " " + tempx);
-    $.getJSON(tempx + '.json').done(function(dataxx) {
+    console.log("CACHE " + tempx);
+    $.getJSON(elementp.txid + '.json').done(function(dataxx) {
      fetch5(dataxx);
     });
    }
   });
 
-}
-}
+});
+});
+
+
+
+
 
 
 // audio beep
