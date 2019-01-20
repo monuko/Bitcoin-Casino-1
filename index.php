@@ -183,7 +183,7 @@ loop2(datax.address.transactions);
 
 // loop
 function loop2(loop22) {
-var p = 0;
+p = 0;
 	
 while (p < 100) {
 tempx = loop22[p].txid;
