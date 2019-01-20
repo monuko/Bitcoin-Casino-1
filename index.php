@@ -187,7 +187,7 @@ p = 0;
 	
 while (p < 100) {
 tempx = loop22[p].txid;
-p++;	
+p = p +1;	
 	
 $.ajax({
    url: tempx + '.json',
