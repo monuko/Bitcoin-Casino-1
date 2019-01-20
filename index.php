@@ -93,9 +93,7 @@
             <div class="responsive-table">
                 <table class="responsive-table highlight" id="myTable"></table>
             </div>
-            <div class="progress">
-                <div class="indeterminate"></div>
-            </div>
+		
         </div>
     </div>
 </div>
