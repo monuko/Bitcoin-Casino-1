@@ -65,8 +65,8 @@
                                 <div class="card-content">
                                     <input id="addrvalue" type="text" class="form-control" value="1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx">
                                     <p class="range-field">
-                                        <input type="range" id="myRange" min="1" max="20" /> </p>
-                                     Multiplier : <span class="new badge" id="demo">7</span> - Winchance : <span id="demo2" class="new badge">14</span>
+                                       <input type="range" id="myRange" min="1" max="20" /> </p>
+                                     Multiplier : <span id="demo">7</span> - Winchance : <span id="demo2">14</span>
 
                                 </div>
                             </div>
