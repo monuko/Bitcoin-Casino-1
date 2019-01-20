@@ -177,9 +177,10 @@ ws.onclose = function() {
 $.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=99').done(function(datax) {
 var i = 0;
 
-for (i = 0; i < datax.address.transactions.length; i++) { 
+while (i < 100) {
 tempx = datax.address.transactions[i].txid;
-  
+   i++;
+ 
 $.ajax({
    url: tempx + '.json',
    type: 'HEAD',
