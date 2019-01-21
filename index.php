@@ -92,7 +92,7 @@
 
 
 
-            <ul class="collapsible2 popout">
+            <ul class="collapsible popout">
                 <li class="active">
                  <div class="collapsible-header"><i class="material-icons">attach_money</i>Graph</div>
                 <div class="collapsible-body">    
@@ -108,10 +108,10 @@
             <textarea id="textarea2" class="materialize-textarea" data-length="64"></textarea>
 	    <a class="waves-effect waves-light btn">Verify</a>
             <label for="textarea2">[BETVERIFY] BTC Transaction Hash</label>
- </div>
+            </div>
 			
-			</div>
-                </li>
+	    </div>
+             </li>
             </ul>
 
 
@@ -139,10 +139,8 @@
 <script>  
 //ui script		
 $(document).ready(function(){
-
-	    $('.collapsible').collapsible();
-	    $('.collapsible2').collapsible();
-  });
+ $('.collapsible').collapsible();
+});
 		
 		
 //core starts		
