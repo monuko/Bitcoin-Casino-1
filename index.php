@@ -86,15 +86,24 @@
                     <div class="collapsible-header"><i class="material-icons">attach_money</i>FAQ House Edge/Fees</div>
                     <div class="collapsible-body"><span>House Edge : 1% </span></div>
                 </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">attach_money</i>BET ROll VERIFY</div>
+                    <div class="collapsible-body">
+			
+          <div class="input-field">
+            <textarea id="textarea2" class="materialize-textarea" data-length="64"></textarea>
+            <label for="textarea2">[BETVERIFY] BTC Transaction Hash</label>
+          </div>
+
+			
+		</div>
+                </li>
             </ul>
 
 
             <div id="myplot"></div>
 
-          <div class="input-field">
-            <textarea id="textarea2" class="materialize-textarea" data-length="64"></textarea>
-            <label for="textarea2">[BETVERIFY] BTC Transaction Hash</label>
-          </div>
+
 
 
         </div>
