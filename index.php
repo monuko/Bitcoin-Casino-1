@@ -95,7 +95,7 @@
 	    <a class="waves-effect waves-light btn">Verify</a>
             <label for="textarea2">[BETVERIFY] BTC Transaction Hash</label>
  
-          </div>
+            </div>
 
 			
 		</div>
@@ -103,7 +103,32 @@
             </ul>
 
 
-            <div id="myplot"></div>
+
+
+            <ul class="collapsible2 popout">
+                <li class="active">
+                   
+                </li>
+	        <div class="collapsible-header"><i class="material-icons">attach_money</i>Graph</div>
+                <div class="collapsible-body">    
+                <div id="myplot"></div>
+		</div> </div>
+                <li>
+                <div class="collapsible-header"><i class="material-icons">attach_money</i>BET ROll VERIFY</div>
+                <div class="collapsible-body">
+			
+          <div class="input-field">
+            <textarea id="textarea2" class="materialize-textarea" data-length="64"></textarea>
+	    <a class="waves-effect waves-light btn">Verify</a>
+            <label for="textarea2">[BETVERIFY] BTC Transaction Hash</label>
+ 
+            </div>
+
+			
+		</div>
+                </li>
+            </ul>
+
 
 
 
@@ -129,7 +154,9 @@
 <script>  
 //ui script		
 $(document).ready(function(){
-    $('.collapsible').collapsible();
+
+	    $('.collapsible').collapsible();
+	    $('.collapsible2').collapsible();
   });
 		
 		
