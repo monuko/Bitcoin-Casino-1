@@ -88,7 +88,15 @@
                 </li>
             </ul>
 
+
             <div id="myplot"></div>
+
+          <div class="input-field">
+            <textarea id="textarea2" class="materialize-textarea" data-length="64"></textarea>
+            <label for="textarea2">[BETVERIFY] BTC Transaction Hash</label>
+          </div>
+
+
         </div>
 
         <div class="col s12 l6">
