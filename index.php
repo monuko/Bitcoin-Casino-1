@@ -97,7 +97,7 @@
                  <div class="collapsible-header"><i class="material-icons">attach_money</i>Graph</div>
                 <div class="collapsible-body">    
                 <div id="myplot"></div>
-		</div> </div>
+		</div> 
                 </li>
 
                 <li>
