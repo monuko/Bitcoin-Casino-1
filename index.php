@@ -92,7 +92,9 @@
 			
           <div class="input-field">
             <textarea id="textarea2" class="materialize-textarea" data-length="64"></textarea>
+	    <a class="waves-effect waves-light btn">Verify</a>
             <label for="textarea2">[BETVERIFY] BTC Transaction Hash</label>
+ 
           </div>
 
 			
