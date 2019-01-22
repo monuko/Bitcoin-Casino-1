@@ -75,12 +75,11 @@ $imphash = hash('sha512', $trxn);
 // $roll = $roll%(10000);
 // $roll = $roll/100;
 
-$roll = (int) filter_var($imphash, FILTER_SANITIZE_NUMBER_INT);
-$roll = substr($roll, -4);
+
+
+$blockint = preg_replace('/[^0-9]/', '', $imphash);
+$roll = substr($blockint, -4);
 $roll = $roll/100;
-
-
-
 
 
 
