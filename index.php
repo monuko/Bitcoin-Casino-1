@@ -110,6 +110,7 @@
             </div>
 			
             <span id="rolloutput"></span>
+            <input id="rolloutputbethash" type="text">
 
 		    
 	    </div>
@@ -154,7 +155,9 @@ $('#rolloutput').html(
 '<br>Block Hash : ' + dataxxxx.blockhash +
 '<br>Bethash : ' + dataxxxx.bethash +
 '<br>Bet Roll : ' + dataxxxx.roll
-); 		
+); 	
+
+$('#rolloutputbethash').val(dataxxxx.bethash); 	
 	
 });
 });
