@@ -58,34 +58,23 @@ for($i = 0; $i < $outputcount; $i++) {
 } 
 
 
+
+
 if($confirmation>0){
 $url = 'https://api.smartbit.com.au/v1/blockchain/block/'.$blocknum;
 $obj = json_decode(file_get_contents($url), true);
 $blockhash =  $obj['block']['hash'];
 $blocktime =  $obj['block']['time'];
-$imphash = hash('sha512', $trxn.$blockhash);
+$imphash = hash('sha512', hash('sha512', $trxn) . hash('sha512', $blockhash) );
 }else{
 $imphash = hash('sha512', $trxn);   
 }
 
 
-for ($iii = 0; $iii < strlen($imphash); $iii+= 5)
-	{
-	$sub = substr($imphash, $iii, 5);
-	if (strlen($sub) == 5)
-		{
-		$decimal_number = hexdec($sub);
-		if ($decimal_number < 1000000)
-			{
-			$decimal_fourc = bcmod($decimal_number, 10000);
-			$roll = bcdiv($decimal_fourc, 100, 2);
-			}
-		}
-	  else
-		{
-		break;
-		}
-	}
+$roll = hexdec(substr($imphash, 0, 4));
+$roll = $roll%(10000);
+$roll = $roll/100;
+
 
 
 
