@@ -172,9 +172,10 @@ M.toast({html: 'Loading Recent Bets.'});
 	
 //bet roll verify
 $("#textarea2").change(function(){
+M.toast({html: 'Fetching Bet Details'});
+	
 $.getJSON('a.php?t=' + $('textarea#textarea2').val()).done(function(dataxxxx) {
 console.log('fetchiiiiiiiiing');
-M.toast({html: 'Fetching Bet Details'});
 
 	$('#ro1').val(dataxxxx.sender); 	
 	$('#ro2').val(dataxxxx.trxn); 	
