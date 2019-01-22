@@ -71,8 +71,9 @@ $imphash = hash('sha512', $trxn);
 }
 
 
-$blockint = preg_replace('/[^0-9]/', '', $imphash);
-$roll = substr($blockint, -4);
+$roll_number_hex = substr($imphash, 0, 4);
+$roll = hexdec($roll_number_hex);
+$roll = $roll%(10000);
 $roll = $roll/100;
 
 
