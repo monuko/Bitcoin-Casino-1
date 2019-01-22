@@ -31,6 +31,25 @@ $addrrrr=array(
     "1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx"
 );
   
+function rollDice($hash){
+    for($i = 0; $i < strlen($hash); $i += 5){
+        $sub = substr($hash, $i, 5);
+        if(strlen($sub) == 5){
+            $decimal_number = hexdec($sub);
+            if($decimal_number < 1000000){
+                $decimal_fourc = bcmod($decimal_number, 10000);
+                $final_decimal = bcdiv($decimal_fourc, 100, 2);
+                return $final_decimal;
+            }
+        }
+        else{
+            break;
+        }
+    }
+}
+
+
+
   
   
 $url = 'https://api.smartbit.com.au/v1/blockchain/tx/'. $trxn;
@@ -64,10 +83,13 @@ $imphash = hash('sha512', hash('sha512', $trxn) . hash('sha512', $blockhash));
 $imphash = hash('sha512', $trxn);   
 }
 
-$roll_number_hex = substr($imphash, 0, 4);
-$roll = hexdec($roll_number_hex);
-$roll = $roll%(10000);
-$roll = $roll/100;
+$roll = rollDice($imphash);
+
+
+
+
+
+
 
 
 
@@ -108,7 +130,7 @@ if(0<$confirmation){
 $myJSON = json_encode($myObj);
 echo $myJSON;
 
-if($confirmation>3){
+if($confirmation>1){
 $fp = fopen($trxn.'.json', 'w');
 fwrite($fp,$myJSON);
 fclose($fp);
