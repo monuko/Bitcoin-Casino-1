@@ -78,7 +78,7 @@
                 </li>
 
 
-                <li>
+                <li class="active">
                 <div class="collapsible-header"><i class="material-icons">code</i>BET ROLL VERIFY</div>
                 <div class="collapsible-body">
 			
