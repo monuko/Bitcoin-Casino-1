@@ -85,7 +85,7 @@
             <div class="input-field">
             <textarea id="textarea2" class="materialize-textarea" data-length="64"></textarea>
             <label for="textarea2">[BETVERIFY] BTC Transaction Hash</label>
-            </div>
+  
 
 			<textarea id="ro1" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
 			<label for="ro1">Player</label>
@@ -104,7 +104,7 @@
 			
 			<textarea id="ro6" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
 			<label for="ro6">BET ROLL</label>
-
+            </div>
 	    </div>
              </li>
                
