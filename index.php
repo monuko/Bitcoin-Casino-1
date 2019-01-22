@@ -149,10 +149,10 @@ $("#textarea2").change(function(){
 $.getJSON('a.php?t=' + $('textarea#textarea2').val()).done(function(dataxxxx) {
 	
 $('#rolloutput').html(
-'<br>Player : ' + dataxxxx.sender 
-'<br>Transaction : ' + dataxxxx.trxn
-'<br>Block Hash : ' + dataxxxx.blockhash
-'<br>Bethash : ' + dataxxxx.bethash
+'<br>Player : ' + dataxxxx.sender +
+'<br>Transaction : ' + dataxxxx.trxn +
+'<br>Block Hash : ' + dataxxxx.blockhash +
+'<br>Bethash : ' + dataxxxx.bethash +
 '<br>Bet Roll : ' + dataxxxx.roll
 ); 		
 	
