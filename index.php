@@ -73,8 +73,7 @@
                                 </div>
                             </div>
                         </div>
- <div class="progress"><div class="indeterminate"></div></div>
- <blockquote>Deposit Bitcoin (BTC) Only, 1 Confirmation Required.</blockquote>
+ <blockquote>Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</blockquote>
 
 
                     </div>
