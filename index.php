@@ -76,29 +76,7 @@
 <div class="progress"><div class="indeterminate"></div></div>
                     </div>
                 </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">blur_on</i>FAQ Payouts </div>
-                    <div class="collapsible-body"><span>When Your Transaction has 5+ Confirmation on blockchain, Payout is Automatically sent to you. 
-	    Its Sent To Same Address From Which You Send, if multiple inputs are used then winnings are sent to the 1st Input.
-	     </span></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">attach_money</i>FAQ House Edge/Fees</div>
-                    <div class="collapsible-body"><span>House Edge : 1% </span></div>
-                </li>
-               
-            </ul>
 
-
-
-
-            <ul class="collapsible popout">
-                <li class="active">
-                 <div class="collapsible-header"><i class="material-icons">grain</i>Graph</div>
-                <div class="collapsible-body">    
-                <div id="myplot"></div>
-		</div> 
-                </li>
 
                 <li>
                 <div class="collapsible-header"><i class="material-icons">code</i>BET ROLL VERIFY</div>
@@ -126,6 +104,30 @@
 
 	    </div>
              </li>
+               
+            </ul>
+
+
+
+
+            <ul class="collapsible popout">
+                <li class="active">
+                 <div class="collapsible-header"><i class="material-icons">grain</i>Graph</div>
+                <div class="collapsible-body">    
+                <div id="myplot"></div>
+		</div> 
+                </li>
+
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">blur_on</i>FAQ Payouts </div>
+                    <div class="collapsible-body"><span>When Your Transaction has 5+ Confirmation on blockchain, Payout is Automatically sent to you. 
+	    Its Sent To Same Address From Which You Send, if multiple inputs are used then winnings are sent to the 1st Input.
+	     </span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">attach_money</i>FAQ House Edge/Fees</div>
+                    <div class="collapsible-body"><span>House Edge : 1% </span></div>
+                </li>
             </ul>
 
 
