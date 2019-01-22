@@ -109,11 +109,21 @@
             <label for="textarea2">[BETVERIFY] BTC Transaction Hash</label>
             </div>
 
-			<input id="ro1" type="text">
-			<input id="ro2" type="text">
-			<input id="ro3" type="text">
-			<input id="ro4" type="text">
-			<input id="ro5" type="text">
+			<input id="ro1" type="text" placeholder="Press Enter">
+			<label for="ro1">Player</label>
+			
+			<input id="ro2" type="text" placeholder="Press Enter">
+			<label for="ro2">Transaction Hash</label>
+			
+			<input id="ro3" type="text" placeholder="Press Enter">
+			<label for="ro3">Block Hash</label>
+			
+			<input id="ro4" type="text" placeholder="Press Enter">
+			<label for="ro4">BET HASH</label>
+			
+			<input id="ro5" type="text" placeholder="Press Enter">
+			<label for="ro5">BEt ROLL</label>
+
 	    </div>
              </li>
             </ul>
@@ -154,7 +164,7 @@ $.getJSON('a.php?t=' + $('textarea#textarea2').val()).done(function(dataxxxx) {
 	$('#ro12').val(dataxxxx.trxn); 	
 	$('#ro13').val(dataxxxx.blockhash); 	
 	$('#ro14').val(dataxxxx.bethash); 	
-	$('#ro15').val(dataxxxx.bethash); 	
+	$('#ro15').val(dataxxxx.roll); 	
 });
 });
 
