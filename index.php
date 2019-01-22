@@ -92,7 +92,7 @@
 
 
 
-            <ul class="collapsible popout">
+            <ul class="collapsible">
                 <li class="active">
                  <div class="collapsible-header"><i class="material-icons">attach_money</i>Graph</div>
                 <div class="collapsible-body">    
