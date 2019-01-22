@@ -160,11 +160,11 @@ $('.collapsible').collapsible();
 $("#textarea2").change(function(){
 $.getJSON('a.php?t=' + $('textarea#textarea2').val()).done(function(dataxxxx) {
 	
-	$('#ro11').val(dataxxxx.sender); 	
-	$('#ro12').val(dataxxxx.trxn); 	
-	$('#ro13').val(dataxxxx.blockhash); 	
-	$('#ro14').val(dataxxxx.bethash); 	
-	$('#ro15').val(dataxxxx.roll); 	
+	$('#ro1').val(dataxxxx.sender); 	
+	$('#ro2').val(dataxxxx.trxn); 	
+	$('#ro3').val(dataxxxx.blockhash); 	
+	$('#ro4').val(dataxxxx.bethash); 	
+	$('#ro5').val(dataxxxx.roll); 	
 });
 });
 
