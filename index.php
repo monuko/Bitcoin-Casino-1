@@ -85,8 +85,8 @@
             <div class="input-field">
             <textarea id="textarea2" class="materialize-textarea" data-length="64"></textarea>
             <label for="textarea2">Paste Deposit Transaction Hash</label>
-  </div>
-  <div class="progress"><div class="indeterminate"></div></div>
+           </div>
+
 
             <div class="input-field">
 			<textarea id="ro1" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
@@ -168,19 +168,22 @@
 //ui script		
 $(document).ready(function(){
 $('.collapsible').collapsible();	
-
+M.toast({html: 'Loading Recent Bets.'});
 	
 //bet roll verify
 $("#textarea2").change(function(){
 $.getJSON('a.php?t=' + $('textarea#textarea2').val()).done(function(dataxxxx) {
 console.log('fetchiiiiiiiiing');
-	
+M.toast({html: 'Fetching Bet Details'});
+
 	$('#ro1').val(dataxxxx.sender); 	
 	$('#ro2').val(dataxxxx.trxn); 	
 	$('#ro3').val(dataxxxx.blocknum);
 	$('#ro4').val(dataxxxx.blockhash); 	
 	$('#ro5').val(dataxxxx.bethash); 	
 	$('#ro6').val(dataxxxx.roll); 	
+
+M.toast({html: 'Fetched !'});
 });
 });
 
