@@ -71,10 +71,13 @@ $imphash = hash('sha512', $trxn);
 }
 
 
-$roll = hexdec(substr($imphash, 0, 4));
-$roll = $roll%(10000);
-$roll = $roll/100;
+// $roll = hexdec(substr($imphash, 0, 4));
+// $roll = $roll%(10000);
+// $roll = $roll/100;
 
+$roll = (int) filter_var($imphash, FILTER_SANITIZE_NUMBER_INT);
+$roll = substr($roll, -4);
+$roll = $roll/100;
 
 
 
