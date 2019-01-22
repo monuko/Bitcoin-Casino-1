@@ -94,13 +94,16 @@
 			<label for="ro2">Transaction Hash</label>
 			
 			<input id="ro3" type="text" placeholder="Press Enter">
-			<label for="ro3">Block Hash</label>
+			<label for="ro3">Block Number</label>
 			
 			<input id="ro4" type="text" placeholder="Press Enter">
-			<label for="ro4">BET HASH</label>
+			<label for="ro4">Block Hash</label>
 			
 			<input id="ro5" type="text" placeholder="Press Enter">
-			<label for="ro5">BET ROLL</label>
+			<label for="ro5">BET HASH</label>
+			
+			<input id="ro6" type="text" placeholder="Press Enter">
+			<label for="ro6">BET ROLL</label>
 
 	    </div>
              </li>
@@ -165,9 +168,10 @@ console.log('fetchiiiiiiiiing');
 	
 	$('#ro1').val(dataxxxx.sender); 	
 	$('#ro2').val(dataxxxx.trxn); 	
-	$('#ro3').val(dataxxxx.blockhash); 	
-	$('#ro4').val(dataxxxx.bethash); 	
-	$('#ro5').val(dataxxxx.roll); 	
+	$('#ro3').val(dataxxxx.blocknum);
+	$('#ro4').val(dataxxxx.blockhash); 	
+	$('#ro5').val(dataxxxx.bethash); 	
+	$('#ro6').val(dataxxxx.roll); 	
 });
 });
 
