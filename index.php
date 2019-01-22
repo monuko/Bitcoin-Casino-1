@@ -109,6 +109,12 @@
             <label for="textarea2">[BETVERIFY] BTC Transaction Hash</label>
             </div>
 			
+            <span id="rolloutput"></span
+		<span id="rolloutput2"></span
+		    <span id="rolloutput3"></span
+		    <span id="rolloutput4"></span
+		    <span id="rolloutput5"></span
+		    
 	    </div>
              </li>
             </ul>
@@ -141,11 +147,13 @@ $(document).ready(function(){
 $('.collapsible').collapsible();	
 	
 $("#textarea2").change(function(){
-
 $.getJSON('a.php?t=' + $('textarea#textarea2').val()).done(function(dataxxxx) {
-console.log(dataxxxx.sender);	
+$('#rolloutput').text('Player : ' + dataxxxx.sender); 	
+$('#rolloutput2').text('Transaction : ' + dataxxxx.trxn); 
+$('#rolloutput3').text('Block : ' + dataxxxx.blockhash);	
+$('#rolloutput4').text('Bethash : ' + dataxxxx.bethash);	
+$('#rolloutput5').text('Bet Roll : ' + dataxxxx.roll);		
 });
-
 });
 		
 });
