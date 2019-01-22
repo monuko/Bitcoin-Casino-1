@@ -92,7 +92,7 @@
 
 
 
-            <ul class="collapsible">
+            <ul class="collapsible popout">
                 <li class="active">
                  <div class="collapsible-header"><i class="material-icons">attach_money</i>Graph</div>
                 <div class="collapsible-body">    
@@ -141,15 +141,20 @@
 <script>  
 //ui script		
 $(document).ready(function(){
-$('.collapsible').collapsible();	
 	
+$('.collapsible').collapsible();	
+
+	
+//bet roll verify
 $("#textarea2").change(function(){
 $.getJSON('a.php?t=' + $('textarea#textarea2').val()).done(function(dataxxxx) {
-$('#rolloutput').html('Player : ' + dataxxxx.sender +'<br> HELLO TEST'); 	
-$('#rolloutput2').text('Transaction : ' + dataxxxx.trxn); 
-$('#rolloutput3').text('Block : ' + dataxxxx.blockhash); 	
-$('#rolloutput4').text('Bethash : ' + dataxxxx.bethash);	
-$('#rolloutput5').text('Bet Roll : ' + dataxxxx.roll);		
+$('#rolloutput').html(
+'Player : ' + dataxxxx.sender +'<br>'
+'Transaction : ' + dataxxxx.trxn +'<br>'
+'Block Hash : ' + dataxxxx.blockhash +'<br>'
+'Bethash : ' + dataxxxx.bethash +'<br>'
+'Bet Roll : ' + dataxxxx.roll
+); 		
 });
 });
 		
