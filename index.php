@@ -56,7 +56,7 @@
 
             <ul class="collapsible popout">
                 <li class="active">
-                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Deposit Bitcoin Below !</div>
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Set Multiplier Below !</div>
                     <div class="collapsible-body">
 
                         <div id="deposit" class="card horizontal">
@@ -73,7 +73,10 @@
                                 </div>
                             </div>
                         </div>
-<div class="progress"><div class="indeterminate"></div></div>
+ <div class="progress"><div class="indeterminate"></div></div>
+ <blockquote>Deposit Bitcoin (BTC) Only, 1 Confirmation Required.</blockquote>
+
+
                     </div>
                 </li>
 
