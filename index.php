@@ -109,11 +109,11 @@
             <label for="textarea2">[BETVERIFY] BTC Transaction Hash</label>
             </div>
 			
-            <span id="rolloutput"></span
-		<span id="rolloutput2"></span
-		    <span id="rolloutput3"></span
-		    <span id="rolloutput4"></span
-		    <span id="rolloutput5"></span
+			<span id="rolloutput"></span>
+			<span id="rolloutput2"></span>
+			<span id="rolloutput3"></span>
+			<span id="rolloutput4"></span>
+		        <span id="rolloutput5"></span>
 		    
 	    </div>
              </li>
