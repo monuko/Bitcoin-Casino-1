@@ -78,8 +78,8 @@
                 </li>
 
 
-                <li class="active">
-                <div class="collapsible-header"><i class="material-icons">code</i>BET ROLL VERIFY</div>
+                <li>
+                <div class="collapsible-header"><i class="material-icons">code</i>BETROLL VERIFY</div>
                 <div class="collapsible-body">
 			
             <div class="input-field">
