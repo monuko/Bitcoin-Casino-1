@@ -139,18 +139,15 @@
 //ui script		
 $(document).ready(function(){
 $('.collapsible').collapsible();	
+	
 $("#textarea2").change(function(){
 
 $.getJSON('a.php?t=' + $('textarea#textarea2').val()).done(function(dataxxxx) {
-console.log( dataxxxx.sender 
- dataxxxx.winroll.toFixed(2)
- dataxxxx.amount
- dataxxxx.winamount);	
+console.log(dataxxxx.sender);	
 });
 
 });
-	
-	
+		
 });
 		
 		
