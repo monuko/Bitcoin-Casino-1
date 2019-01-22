@@ -106,7 +106,6 @@
 			
             <div class="input-field">
             <textarea id="textarea2" class="materialize-textarea" data-length="64"></textarea>
-	    <a class="waves-effect waves-light btn">Verify</a>
             <label for="textarea2">[BETVERIFY] BTC Transaction Hash</label>
             </div>
 			
@@ -139,7 +138,19 @@
 <script>  
 //ui script		
 $(document).ready(function(){
- $('.collapsible').collapsible();
+$('.collapsible').collapsible();	
+$("#textarea2").change(function(){
+
+$.getJSON('a.php?t=' + $('textarea#textarea2').val()).done(function(dataxxxx) {
+console.log( dataxxxx.sender 
+ dataxxxx.winroll.toFixed(2)
+ dataxxxx.amount
+ dataxxxx.winamount);	
+});
+
+});
+	
+	
 });
 		
 		
@@ -237,7 +248,6 @@ $.ajax({
 
 // audio beep
 a = new AudioContext()
-
 function beep(vol, freq, duration) {
  v = a.createOscillator()
  u = a.createGain()
