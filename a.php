@@ -78,8 +78,8 @@ $imphash = hash('sha512', $trxn);
 
 
 $blockint = preg_replace('/[^0-9]/', '', $imphash);
-$roll = substr($blockint, -4);
-$roll = $roll/100;
+$roll = substr($blockint, -5);
+$roll = $roll/1000;
 
 
 
