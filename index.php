@@ -87,22 +87,22 @@
             <label for="textarea2">[BETVERIFY] BTC Transaction Hash</label>
             </div>
 
-			<input id="ro1" type="text" placeholder="Press Enter">
+			<textarea id="ro1" type="text" placeholder="Press Enter" class="materialize-textarea">
 			<label for="ro1">Player</label>
 			
-			<input id="ro2" type="text" placeholder="Press Enter">
+			<textarea id="ro2" type="text" placeholder="Press Enter" class="materialize-textarea">
 			<label for="ro2">Transaction Hash</label>
 			
-			<input id="ro3" type="text" placeholder="Press Enter">
+			<textarea id="ro3" type="text" placeholder="Press Enter" class="materialize-textarea">
 			<label for="ro3">Block Number</label>
 			
-			<input id="ro4" type="text" placeholder="Press Enter">
+			<textarea id="ro4" type="text" placeholder="Press Enter" class="materialize-textarea">
 			<label for="ro4">Block Hash</label>
 			
-			<input id="ro5" type="text" placeholder="Press Enter">
-			<label for="ro5">BET HASH</label>
+			<textarea id="ro5" type="text" placeholder="Press Enter" class="materialize-textarea">
+			<label for="ro5">BETHASH</label>
 			
-			<input id="ro6" type="text" placeholder="Press Enter">
+			<textarea id="ro6" type="text" placeholder="Press Enter" class="materialize-textarea">
 			<label for="ro6">BET ROLL</label>
 
 	    </div>
