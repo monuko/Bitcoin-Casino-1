@@ -31,22 +31,7 @@ $addrrrr=array(
     "1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx"
 );
   
-function rollDice($hash){
-    for($i = 0; $i < strlen($hash); $i += 5){
-        $sub = substr($hash, $i, 5);
-        if(strlen($sub) == 5){
-            $decimal_number = hexdec($sub);
-            if($decimal_number < 1000000){
-                $decimal_fourc = bcmod($decimal_number, 10000);
-                $final_decimal = bcdiv($decimal_fourc, 100, 2);
-                return $final_decimal;
-            }
-        }
-        else{
-            break;
-        }
-    }
-}
+
 
 
 
@@ -83,9 +68,24 @@ $imphash = hash('sha512', hash('sha512', $trxn) . hash('sha512', $blockhash));
 $imphash = hash('sha512', $trxn);   
 }
 
-$roll = rollDice($imphash);
 
-
+for ($iii = 0; $iii < strlen($imphash); $iii+= 5)
+	{
+	$sub = substr($imphash, $iii, 5);
+	if (strlen($sub) == 5)
+		{
+		$decimal_number = hexdec($sub);
+		if ($decimal_number < 1000000)
+			{
+			$decimal_fourc = bcmod($decimal_number, 10000);
+			$roll = bcdiv($decimal_fourc, 100, 2);
+			}
+		}
+	  else
+		{
+		break;
+		}
+	}
 
 
 
