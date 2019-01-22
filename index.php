@@ -175,7 +175,6 @@ $("#textarea2").change(function(){
 M.toast({html: 'Fetching Bet Details'});
 	
 $.getJSON('a.php?t=' + $('textarea#textarea2').val()).done(function(dataxxxx) {
-console.log('fetchiiiiiiiiing');
 
 	$('#ro1').val(dataxxxx.sender); 	
 	$('#ro2').val(dataxxxx.trxn); 	
@@ -255,7 +254,7 @@ ws.onclose = function() {
 
 
 // init & fetch JSON
-$.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=15').done(function(datax) {
+$.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=9').done(function(datax) {
 tempx = datax.address.transactions;
 tempx.forEach(function(elementp) {
 
