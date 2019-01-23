@@ -66,7 +66,7 @@ $obj = json_decode(file_get_contents($url), true);
 $blockhash =  $obj['block']['hash'];
 $blocktime =  $obj['block']['time'];
 //$imphash = hash('sha512', hash('sha512', $trxn) . hash('sha512', $blockhash) . hash('sha512', $blocknum) );
-$imphash = hash('sha512',$blocknum . $trxn . $blockhash);
+$imphash = hash('sha512',$blocknum.$blockhash.$trxn);
 }else{
 $imphash = hash('sha512', $trxn);   
 }
