@@ -198,7 +198,7 @@ M.toast({html: 'Fetched !'});
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 var output2 = document.getElementById("demo2");
-var output2 = document.getElementById("maxbet");	
+var output3 = document.getElementById("maxbet");	
 output.innerHTML = slider.value;
 slider.oninput = function() {
   output3.innerHTML = "Maxbet" + this.value/1 +"BTC";	
