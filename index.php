@@ -58,22 +58,23 @@
                 <li class="active">
                     <div class="collapsible-header"><i class="material-icons">filter_drama</i>Set Multiplier Below !</div>
                     <div class="collapsible-body">
+			               <blockquote><span id="maxbet"></span></blockquote>
+
                         <div id="deposit" class="card horizontal">
                             <div class="card-image">
                                 <img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx" />
                             </div>
                             <div class="card-stacked">
                                 <div class="card-content">
-       <blockquote><span id="maxbet"></span></blockquote>
+  <input id="addrvalue" type="text" class="form-control" value="1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx">
 
                                        <p class="range-field">
                                        <input type="range" id="myRange" min="2" max="20" /> </p>
-                                       Multiplier : <span id="demo">7</span> - Winchance : <span id="demo2">14</span>
+                                      <blockquote> Multiplier : <span id="demo">7</span> - Winchance : <span id="demo2">14</span></blockquote>
 
                                 </div>
                             </div>
                         </div>
-  <input id="addrvalue" type="text" class="form-control" value="1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx">
 
  <blockquote>Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</blockquote>
 
