@@ -61,7 +61,7 @@
 
                         <div id="deposit" class="card horizontal">
                             <div class="card-image">
-                                <img id="addrimg" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx" />
+                                <img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx" />
                             </div>
                             <div class="card-stacked">
                                 <div class="card-content">
