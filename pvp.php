@@ -1,10 +1,18 @@
+<table rules="cols">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+        <th>Month</th>
+    <th>Savings</th>
+  </tr>
+
+
+
 <?
 $x = 0;
 $bigrep = 0;
 $obj = json_decode(file_get_contents("https://blockexplorer.com/api/addr/3GDtHsCx1PQgtA9mdvgC5MyPN4vHyrR6sZ/utxo"), true);
 
-
-echo "UNDER DEVELOPMENT, DO NOT BET    <br>";
 
 
 while($x < count($obj)) {
@@ -29,9 +37,15 @@ $bigtrxn = $trxn;
 $conf = $obj[$x]['confirmations'];
 }  
 
-echo "$trxn | $roll x $amount = $rep <br>";
+echo "  <tr><td>$trxn</td><td>$roll</td><td>$amount</td><td>$rep</td></tr>"  
 $x++;
 } 
+?>
+
+
+</table>
+
+<?
 
 $url = 'https://api.smartbit.com.au/v1/blockchain/tx/'. $bigtrxn;
 $obj = json_decode(file_get_contents($url), true);
