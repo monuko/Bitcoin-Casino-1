@@ -2,7 +2,7 @@
   <tr>
     <th>Month</th>
     <th>Savings</th>
-        <th>Month</th>
+    <th>Month</th>
     <th>Savings</th>
   </tr>
 
@@ -37,7 +37,14 @@ $bigtrxn = $trxn;
 $conf = $obj[$x]['confirmations'];
 }  
 
-echo "  <tr><td>$trxn</td><td>$roll</td><td>$amount</td><td>$rep</td></tr>"  
+echo "  <tr>
+<td>$trxn</td>
+<td>$roll</td>
+<td>$amount</td>
+<td>$rep</td>
+</tr>";
+
+  
 $x++;
 } 
 ?>
