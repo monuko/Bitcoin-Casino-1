@@ -1,72 +1,147 @@
-<style>
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Half Fuller Buttons</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css'>
+
+   <style>
+
+     @import url(https://fonts.googleapis.com/css?family=Roboto);
 body {
-  font-family: 'Open sans', sans-serif;
-  font-size:100%;
-  line-height:1.5;
-}
-* {
-  box-sizing: border-box;
-}
-.example-item {
-  padding:1em;
-  border-radius:5px;
-  max-width:15em;
-}
-.l-grid-half {
-  width: 50%;
+  background-color: #333;
+  color: #fff;
+  font-family: 'Roboto', Arial;
+  padding: 10em;
 }
 
-.l-flex-parent {
-  //by having a parent with flex-direction:row, the min-height bug in IE doesn't stick around.
-  display:flex;
-  flex-direction:row;
-  
-}
-.l-flex-child {
-  padding:1em;
-  min-height: 100vh;
-  align-items: center;
-  display:flex; //if you have items within the child you'll need to make it display flex
+.flex-grid-center {
+  display: flex;
   justify-content: center;
-  flex-direction: column;
-  
+  margin: 5em 0;
 }
-.t-purple {
-  background-color: #7b5a9e;
-  color:#fff;
+
+.fuller-button {
+  color: white;
+  background: none;
+  border-radius: 0;
+  padding: 1.2em 5em;
+  letter-spacing: 0.35em;
+  font-size: 0.7em;
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  margin: 1em;
 }
-.t-white {
+.fuller-button.blue {
+  box-shadow: inset 0 0 1em rgba(0, 170, 170, 0.5), 0 0 1em rgba(0, 170, 170, 0.5);
+  border: #0dd solid 2px;
+}
+.fuller-button.blue:hover {
+  background-color: #0dd;
+  box-shadow: inset 0 0 0 rgba(0, 170, 170, 0.5), 0 0 1.5em rgba(0, 170, 170, 0.7);
+}
+.fuller-button.red {
+  box-shadow: inset 0 0 1em rgba(251, 81, 81, 0.4), 0 0 1em rgba(251, 81, 81, 0.4);
+  border: #fb5454 solid 2px;
+}
+.fuller-button.red:hover {
+  background-color: #fb5454;
+  box-shadow: inset 0 0 0 rgba(251, 81, 81, 0.4), 0 0 1.5em rgba(251, 81, 81, 0.6);
+}
+.fuller-button.white {
+  box-shadow: inset 0 0 0.8em rgba(255, 255, 255, 0.3), 0 0 0.8em rgba(255, 255, 255, 0.3);
+  border: #fff solid 2px;
+}
+.fuller-button.white:hover {
+  color: rgba(0, 0, 0, 0.8);
   background-color: #fff;
-  color:  #7b5a9e;
+  box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.3), 0 0 1.2em rgba(255, 255, 255, 0.5);
 }
-.t-white .example-item {
-  background:  #7b5a9e;
+
+.pure-control-group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 0 1em 2.6em 1em;
+}
+
+.pure-form .pure-control-group label {
+  text-align: left;
+  position: absolute;
+  left: 0;
+  top: 15%;
+  z-index: 0;
+  letter-spacing: 0;
+  margin: 0 1em;
+}
+
+.pure-form .pure-control-group input {
+  background: none;
+  box-shadow: none;
+  padding-left: 0;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+  z-index: 1;
   color: #fff;
 }
 
-.t-purple .example-item {
-  
-  background:#fff;
-  color:#000;
-
+.pure-form .pure-control-group input:focus {
+  border-bottom: 2px solid white;
 }
-</style>
 
+.pure-form .pure-control-group textarea {
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  border-left: 2px solid rgba(255, 255, 255, 0.4);
+  resize: none;
+  height: 8em;
+  color: #fff;
+}
 
+.pure-form .pure-control-group textarea:focus {
+  border-left: 2px solid white;
+}
 
-<div class="l-flex-fix">
-<div class="l-flex-parent">
-  <div class="t-purple l-flex-child l-grid-half">
-     <div class="example-item">
-       This is my fix for the flexbox min-height bug in IE11/10 mentioned by Philip Walton in <a href="#https://github.com/philipwalton/flexbugs#3-min-height-on-a-column-flex-container-wont-apply-to-its-flex-items">Flexbugs</a>, bug number #3 
-    </div>
-  </div>
-  <div class="t-white l-flex-child l-grid-half">
-    <div class="example-item">
-      You need to wrap any flex-direction:column inside a flex-direction:row (or just display:flex for simple)
-    </div>
-  </div>
+.pure-form .pure-control-group input[type=email]:focus:invalid {
+  color: #fff;
+}
+
+.pure-form .pure-control-group input[type=email]:invalid {
+  color: #fb5454;
+}
+
+.pure-form button {
+  margin: 0.5em 1em;
+}
+  </style>
+
+  
+</head>
+
+<body>
+
+  
+<div class="flex-grid-center">
+  <div class="pure-button fuller-button blue">ACCEPT</div>
+  <div class="pure-button fuller-button red">REFUSE</div>
+  <div class="pure-button fuller-button white">MORE INFO</div>
 </div>
-</div>
+<!--form.pure-form
+.pure-control-group.pure-u-1
+	label(for="name") NAME
+	input.form-control#form-name(name="name" type="text")
+-->
+  
+  
 
+</body>
+
+</html>
