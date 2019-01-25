@@ -4,11 +4,10 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Half Fuller Buttons</title>
-  
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-
+  <title>SKOBET - Bitcoin Casino</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css'>
+  <meta http-equiv="refresh" content="30">
 
    <style>
 
@@ -128,20 +127,11 @@ body {
 
 <body>
 
-  
 <div class="flex-grid-center">
-  <div class="pure-button fuller-button blue">ACCEPT</div>
-  <div class="pure-button fuller-button red">REFUSE</div>
+  <div class="pure-button fuller-button blue">Player Vs Casino</div>
+  <div class="pure-button fuller-button red">Player Vs Player</div>
   <div class="pure-button fuller-button white">MORE INFO</div>
 </div>
-<!--form.pure-form
-.pure-control-group.pure-u-1
-	label(for="name") NAME
-	input.form-control#form-name(name="name" type="text")
--->
-  
-  
 
 </body>
-
 </html>
