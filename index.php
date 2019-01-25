@@ -143,7 +143,7 @@
                 </li>
                 <li>
                     <div class="collapsible-header"><i class="material-icons">attach_money</i>FAQ House Edge/Fees</div>
-                    <div class="collapsible-body"><span>House Edge : 1% </span></div>
+                    <div class="collapsible-body"><span>House Edge : 1%  <br> Withraw Fees :  0.00001 BTC</span></div>
                 </li>
             </ul>
 
