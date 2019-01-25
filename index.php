@@ -128,8 +128,8 @@ body {
 <body>
 
 <div class="flex-grid-center">
-  <div class="pure-button fuller-button blue">Player Vs Casino</div>
-  <div class="pure-button fuller-button red">Player Vs Player</div>
+  <a href="/pvc.html"><div class="pure-button fuller-button blue">Player Vs Casino</div></a>
+  <a href="/pvp.php"><div class="pure-button fuller-button red">Player Vs Player</div></a>
   <div class="pure-button fuller-button white">Telegram</div>
 </div>
 
