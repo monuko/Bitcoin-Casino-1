@@ -51,7 +51,7 @@ for($i = 0; $i < $outputcount; $i++) {
   $amount = $amount + $amountp;
   $depositadd = $addrrrr[$x];
   $winamount = $x*$amount;
-  $winamount = $winamount*0.98;
+  $winamount = $winamount*0.99;
   $winroll = 99/$x;    
 }
 }
