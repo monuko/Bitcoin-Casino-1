@@ -1,31 +1,31 @@
 <?php
 $addrrrr=array(
-    "12JyurJDarDCbtxdcMjfE59BQUyAP7Db5h",
-    "12JyurJDarDCbtxdcMjfE59BQUyAP7Db5h",
-    "1562ws57S8BxnWyAgTSuR3Y4SNDkoR5p9B",
-    "15m2yG8s4zmymjfH3D4gnkvDwCNN94oQhh",
-    "168vnBonda2sUb8nRYm83NZcSmtsjxc5aN",
-    "17Tx6ozt3jumtfMSEm37MWiFzacc8wjxwW",
-    "1AyfJaXioXg5Mj1NeGBV6gywr9mfJE9drJ",
-    "1FcRk9EZhCd5GzwhEauo6E62rqKGPT55Yb",
-    "1GeepMWBrk2WqAsePmtUYLjz5mVmYe55op",
-    "1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H",
-    "1HxQc9AUiPovQYBJx4vi13g7WUcki7CVUW",
-    "1JBcELusCqjB84FnLPwRET5W7YXWt6ACsF",
-    "1JT34AYyqQ5MT7GBT5MceyAvhkkqbE8QLY",
-    "1KNsmtUSRHp9eoFypjjN8swG6Y43akobuG",
-    "1LGXCYKL4mwxdUiBKqFMvw1SR8VWePXS59",
-    "1LHm5bfuabK8tvCH7ej7CN7BuYRBQFBiZ",
-    "1LvnnoC4nCcc5N55i6SeTpd6wZSrkNS5V",
-    "1MdsKwmLE4UfdtJmwsdpTbLA61aFDxHo5N",
-    "1MmjZsoZZjrmHwy5R4svVs1AYCmf6DvVkr",
-    "1MyHEvezvUPAzkdUDRKt6T5Xgp8xgj6gLQ",
-    "1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx"
+    "14UD64ENDp8ALp17jpe7fXBh1k8jUxoV43",
+    "14UD64ENDp8ALp17jpe7fXBh1k8jUxoV43",
+    "1934No2n9Rx2Xxem49WnS8FEuPZtdon9WV",
+    "19pey1UUWvvu17DLGXQomSVAnqoWGLPNrR",
+    "1AbXWU92jbX7548RdLorw3Ya147X9nPqfz",
+    "1CpJxcnS1X1AW2xVT3mwWsh6mCcPue7LcS",
+    "1DtF21Na1AoQZdXPVCg5BLhuPhVU5xeEbg",
+    "1EM49SKjeRNqXFmwhKbYqPaXenCroFRcHz",
+    "1Ewa6qiK4MMZt4eiC9fMNRh3ytEKismMFn",
+    "1FtJusHG8M4e8fu67EccQhDMFJUA8o16sW",
+    "1GNvQZw8ig1cy2avWJv2FuMA8yKasuTy94",
+    "1GiSya3dupzspyY1cT7KgUqiRBmK82ccGk",
+    "1HjWuh7s6BeziKTTNusFwKSWouME57tBLv",
+    "1JRMkpMfb7dwaNZof4hhHCQmKkHsbV7Fuy",
+    "1JYt4AtzSqWh7uYL4QrsiTFjLVEBq9hNEo",
+    "1MYHGU9f3Yn5TdsqRzH539FD7MVzw2GimU",
+    "1NuYrKRA4XpEx44Mwz7v7mDV96VLTwWqZR",
+    "1PKobUyAM54shkbHKAEAnK551BhqGxUKVu",
+    "1PZPkGRkJSJmnxkvKyBswLLEZRVrEJpLpF",
+    "1Q8cpiRb136xbXMQ9m8c4UtQHmrn59mKJH",
+    "1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk"
 );
 
 
-$scrape = file_get_contents("https://www.blockchain.com/btc/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?filter=1#"); 
-$scrape2 = json_decode(file_get_contents('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=asc&limit=111'), true);
+$scrape = file_get_contents("https://www.blockchain.com/btc/address/xpub661MyMwAqRbcEiNk4KqoCzFJEfqDKkoyYZ1sEkJu3G4EKJVNczpNmUq9AYrdV8RJ4Swcd3N3CtBAZwat1RrqaQycG5wkZaVRCWQC5m6UiTL?filter=1#"); 
+$scrape2 = json_decode(file_get_contents('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcEiNk4KqoCzFJEfqDKkoyYZ1sEkJu3G4EKJVNczpNmUq9AYrdV8RJ4Swcd3N3CtBAZwat1RrqaQycG5wkZaVRCWQC5m6UiTL?dir=asc&limit=111'), true);
 
 $matches = array();
 preg_match('/[a-fA-F0-9]{64}/', $scrape, $matches);
@@ -94,7 +94,7 @@ function sendMessage($input,$input2) {
         "id" => "view1",
         "text" => "View",
         "icon" => "http://i.imgur.com/N8SN8ZS.png",
-        "url" => "https://skobet.herokuapp.com"
+        "url" => "https://www.skobet.com"
     ));
     $fields = array(
         'app_id' => "56e2278b-0156-4823-8c51-53b991849d78",
