@@ -53,7 +53,9 @@ if($obj['transaction']['outputs'][$i]['addresses'][0] === $addrrrr[$x] ){
   $amount = $amount + $amountp;
   $depositadd = $addrrrr[$x];
   $winamount = $x*$amount;
-  $winamount = $winamount*0.98;
+  $winamount = $winamount*0.99;
+  $winamount = ($winamount - 0.00001);
+
   $winroll = 99/$x;    
 }}}
  
