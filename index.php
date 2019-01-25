@@ -4,134 +4,185 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>SKOBET - Bitcoin Casino</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/pure/0.5.0/pure-min.css'>
-  <meta http-equiv="refresh" content="30">
+  <title>Dual Sliding Landing page</title>
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-   <style>
+  
+ <style>
+   html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
 
-     @import url(https://fonts.googleapis.com/css?family=Roboto);
-body {
-  background-color: #333;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1 {
   color: #fff;
-  font-family: 'Roboto', Arial;
-  padding: 10em;
-}
-
-.flex-grid-center {
-  display: flex;
-  justify-content: center;
-  margin: 5em 0;
-}
-
-.fuller-button {
-  color: white;
-  background: none;
-  border-radius: 0;
-  padding: 1.2em 5em;
-  letter-spacing: 0.35em;
-  font-size: 0.7em;
-  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
-  margin: 1em;
-}
-.fuller-button.blue {
-  box-shadow: inset 0 0 1em rgba(0, 170, 170, 0.5), 0 0 1em rgba(0, 170, 170, 0.5);
-  border: #0dd solid 2px;
-}
-.fuller-button.blue:hover {
-  background-color: #0dd;
-  box-shadow: inset 0 0 0 rgba(0, 170, 170, 0.5), 0 0 1.5em rgba(0, 170, 170, 0.7);
-}
-.fuller-button.red {
-  box-shadow: inset 0 0 1em rgba(251, 81, 81, 0.4), 0 0 1em rgba(251, 81, 81, 0.4);
-  border: #fb5454 solid 2px;
-}
-.fuller-button.red:hover {
-  background-color: #fb5454;
-  box-shadow: inset 0 0 0 rgba(251, 81, 81, 0.4), 0 0 1.5em rgba(251, 81, 81, 0.6);
-}
-.fuller-button.white {
-  box-shadow: inset 0 0 0.8em rgba(255, 255, 255, 0.3), 0 0 0.8em rgba(255, 255, 255, 0.3);
-  border: #fff solid 2px;
-}
-.fuller-button.white:hover {
-  color: rgba(0, 0, 0, 0.8);
-  background-color: #fff;
-  box-shadow: inset 0 0 0 rgba(255, 255, 255, 0.3), 0 0 1.2em rgba(255, 255, 255, 0.5);
-}
-
-.pure-control-group {
-  display: flex;
-  flex-direction: column;
   position: relative;
-  padding: 0 1em 2.6em 1em;
-}
-
-.pure-form .pure-control-group label {
-  text-align: left;
   position: absolute;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+}
+h1:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 4px;
   left: 0;
-  top: 15%;
-  z-index: 0;
-  letter-spacing: 0;
-  margin: 0 1em;
+  bottom: -8px;
+  background: #fff;
+  transition: 500ms all ease-in-out;
 }
 
-.pure-form .pure-control-group input {
-  background: none;
-  box-shadow: none;
-  padding-left: 0;
-  border-radius: 0;
-  border: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+a.cta {
+  display: block;
+  position: absolute;
+  height: 50px;
+  line-height: 50px;
+  width: 120px;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  left: 50%;
+  bottom: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border: 2px solid #fff;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+a.cta:before {
+  content: "";
+  background: #fff;
+  height: 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 300ms all ease-in-out;
+}
+a.cta:hover:before {
+  height: 4px;
+}
+
+.container {
+  background: #09f;
+  width: 100%;
+  height: 100%;
   position: relative;
-  z-index: 1;
-  color: #fff;
 }
-
-.pure-form .pure-control-group input:focus {
-  border-bottom: 2px solid white;
+.container .one-half {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
 }
-
-.pure-form .pure-control-group textarea {
-  background: none;
-  box-shadow: none;
-  border-radius: 0;
-  border: none;
-  border-left: 2px solid rgba(255, 255, 255, 0.4);
-  resize: none;
-  height: 8em;
-  color: #fff;
+.container .one-half.left {
+  left: 0;
+  background: url("http://andrewerrico.com/jura-panorama.jpg") center center no-repeat;
+  background-size: cover;
 }
-
-.pure-form .pure-control-group textarea:focus {
-  border-left: 2px solid white;
+.container .one-half.left:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 120, 0.5);
+  position: absolute;
 }
-
-.pure-form .pure-control-group input[type=email]:focus:invalid {
-  color: #fff;
+.container .one-half.right {
+  right: 0;
+  background: url("https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b") center center no-repeat;
+  background-size: cover;
 }
-
-.pure-form .pure-control-group input[type=email]:invalid {
-  color: #fb5454;
+.container .one-half.right:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(25, 120, 220, 0.5);
+  position: absolute;
 }
-
-.pure-form button {
-  margin: 0.5em 1em;
+.container .one-half.left, .container .one-half.right {
+  transition: 500ms all ease-in-out;
 }
-  </style>
+.container .one-half.left:before, .container .one-half.right:before {
+  transition: 500ms all ease-in-out;
+}
+.container.left-is-hovered .left {
+  width: 85%;
+}
+.container.left-is-hovered .left h1:after {
+  width: 100%;
+}
+.container.left-is-hovered .right {
+  width: 15%;
+}
+.container.left-is-hovered .right:before {
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 2;
+}
+.container.right-is-hovered .right {
+  width: 85%;
+}
+.container.right-is-hovered .right h1:after {
+  width: 100%;
+}
+.container.right-is-hovered .left {
+  width: 15%;
+}
+.container.right-is-hovered .left:before {
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 2;
+}
+   </style>
 
   
 </head>
 
 <body>
 
-<div class="flex-grid-center">
-  <a href="/pvc.html"><div class="pure-button fuller-button blue">Player Vs Casino</div></a>
-  <a href="/pvp.php"><div class="pure-button fuller-button red">Player Vs Player</div></a>
-  <div class="pure-button fuller-button white">Telegram</div>
+  <div class="container">
+  <div class="one-half left">
+    <h1>Player Vs Casino</h1>
+    <a href="pvc.html" class="cta">Let's Go</a>
+  </div>
+  <div class="one-half right">
+    <h1>Player Vs Player</h1>
+    <a href="pvp.php" class="cta">Let's Go</a>
+  </div>
 </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script>
+  $l = $('.left')
+$r = $('.right')
+
+$l.mouseenter(function() {
+  $('.container').addClass('left-is-hovered');
+}).mouseleave(function() {
+  $('.container').removeClass('left-is-hovered');
+});
+
+$r.mouseenter(function() {
+  $('.container').addClass('right-is-hovered');
+}).mouseleave(function() {
+  $('.container').removeClass('right-is-hovered');
+});
+  </script>
+
+
+
 
 </body>
+
 </html>
