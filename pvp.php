@@ -1,9 +1,9 @@
 <table rules="cols">
   <tr>
-    <th>Month</th>
-    <th>Savings</th>
-    <th>Month</th>
-    <th>Savings</th>
+    <th>Transaction Hash</th>
+    <th>Roll</th>
+    <th>Amount</th>
+    <th>Reputation</th>
   </tr>
 
 
