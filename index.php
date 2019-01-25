@@ -130,7 +130,7 @@ body {
 <div class="flex-grid-center">
   <div class="pure-button fuller-button blue">Player Vs Casino</div>
   <div class="pure-button fuller-button red">Player Vs Player</div>
-  <div class="pure-button fuller-button white">MORE INFO</div>
+  <div class="pure-button fuller-button white">Telegram</div>
 </div>
 
 </body>
