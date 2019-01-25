@@ -4,7 +4,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="30">
+<title>SKOBET - Bitcoin Blockchain Betting</title>
+<meta name="Description" content="Bitcoin Blockchain Betting, Earn Upto 20 Times Your Bet.  SKOBET is Decenterlized, Fast, Fair, Provides Each Bet Verification Directly on Bitcoin Blockchain. ">
+<meta name="Keywords" content="SKOBET,skobet bitcoin,skobet btc,skobet play,skobet fair">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="refresh" content="30">
 
   <title>Dual Sliding Landing page</title>
   
