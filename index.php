@@ -203,7 +203,7 @@ var output2 = document.getElementById("demo2");
 var output3 = document.getElementById("maxbet");	
 output.innerHTML = slider.value;
 slider.oninput = function() {
-  output3.innerHTML = "Maxbet " + parseFloat(1.148/this.value).toFixed(3) +" BTC";	
+  output3.innerHTML = "Maxbet " + parseFloat(tempbalx/this.value).toFixed(6) +" BTC";	
   output.innerHTML = this.value +"X";
   output2.innerHTML = parseFloat((99/this.value)).toFixed(3) +"%";
   document.getElementById("addrvalue").value = addr[this.value];
@@ -263,6 +263,8 @@ ws.onclose = function() {
 // init & fetch JSON
 $.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcEiNk4KqoCzFJEfqDKkoyYZ1sEkJu3G4EKJVNczpNmUq9AYrdV8RJ4Swcd3N3CtBAZwat1RrqaQycG5wkZaVRCWQC5m6UiTL?dir=dasc&limit=13').done(function(datax) {
 tempx = datax.address.transactions;
+tempbalx = datax.address.total.balance;	
+
 tempx.forEach(function(elementp) {
 
 $.ajax({
