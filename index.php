@@ -138,7 +138,7 @@
 
 <div class="fixed-action-btn">
   <a class="btn-floating btn-large red">
-    <i class="large material-icons">contact_phone</i>
+    <i class="large material-icons">help</i>
   </a>
   <ul>
     <li><a href="http://t.me/bonzod" target="_blank" class="btn-floating yellow"><i class="material-icons">email</i></a></li>
