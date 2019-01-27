@@ -58,9 +58,6 @@
 
  <blockquote>Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</blockquote>
 
-
-
-
             <ul class="collapsible popout">
                 <li class="active">
                  <div class="collapsible-header"><i class="material-icons">grain</i>Graph</div>
@@ -144,7 +141,7 @@
     <i class="large material-icons">contact_phone</i>
   </a>
   <ul>
-    <li><a class="btn-floating red"><i class="material-icons">email</i></a></li>
+    <li><a href="http://t.me/bonzod" target="_blank" class="btn-floating yellow"><i class="material-icons">email</i></a></li>
   </ul>
 </div>
 
