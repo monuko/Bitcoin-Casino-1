@@ -52,13 +52,9 @@
 
 <div class="container">
     <div class="row">
-        <div class="col s12 l6">
 
-            <ul class="collapsible popout">
-                <li class="active">
-                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Set Multiplier Below !</div>
-                    <div class="collapsible-body">
-			               <blockquote><span id="maxbet"></span></blockquote>
+        <div class="col s12 l6">
+      <blockquote><span id="maxbet"></span></blockquote>
 
                         <div id="deposit" class="card horizontal">
                             <div class="card-image">
@@ -77,8 +73,16 @@
                         </div>
 
  <blockquote>Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</blockquote>
+	</div>
 
 
+        <div class="col s12 l6">
+
+            <ul class="collapsible popout">
+                <li class="active">
+                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Set Multiplier Below !</div>
+                    <div class="collapsible-body">
+			         
                     </div>
                 </li>
 
