@@ -20,13 +20,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
+
+
+
+
 <div class="container">
     <div class="row">
         <nav>
             <div class="nav-wrapper">
                 <a href="" onClick="window.location.href=window.location.href" class="brand-logo"><i class="material-icons">dehaze</i> SKOBET</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a target="_blank" href="https://pastebin.com/raw/R0Jn8UPH">Fairness</a></li> 
+                    <li><a target="_blank" href="https://pastebin.com/raw/R0Jn8UPH">Fairness</a></li>
                     <li><a target="_blank" href="https://www.blockchain.com/btc/xpub/xpub661MyMwAqRbcEiNk4KqoCzFJEfqDKkoyYZ1sEkJu3G4EKJVNczpNmUq9AYrdV8RJ4Swcd3N3CtBAZwat1RrqaQycG5wkZaVRCWQC5m6UiTL">Block Explorer</a></li>
                 </ul>
             </div>
@@ -38,73 +42,70 @@
     <div class="row">
 
         <div class="col s12 l6">
-      <blockquote><span id="maxbet"></span></blockquote>
+            <blockquote><span id="maxbet"></span></blockquote>
 
-                        <div id="deposit" class="card horizontal">
-                            <div class="card-image">
-                                <img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
-                            </div>
-                            <div class="card-stacked">
-                                <div class="card-content">
-  <input id="addrvalue" type="text" class="form-control" value="1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk">
+            <div id="deposit" class="card horizontal">
+                <div class="card-image">
+                    <img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <input id="addrvalue" type="text" class="form-control" value="1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk">
 
-                                       <p class="range-field">
-                                       <input type="range" id="myRange" min="2" max="20" /> </p>
-                                      <blockquote> Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span></blockquote>
+                        <p class="range-field">
+                            <input type="range" id="myRange" min="2" max="20" /> </p>
+                        <blockquote> Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span></blockquote>
 
-                                </div>
-                            </div>
-                        </div>
+                    </div>
+                </div>
+            </div>
 
- <blockquote>Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</blockquote>
+            <blockquote>Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</blockquote>
 
             <ul class="collapsible popout">
                 <li class="active">
-                 <div class="collapsible-header"><i class="material-icons">grain</i>Graph</div>
-                <div class="collapsible-body">    
-                <div id="myplot"></div>
-		</div> 
+                    <div class="collapsible-header"><i class="material-icons">grain</i>Graph</div>
+                    <div class="collapsible-body">
+                        <div id="myplot"></div>
+                    </div>
                 </li>
-		    
-		       <li>
-                <div class="collapsible-header"><i class="material-icons">code</i>BETROLL VERIFY</div>
-                <div class="collapsible-body">
-			
-            <div class="input-field">
-            <textarea id="textarea2" class="materialize-textarea" data-length="64"></textarea>
-            <label for="textarea2">Paste Deposit Transaction Hash</label>
-           </div>
 
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">code</i>BETROLL VERIFY</div>
+                    <div class="collapsible-body">
 
-            <div class="input-field">
-			<textarea id="ro1" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
-			<label for="ro1">Player</label>
-		    </div>
-	            <div class="input-field">		
-			<textarea id="ro2" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
-			<label for="ro2">Transaction Hash</label>
-			</div>
-			                <div class="input-field">
-			<textarea id="ro3" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
-			<label for="ro3">Block Number</label>
-			</div>
-						            <div class="input-field">
-			<textarea id="ro4" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
-			<label for="ro4">Block Hash</label>
-			</div>
-								                <div class="input-field">
-			<textarea id="ro5" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
-			<label for="ro5">BETHASH</label>
-			</div>
-											            <div class="input-field">
-			<textarea id="ro6" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
-			<label for="ro6">BET ROLL</label>
-</div>
+                        <div class="input-field">
+                            <textarea id="textarea2" class="materialize-textarea" data-length="64"></textarea>
+                            <label for="textarea2">Paste Deposit Transaction Hash</label>
+                        </div>
 
+                        <div class="input-field">
+                            <textarea id="ro1" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
+                            <label for="ro1">Player</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="ro2" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
+                            <label for="ro2">Transaction Hash</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="ro3" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
+                            <label for="ro3">Block Number</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="ro4" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
+                            <label for="ro4">Block Hash</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="ro5" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
+                            <label for="ro5">BETHASH</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="ro6" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
+                            <label for="ro6">BET ROLL</label>
+                        </div>
 
-	    </div>
-             </li>
-                
+                    </div>
+                </li>
 
                 <li>
                     <div class="collapsible-header"><i class="material-icons">blur_on</i>FAQ Payouts </div>
@@ -118,17 +119,13 @@
                 </li>
             </ul>
 
-
-
-
-
         </div>
 
         <div class="col s12 l6">
             <div class="responsive-table">
                 <table class="responsive-table highlight" id="myTable"></table>
             </div>
-		
+
         </div>
     </div>
 </div>
@@ -136,14 +133,10 @@
 
 
 
-<div class="fixed-action-btn">
-  <a class="btn-floating btn-large red">
-    <i class="large material-icons">help</i>
-  </a>
-  <ul>
-    <li><a href="http://t.me/bonzod" target="_blank" class="btn-floating yellow"><i class="material-icons">email</i></a></li>
-  </ul>
-</div>
+
+
+
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -152,27 +145,22 @@
 <script>  
 //ui script		
 $(document).ready(function(){
-$('.fixed-action-btn').floatingActionButton();
 $('.collapsible').collapsible();	
 M.toast({html: 'Loading Recent Bets.'});
 	
 //bet roll verify
 $("#textarea2").change(function(){
 M.toast({html: 'Fetching Bet Details'});
-	
 $.getJSON('a.php?t=' + $('textarea#textarea2').val()).done(function(dataxxxx) {
-
 	$('#ro1').val(dataxxxx.sender); 	
 	$('#ro2').val(dataxxxx.trxn); 	
 	$('#ro3').val(dataxxxx.blocknum);
 	$('#ro4').val(dataxxxx.blockhash); 	
 	$('#ro5').val(dataxxxx.bethash); 	
 	$('#ro6').val(dataxxxx.roll); 	
-
 M.toast({html: 'Fetched !'});
 });
 });
-
 		
 });
 		
@@ -215,7 +203,6 @@ var addr = [
     "1Q8cpiRb136xbXMQ9m8c4UtQHmrn59mKJH",
     "1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk"
 ];
-
 
 
 //https stuff
