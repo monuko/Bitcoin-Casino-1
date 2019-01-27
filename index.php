@@ -139,6 +139,15 @@
 
 
 
+<div class="fixed-action-btn">
+  <a class="btn-floating btn-large red">
+    <i class="large material-icons">contact_phone</i>
+  </a>
+  <ul>
+    <li><a class="btn-floating red"><i class="material-icons">email</i></a></li>
+  </ul>
+</div>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
@@ -146,6 +155,7 @@
 <script>  
 //ui script		
 $(document).ready(function(){
+$('.fixed-action-btn').floatingActionButton();
 $('.collapsible').collapsible();	
 M.toast({html: 'Loading Recent Bets.'});
 	
