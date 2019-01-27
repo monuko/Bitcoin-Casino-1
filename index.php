@@ -31,7 +31,7 @@
                 <a href="" onClick="window.location.href=window.location.href" class="brand-logo"><i class="material-icons">dehaze</i> SKOBET</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <li><a target="_blank" href="https://pastebin.com/raw/R0Jn8UPH">Fairness</a></li>
-                    <li><a target="_blank" href="https://www.blockchain.com/btc/xpub/xpub661MyMwAqRbcEiNk4KqoCzFJEfqDKkoyYZ1sEkJu3G4EKJVNczpNmUq9AYrdV8RJ4Swcd3N3CtBAZwat1RrqaQycG5wkZaVRCWQC5m6UiTL">Block Explorer</a></li>
+                    <li><a target="_blank" href="https://www.blockchain.com/btc/xpub/xpub661MyMwAqRbcEiNk4KqoCzFJEfqDKkoyYZ1sEkJu3G4EKJVNczpNmUq9AYrdV8RJ4Swcd3N3CtBAZwat1RrqaQycG5wkZaVRCWQC5m6UiTL">View Skobet Wallet</a></li>
                 </ul>
             </div>
         </nav>
