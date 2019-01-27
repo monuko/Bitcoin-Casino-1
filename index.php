@@ -181,8 +181,8 @@ slider.oninput = function() {
 
 //address
 var addr = [
-    "14UD64ENDp8ALp17jpe7fXBh1k8jUxoV43",
-    "14UD64ENDp8ALp17jpe7fXBh1k8jUxoV43",
+    "00",
+    "00",
     "1934No2n9Rx2Xxem49WnS8FEuPZtdon9WV",
     "19pey1UUWvvu17DLGXQomSVAnqoWGLPNrR",
     "1AbXWU92jbX7548RdLorw3Ya147X9nPqfz",
