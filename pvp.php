@@ -1,6 +1,10 @@
-UNDER DEVELOPMENT, MEANWHILE PLAY CASINO !!<br>
 
+Deposit Bitcoin to : 3GDtHsCx1PQgtA9mdvgC5MyPN4vHyrR6sZ<br><br>
 
+Formula :<br>
+=> roll = SHA512 of transaction Blockhash<br>
+=> Roll * Bet Amount = Reputation<br>
+Biggest Reputation Wins, When Latest Transaction Reach 500 Confirmation<br><br><br>
 <table rules="cols">
   <tr>
     <th>Transaction Hash</th>
@@ -50,12 +54,9 @@ echo "  <tr>
   
 $x++;
 } 
-?>
 
+echo "</table>";
 
-</table>
-
-<?
 
 $url = 'https://api.smartbit.com.au/v1/blockchain/tx/'. $bigtrxn;
 $obj = json_decode(file_get_contents($url), true);
