@@ -5,7 +5,7 @@ Formula :<br>
 => roll = SHA512 of transaction Blockhash<br>
 => Roll * Bet Amount = Reputation<br>
 Biggest Reputation Wins, When Latest Transaction Reach 500 Confirmation<br><br><br>
-<table rules="cols" cellpadding="10">
+<table rules="cols" cellpadding="3">
   <tr>
     <th>Transaction Hash</th>
     <th>Confirmation</th>
