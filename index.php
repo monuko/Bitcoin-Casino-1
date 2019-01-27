@@ -73,21 +73,19 @@
                         </div>
 
  <blockquote>Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</blockquote>
-	</div>
 
 
-        <div class="col s12 l6">
+
 
             <ul class="collapsible popout">
                 <li class="active">
-                    <div class="collapsible-header"><i class="material-icons">filter_drama</i>Set Multiplier Below !</div>
-                    <div class="collapsible-body">
-			         
-                    </div>
+                 <div class="collapsible-header"><i class="material-icons">grain</i>Graph</div>
+                <div class="collapsible-body">    
+                <div id="myplot"></div>
+		</div> 
                 </li>
-
-
-                <li>
+		    
+		       <li>
                 <div class="collapsible-header"><i class="material-icons">code</i>BETROLL VERIFY</div>
                 <div class="collapsible-body">
 			
@@ -125,19 +123,7 @@
 
 	    </div>
              </li>
-               
-            </ul>
-
-
-
-
-            <ul class="collapsible popout">
-                <li class="active">
-                 <div class="collapsible-header"><i class="material-icons">grain</i>Graph</div>
-                <div class="collapsible-body">    
-                <div id="myplot"></div>
-		</div> 
-                </li>
+                
 
                 <li>
                     <div class="collapsible-header"><i class="material-icons">blur_on</i>FAQ Payouts </div>
