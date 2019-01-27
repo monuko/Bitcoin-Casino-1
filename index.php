@@ -18,22 +18,6 @@
 	    
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-	    
-<link rel="manifest" href="/manifest.json" />
-<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-<script>
-  var OneSignal = window.OneSignal || [];
-  OneSignal.push(function() {
-    OneSignal.init({
-      appId: "56e2278b-0156-4823-8c51-53b991849d78",
-      autoRegister: true,
-      notifyButton: {
-        enable: true,
-      },
-    });
-  });
-</script>
 </head>
 <body>
 <div class="container">
