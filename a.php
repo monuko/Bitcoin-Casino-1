@@ -8,8 +8,8 @@ $amount = 0.0;
 
 
 $addrrrr=array(
-    "14UD64ENDp8ALp17jpe7fXBh1k8jUxoV43",
-    "14UD64ENDp8ALp17jpe7fXBh1k8jUxoV43",
+    "00",
+    "00",
     "1934No2n9Rx2Xxem49WnS8FEuPZtdon9WV",
     "19pey1UUWvvu17DLGXQomSVAnqoWGLPNrR",
     "1AbXWU92jbX7548RdLorw3Ya147X9nPqfz",
@@ -32,11 +32,6 @@ $addrrrr=array(
 );
   
 
-
-
-
-  
-  
 $url = 'https://api.smartbit.com.au/v1/blockchain/tx/'. $trxn;
 $obj = json_decode(file_get_contents($url), true);
 $blocknum =  $obj['transaction']['block'];
