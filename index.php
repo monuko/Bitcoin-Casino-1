@@ -1,13 +1,8 @@
  <!DOCTYPE html>
   <html>
     <head>
-<title>SKOBET - Bitcoin Blockchain Betting</title>
-<meta name="Description" content="Bitcoin Blockchain Betting, Earn Upto 20 Times Your Bet.  SKOBET is Decenterlized, Fast, Fair, Provides Each Bet Verification Directly on Bitcoin Blockchain. ">
-<meta name="Keywords" content="SKOBET,skobet bitcoin,skobet btc,skobet play,skobet fair">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>SKOBET - Blockchain Casino</title>
 <meta http-equiv="refresh" content="300">
-
-	    
 <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
