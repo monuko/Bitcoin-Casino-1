@@ -130,7 +130,8 @@
 
 
 
-
+<div class="container">
+    <div class="row">
  <footer class="page-footer">
           <div class="container">
             <div class="row">
@@ -156,7 +157,7 @@
           </div>
         </footer>
             
-
+</div></div>
 
 
 
