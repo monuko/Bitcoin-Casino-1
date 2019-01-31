@@ -131,6 +131,33 @@
 
 
 
+ <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Terms Of Service</h5>
+                <p class="grey-text text-lighten-4">You are 100% anonymous, we do not store any data about you or your computer. Privacy As Promised. </p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="https://bit.ly/2UuQa9W">Fariness</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://bit.ly/2G1broA">Our Wallet</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://bit.ly/2HI9hMq">Telegram</a></li>
+                  <li><a class="grey-text text-lighten-3" href="https://bit.ly/2HI9hMq">Bitcointalk</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 SKOBET
+            </div>
+          </div>
+        </footer>
+            
+
+
 
 
 
