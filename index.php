@@ -36,6 +36,9 @@
 
 
         <div class="container"> <div class="row">
+ <div class="col s12 l12">
+<div id="myplot"></div></div>
+
         <div class="col s12 l6">
             <blockquote><span id="maxbet"></span></blockquote>
 
@@ -58,13 +61,6 @@
             <blockquote>Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</blockquote>
 
             <ul class="collapsible popout">
-                <li class="active">
-                    <div class="collapsible-header"><i class="material-icons">grain</i>Graph</div>
-                    <div class="collapsible-body">
-                        <div id="myplot"></div>
-                    </div>
-                </li>
-
                 <li>
                     <div class="collapsible-header"><i class="material-icons">code</i>BETROLL VERIFY</div>
                     <div class="collapsible-body">
