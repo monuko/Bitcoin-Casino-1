@@ -131,18 +131,15 @@
 
 
 <div class="container">
-    <div class="row">
- <footer class="page-footer">
+ 
   <div class="footer-copyright">
-    <div class="container">
+ 
    © 2019 SKOBET
 	                <a class="grey-text text-lighten-4 right" href="https://bit.ly/2HI9hMq">Bitcointalk</a>
-
-            </div>
           </div>
-        </footer>
+
       </div>
-</div>
+
 
 
 
