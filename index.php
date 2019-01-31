@@ -49,7 +49,7 @@
 
                         <p class="range-field">
                             <input type="range" id="myRange" min="2" max="20" /> </p>
-                        <blockquote> Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span></blockquote>
+                        Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span>
 
                     </div>
                 </div>
