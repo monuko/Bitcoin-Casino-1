@@ -131,7 +131,7 @@
 
 
 <div class="container">
-
+    <div class="row">
  <footer class="page-footer">
   <div class="footer-copyright">
     <div class="container">
@@ -141,7 +141,7 @@
             </div>
           </div>
         </footer>
-            
+      </div>
 </div>
 
 
