@@ -18,15 +18,14 @@
 
 
 
-
-<div class="container"><div class="row">
 	 <div class="navbar-fixed">
+<div class="container"><div class="row">
+
   <nav>
     <div class="nav-wrapper">
       <a href="#" onClick="window.location.href=window.location.href"  class="brand-logo"><i class="material-icons">dehaze</i> SKOBET</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-
+        <li><a target="_blank" href="https://bit.ly/2G1broA">View On Blockchain</a></li>
       </ul>
     </div>
 		 </nav>    </div></div></div>
@@ -143,9 +142,9 @@
               <div class="col l4 offset-l2 s12">
 		<h5 class="white-text">Useful Links</h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="https://bit.ly/2UuQa9W">Fariness Verify</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://bit.ly/2G1broA">View Our Wallet</a></li>
-                  <li><a class="grey-text text-lighten-3" href="https://bit.ly/2HI9hMq">Telegram Group</a></li>
+                  <li><a class="grey-text text-lighten-3" target="_blank" href="https://bit.ly/2UuQa9W">Fariness Verify</a></li>
+                  <li><a class="grey-text text-lighten-3" target="_blank" href="https://bit.ly/2G1broA">View Our Wallet</a></li>
+                  <li><a class="grey-text text-lighten-3" target="_blank" href="https://bit.ly/2HI9hMq">Telegram Group</a></li>
                 </ul>
               </div>
             </div>
