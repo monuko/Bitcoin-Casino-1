@@ -23,13 +23,13 @@
 
 
 	
-
+        <div class="container"> <div class="row">
   <nav><div class="nav-wrapper">
       <a href="#" onClick="window.location.href=window.location.href"  class="brand-logo"><i class="material-icons">dehaze</i> SKOBET</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a target="_blank" href="https://bit.ly/2G1broA">View On Blockchain</a></li>
       </ul>
-    </div></nav>    
+	  </div></nav>    </div></div>
 
 
 
@@ -127,7 +127,7 @@
 
 	
 	
-
+        <div class="container"> <div class="row">
  <footer class="page-footer">
           <div class="container">
             <div class="row">
@@ -150,7 +150,7 @@
             © 2019 SKOBET
             </div>
           </div>
-        </footer>
+        </footer>          </div>          </div>
             
 
 	
