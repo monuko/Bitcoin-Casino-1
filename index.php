@@ -35,7 +35,7 @@
 
 
 
-         <div class="row">
+        <div class="container"> <div class="row">
         <div class="col s12 l6">
             <blockquote><span id="maxbet"></span></blockquote>
 
@@ -122,7 +122,7 @@
             </div>
                 <div class="progress"> <div class="indeterminate"></div></div>
         </div>
-	</div>
+	</div></div>
 
 
 	
