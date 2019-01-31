@@ -23,23 +23,18 @@
 
 
 	
-<div class="container"><div class="row">
 
-  <nav>
-    <div class="nav-wrapper">
+  <nav><div class="nav-wrapper">
       <a href="#" onClick="window.location.href=window.location.href"  class="brand-logo"><i class="material-icons">dehaze</i> SKOBET</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a target="_blank" href="https://bit.ly/2G1broA">View On Blockchain</a></li>
       </ul>
-    </div>
-		 </nav>    </div></div>
+    </div></nav>    
 
 
 
 
 
-<div class="container">
-    <div class="row">
 
         <div class="col s12 l6">
             <blockquote><span id="maxbet"></span></blockquote>
@@ -125,17 +120,14 @@
             <div class="responsive-table">
                 <table class="responsive-table highlight" id="myTable"></table>
             </div>
-<div class="progress"> <div class="indeterminate"></div></div>
+                <div class="progress"> <div class="indeterminate"></div></div>
         </div>
-    </div>
-</div>
 
 
 
 	
 	
-	<div class="container">
-    <div class="row">
+
  <footer class="page-footer">
           <div class="container">
             <div class="row">
@@ -160,7 +152,7 @@
           </div>
         </footer>
             
-</div></div>
+
 	
 	
 
