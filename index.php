@@ -18,7 +18,7 @@
 
 
 
-	 <div class="navbar-fixed">
+	
 <div class="container"><div class="row">
 
   <nav>
@@ -28,7 +28,7 @@
         <li><a target="_blank" href="https://bit.ly/2G1broA">View On Blockchain</a></li>
       </ul>
     </div>
-		 </nav>    </div></div></div>
+		 </nav>    </div></div>
 
 
 
