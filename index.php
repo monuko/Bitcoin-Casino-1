@@ -120,25 +120,13 @@
             <div class="responsive-table">
                 <table class="responsive-table highlight" id="myTable"></table>
             </div>
-
         </div>
+
+
+
+
     </div>
 </div>
-
-
-
-
-
-
-<div class="container">
- 
-  <div class="footer-copyright">
- 
-   © 2019 SKOBET
-	                <a class="grey-text text-lighten-4 right" href="https://bit.ly/2HI9hMq">Bitcointalk</a>
-          </div>
-
-      </div>
 
 
 
