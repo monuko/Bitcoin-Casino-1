@@ -57,6 +57,8 @@
 
             <blockquote>Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</blockquote>
 
+                            <div class="progress"> <div class="indeterminate"></div></div>
+
             <ul class="collapsible popout">
                 <li class="active">
                     <div class="collapsible-header"><i class="material-icons">grain</i>Graph</div>
@@ -120,7 +122,6 @@
             <div class="responsive-table">
                 <table class="responsive-table highlight" id="myTable"></table>
             </div>
-                <div class="progress"> <div class="indeterminate"></div></div>
         </div>
 	</div></div>
 
