@@ -3,33 +3,21 @@
     <head>
 <title>SKOBET - Bitcoin Blockchain Betting</title>
 <meta name="Description" content="Bitcoin Blockchain Betting, Earn Upto 20 Times Your Bet.  SKOBET is Decenterlized, Fast, Fair, Provides Each Bet Verification Directly on Bitcoin Blockchain. ">
-<meta name="Keywords" content="SKOBET,skobet bitcoin,skobet btc,skobet play,skobet fair">
+<meta name="Keywords" content="Bitcoin Bet,SKOBET,skobet bitcoin,skobet btc,skobet play,skobet fair">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta http-equiv="refresh" content="300">
-	   
-<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#2d89ef">
-<meta name="theme-color" content="#ffffff">
-	    
+<meta http-equiv="refresh" content="300">	    
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
 
 
-
-	
-        <div class="container"> <div class="row">
+<div class="container"> <div class="row">
   <nav><div class="nav-wrapper">
       <a href="#" onClick="window.location.href=window.location.href"  class="brand-logo"><i class="material-icons">dehaze</i> SKOBET</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a target="_blank" href="https://bit.ly/2G1broA">View On Blockchain</a></li>
-      </ul>
-	  </div></nav>    </div></div>
+      </ul></div></nav>    </div></div>
 
 
 
