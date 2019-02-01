@@ -41,14 +41,14 @@
 
             <div id="deposit" class="card horizontal">
                 <div class="card-image">
-                    <img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
+                    <img class="tooltipped" data-position="bottom" data-tooltip="Deposit BTC Only" id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
                         <input id="addrvalue" type="text" class="form-control" value="1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk">
 
                         <p class="range-field">
-                            <input type="range" id="myRange" min="2" max="20" /> </p>
+                            <input type="range" id="myRange" min="2" max="20" class="tooltipped" data-position="bottom" data-tooltip="Set Your Multiplier" /> </p>
                         Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span>
 
                     </div>
