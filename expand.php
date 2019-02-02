@@ -1,11 +1,9 @@
 <?
-$a=array("Bitcoin","Bet","Gambling");
-
 function goo() {
+$a=array("Bitcoin","Bet","Gambling");  
 shuffle($a);
 echo $a[0] . " ";
 }
-
 ?>
 
 
