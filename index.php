@@ -217,10 +217,6 @@ var addr = [
 ];
 
 
-//https stuff
-if (location.protocol != 'https:') {
- location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-}
 
 // socket
 var ws = new WebSocket("wss://ws.blockchain.info/inv");
@@ -266,10 +262,6 @@ $.ajax({
 
 });
 });
-
-
-
-
 
 
 // audio beep
