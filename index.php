@@ -107,6 +107,7 @@
         </div>
 
         <div class="col s12 l6">
+            <blockquote>Most Recent Bets :</blockquote>
             <div class="responsive-table">
                 <table class="responsive-table highlight" id="myTable"></table>
             </div>
