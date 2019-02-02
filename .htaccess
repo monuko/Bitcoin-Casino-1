@@ -1,1 +1,5 @@
-  ErrorDocument 404 /index.php
+RewriteEngine On
+RewriteCond %{HTTPS}s ^on(s)|
+RewriteRule ^(.*)$ http%1://www.%{HTTP_HOST}/$1 [R=301,L]
+
+ErrorDocument 404 /index.php
