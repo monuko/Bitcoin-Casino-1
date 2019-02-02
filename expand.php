@@ -1,6 +1,6 @@
 <?
 function goo() {
-$a=array("Bitcoin","Bet","Gambling", "betting","reddit","uk","usa","script","game","BTC","Make Money","Win Bitcoins");  
+$a=array("Bitcoin","Bet","Gambling", "betting","reddit","uk","usa","script","game","BTC","Make Money","Win Bitcoins","anonymous","bitcointalk");  
 shuffle($a);
 echo $a[0] . " ";
 }
@@ -23,4 +23,10 @@ echo $a[0] . " ";
 <p>  <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?><? goo(); ?> <? goo(); ?><? goo(); ?> <? goo(); ?> </p>
 
 <h3>  <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?><? goo(); ?> <? goo(); ?><? goo(); ?> <? goo(); ?> </h3>
+
+<h2>  <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?><? goo(); ?> <? goo(); ?><? goo(); ?> <? goo(); ?> </h2>
+
+<p>  <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?><? goo(); ?> <? goo(); ?><? goo(); ?> <? goo(); ?> </p>
+
+<h4>  <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?> <? goo(); ?><? goo(); ?> <? goo(); ?><? goo(); ?> <? goo(); ?> </h4>
 
