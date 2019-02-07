@@ -263,6 +263,7 @@ $.ajax({
    }
   });
 
+
 });
 });
 
@@ -312,6 +313,7 @@ Plotly.newPlot('myplot', data, layout, {showSendToCloud: true});
 //fetch function
 function fetch5(fetch5) {
   if(0 > addr.indexOf(fetch5.sender)){
+  if(fetch5.depositadd.localeCompare('null')){
   var table = document.getElementById("myTable");
   var row = table.insertRow(-1);
   var cell0 = row.insertCell(0);
@@ -339,7 +341,8 @@ function fetch5(fetch5) {
 
   // plot
   xplot(fetch5.roll,fetch5.winroll);
-
+ 
+}
 }
 }
   </script>
