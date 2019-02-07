@@ -26,7 +26,7 @@
 
 
         <div class="container"> <div class="row">
-        <div class="col s12 l12">
+        <div class="col s12 l6">
             <blockquote><span id="maxbet"></span></blockquote>
 
             <div id="deposit" class="card horizontal">
@@ -49,9 +49,67 @@
 
                             <div class="progress"> <div class="indeterminate"></div></div>
 
+            <ul class="collapsible popout">
+                <li class="active">
+                    <div class="collapsible-header"><i class="material-icons">grain</i>Graph</div>
+                    <div class="collapsible-body">
+                        <div id="myplot"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">code</i>BETROLL VERIFY</div>
+                    <div class="collapsible-body">
+
+                        <div class="input-field">
+                            <textarea id="textarea2" class="materialize-textarea" data-length="64"></textarea>
+                            <label for="textarea2">Paste Deposit Transaction Hash</label>
+                        </div>
+
+                        <div class="input-field">
+                            <textarea id="ro1" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
+                            <label for="ro1">Player</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="ro2" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
+                            <label for="ro2">Transaction Hash</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="ro3" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
+                            <label for="ro3">Block Number</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="ro4" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
+                            <label for="ro4">Block Hash</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="ro5" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
+                            <label for="ro5">BETHASH</label>
+                        </div>
+                        <div class="input-field">
+                            <textarea id="ro6" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
+                            <label for="ro6">BET ROLL</label>
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">blur_on</i>FAQ Payouts </div>
+                    <div class="collapsible-body"><span>When Your Transaction has 5+ Confirmation on blockchain, Payout is Automatically sent to you. 
+	    Its Sent To Same Address From Which You Send, if multiple inputs are used then winnings are sent to the 1st Input.
+	     </span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">attach_money</i>FAQ House Edge/Fees</div>
+                    <div class="collapsible-body"><span>House Edge : 1%</span></div>
+                </li>
+            </ul>
+
         </div>
 
-        <div class="col s12 l12">
+        <div class="col s12 l6">
+            <blockquote>Recent Bets On Skobet :</blockquote>
             <div class="responsive-table">
                 <table class="responsive-table highlight" id="myTable"></table>
             </div>
@@ -96,7 +154,31 @@
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>  
+//ui script		
+$(document).ready(function(){
+$('.collapsible').collapsible();	
+M.toast({html: 'Loading Recent Bets.'});
 	
+//bet roll verify
+$("#textarea2").change(function(){
+M.toast({html: 'Fetching Bet Details'});
+$.getJSON('a.php?t=' + $('textarea#textarea2').val()).done(function(dataxxxx) {
+	$('#ro1').val(dataxxxx.sender); 	
+	$('#ro2').val(dataxxxx.trxn); 	
+	$('#ro3').val(dataxxxx.blocknum);
+	$('#ro4').val(dataxxxx.blockhash); 	
+	$('#ro5').val(dataxxxx.bethash); 	
+	$('#ro6').val(dataxxxx.roll); 	
+M.toast({html: 'Fetched !'});
+});
+});
+		
+});
+
+//https stuff
+if (location.protocol != 'https:') {
+ location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}		
 		
 //core starts		
 var slider = document.getElementById("myRange");
@@ -201,6 +283,30 @@ function beep(vol, freq, duration) {
 }
 
 
+// plot function
+var yar = [];
+var yar2 = [];
+
+function xplot(n,nn) {
+ yar.push(n);
+ yar2.push(nn);
+
+ var roll = {
+  y: yar,
+  type: 'scatter',
+  name: 'Bet Roll'
+ };
+ 
+  var roll2 = {
+  y: yar2,
+  type: 'scatter',
+  name: 'Roll To Win'
+ };
+
+var data = [roll, roll2];
+var layout = {title: 'Recent Bets Roll', showlegend: false};
+Plotly.newPlot('myplot', data, layout, {showSendToCloud: true});
+}
 
 
 
@@ -209,29 +315,31 @@ function fetch5(fetch5) {
   if(fetch5.depositadd.localeCompare('null')){
   var table = document.getElementById("myTable");
   var row = table.insertRow(-1);
+  var cell0 = row.insertCell(0);
+  var cell1 = row.insertCell(1);
+  var cell2 = row.insertCell(2);
   var tempk = (99/fetch5.winroll) + "X";
-  
-  row.insertCell(0).innerHTML = ${fetch5.sender};
-  row.insertCell(1).innerHTML = ${fetch5.roll};
-  row.insertCell(2).innerHTML = ${fetch5.winroll.toFixed(2)};
-  row.insertCell(3).innerHTML = ${fetch5.amount};
-  row.insertCell(4).innerHTML = ${fetch5.winamount};
-  row.insertCell(5).innerHTML = ${tempk};
-  row.insertCell(6).innerHTML = ${fetch5.blocknum};
-  row.insertCell(7).innerHTML = ${fetch5.roll};
 	
+  cell0.innerHTML = `<img width=100px height=100px src="https://flathash.com/${fetch5.sender}" />`;
+  cell1.innerHTML = `${fetch5.sender} <br>
+  Roll : ${fetch5.roll} <  Chance : ${fetch5.winroll.toFixed(2)}<br>
+  Bet : ${fetch5.amount} BTC | Won : ${fetch5.winamount} BTC<br>
+  Multiplier : ${tempk} | Block : ${fetch5.blocknum}
+  `;	
 
   if (fetch5.confirmation < 3) {
-  row.insertCell(8).innerHTML =  = `<a class="waves-effect waves-light btn-small pulse red" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
+  cell2.innerHTML = `<a class="waves-effect waves-light btn-small pulse red" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
   }else{
   if (fetch5.result > 0) {
-     row.insertCell(8).innerHTML =  = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
+     cell2.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
     <a class="waves-effect waves-light btn-small pulse" target="_blank" href="https://tradeblock.com/bitcoin/address/${fetch5.sender}" >Output</a>`;	  
   } else {
-     row.insertCell(8).innerHTML =  = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
+     cell2.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
   }
   }
 
+  // plot
+  xplot(fetch5.roll,fetch5.winroll);
 }
 }
   </script>
