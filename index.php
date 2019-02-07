@@ -51,10 +51,8 @@
 
         </div>
 
-        <div class="col s12 l12">
-            <div class="responsive-table">
-                <table class="responsive-table highlight" id="myTable"></table>
-            </div>
+        <div class="col s12 l12">    
+                <table class="striped" id="myTable"></table>
         </div>
 	</div></div>
 
