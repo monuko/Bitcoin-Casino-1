@@ -49,7 +49,7 @@
         </div>
 
         <div class="col s12 l12">    
-                <table class="striped" id="myTable">
+                <table class="striped highlight" id="myTable">
 				
 		<thead>
           <tr>
