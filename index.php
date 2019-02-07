@@ -65,7 +65,7 @@
 			  <th>Block</th>
 			  <th>Trxn</th>
           </tr>
-        </thead>        <tbody></tbody>
+        </thead>  
 </table></div>
  
 	</div></div>
@@ -192,7 +192,7 @@ function beep(vol, freq, duration) {
 function fetch5(fetch5) {
   if(fetch5.depositadd.localeCompare('null')){
   var table = document.getElementById("myTable");
-  var row = table.insertRow(-1);
+  var row = table.insertRow(0);
   var tempk = (99/fetch5.winroll) + "X";
   
   row.insertCell(0).innerHTML = fetch5.sender;
