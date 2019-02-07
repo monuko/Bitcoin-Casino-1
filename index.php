@@ -139,24 +139,6 @@ var addr = [
 
 
 
-// socket
-var ws = new WebSocket("wss://ws.blockchain.info/inv");
-
-ws.onopen = function() {
- ws.send('{"op":"blocks_sub"}');
-};
-
-ws.onmessage = function(evt) {
- var received_msg = evt.data;
- beep(10, 1000, 500);
- window.location.reload(true);
-};
-
-ws.onclose = function() {
- window.location.reload(true);
-};
-
-
 // init & fetch JSON
 $.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcEiNk4KqoCzFJEfqDKkoyYZ1sEkJu3G4EKJVNczpNmUq9AYrdV8RJ4Swcd3N3CtBAZwat1RrqaQycG5wkZaVRCWQC5m6UiTL?dir=dasc&limit=13').done(function(datax) {
 tempx = datax.address.transactions;
@@ -211,14 +193,14 @@ function fetch5(fetch5) {
   var row = table.insertRow(-1);
   var tempk = (99/fetch5.winroll) + "X";
   
-  row.insertCell(0).innerHTML = ${fetch5.sender};
-  row.insertCell(1).innerHTML = ${fetch5.roll};
-  row.insertCell(2).innerHTML = ${fetch5.winroll.toFixed(2)};
-  row.insertCell(3).innerHTML = ${fetch5.amount};
-  row.insertCell(4).innerHTML = ${fetch5.winamount};
-  row.insertCell(5).innerHTML = ${tempk};
-  row.insertCell(6).innerHTML = ${fetch5.blocknum};
-  row.insertCell(7).innerHTML = ${fetch5.roll};
+  row.insertCell(0).innerHTML = fetch5.sender;
+  row.insertCell(1).innerHTML = fetch5.roll;
+  row.insertCell(2).innerHTML = fetch5.winroll.toFixed(2);
+  row.insertCell(3).innerHTML = fetch5.amount;
+  row.insertCell(4).innerHTML = fetch5.winamount;
+  row.insertCell(5).innerHTML = tempk;
+  row.insertCell(6).innerHTML = fetch5.blocknum;
+  row.insertCell(7).innerHTML = fetch5.roll;
 	
 
   if (fetch5.confirmation < 3) {
