@@ -26,27 +26,28 @@
 
 
         <div class="container"> <div class="row">
-        <div class="col s12 l12">
-		            <blockquote><span id="maxbet">Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address. </span></blockquote>
+		
+		
+		
+         <blockquote><span id="maxbet">Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address. </span></blockquote>
 
-            <div id="deposit" class="card horizontal">
-                <div class="card-image">
-                    <img class="tooltipped" data-position="bottom" data-tooltip="Deposit BTC Only" id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
-                </div>
-                <div class="card-stacked">
-                    <div class="card-content">
-                        <input id="addrvalue" type="text" class="form-control" value="1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk">
+
+ <div class="col s12 l4">   
+   <img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
+ </div>
+ 
+  <div class="col s12 l8">  
+    <input id="addrvalue" type="text" class="form-control" value="1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk">
 
                         <p class="range-field">
                             <input type="range" id="myRange" min="2" max="20" class="tooltipped" data-position="bottom" data-tooltip="Set Your Multiplier" /> </p>
                         Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span>
 
-                    </div>
-                </div>
-            </div>
-                            <div class="progress"> <div class="indeterminate"></div></div>
+  </div>
+            
 
-        </div>
+		   <div class="progress"> <div class="indeterminate"></div></div>
+
 
         <div class="col s12 l12">    
                 <table class="striped highlight" id="myTable">
