@@ -51,7 +51,7 @@
 
 
       
-                <table class="striped highlight" id="myTable">
+                <table class="responsive-table striped highlight" id="myTable">
 				
 		<thead>
           <tr>
