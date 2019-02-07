@@ -41,8 +41,12 @@
             </div>
            </div>
 
-   <div class="col s12 l6">   
-            <blockquote><span id="maxbet">Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address. </span></blockquote>
+   <div class="col s12 l6"> 
+<blockquote>Deposit Bitcoin (BTC) Only, Deposit From Your Wallet Only,
+Payouts Are Sent Back To Same Address From Which Your Deposit. Do Not Deposit From Exchange Wallet.		
+</blockquote>
+   
+            <blockquote><span id="maxbet">Maxbet : 0.2 BTC</span></blockquote>
     </div>
 		   <div class="progress"> <div class="indeterminate"></div></div>
 
