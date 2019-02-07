@@ -27,7 +27,7 @@
 
         <div class="container"> <div class="row">
         <div class="col s12 l6">
-            <blockquote><span id="maxbet"></span></blockquote>
+            <blockquote><span id="maxbet">Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</span></blockquote>
 
             <div id="deposit" class="card horizontal">
                 <div class="card-image">
@@ -44,9 +44,6 @@
                     </div>
                 </div>
             </div>
-
-            <blockquote>Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</blockquote>
-
                             <div class="progress"> <div class="indeterminate"></div></div>
 
             <ul class="collapsible popout">
