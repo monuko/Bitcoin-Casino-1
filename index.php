@@ -196,6 +196,22 @@ function fetch5(fetch5) {
   row.insertCell(5).innerHTML = tempk;
   row.insertCell(6).innerHTML = fetch5.blocknum;
   row.insertCell(7).innerHTML = fetch5.roll;
+  var cellx = row.insertCell(8);
+
+  
+  
+  if (fetch5.confirmation < 3) {
+  cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse red" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
+  }else{
+  if (fetch5.result > 0) {
+     cellx.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
+    <a class="waves-effect waves-light btn-small pulse" target="_blank" href="https://tradeblock.com/bitcoin/address/${fetch5.sender}" >Output</a>`;	  
+  } else {
+     cellx.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
+  }
+  }
+  
+  
 }
 }
   </script>
