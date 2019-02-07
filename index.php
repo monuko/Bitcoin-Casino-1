@@ -52,7 +52,22 @@
         </div>
 
         <div class="col s12 l12">    
-                <table class="striped" id="myTable"></table>
+                <table class="striped" id="myTable">
+				
+		<thead>
+          <tr>
+              <th>Player</th>
+			  <th>Roll</th>
+			  <th>Chance</th>
+			  <th>Bet</th>
+			  <th>Payout</th>
+			  <th>Mult</th>
+			  <th>Block</th>
+			  <th>Trxn</th>
+          </tr>
+        </thead>
+		
+		</table>
         </div>
 	</div></div>
 
@@ -193,8 +208,7 @@ function fetch5(fetch5) {
   row.insertCell(4).innerHTML = fetch5.winamount;
   row.insertCell(5).innerHTML = tempk;
   row.insertCell(6).innerHTML = fetch5.blocknum;
-  row.insertCell(7).innerHTML = fetch5.roll;
-  var cellx = row.insertCell(8);
+  var cellx = row.insertCell(7);
 
   
   
