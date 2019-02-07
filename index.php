@@ -93,7 +93,6 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>  
 	
@@ -143,7 +142,6 @@ var addr = [
 $.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcEiNk4KqoCzFJEfqDKkoyYZ1sEkJu3G4EKJVNczpNmUq9AYrdV8RJ4Swcd3N3CtBAZwat1RrqaQycG5wkZaVRCWQC5m6UiTL?dir=dasc&limit=13').done(function(datax) {
 tempx = datax.address.transactions;
 tempbalx = datax.address.total.balance;	
-
 tempx.forEach(function(elementp) {
 
 $.ajax({
@@ -183,9 +181,6 @@ function beep(vol, freq, duration) {
 }
 
 
-
-
-
 //fetch function
 function fetch5(fetch5) {
   if(fetch5.depositadd.localeCompare('null')){
@@ -201,9 +196,6 @@ function fetch5(fetch5) {
   row.insertCell(5).innerHTML = tempk;
   row.insertCell(6).innerHTML = fetch5.blocknum;
   row.insertCell(7).innerHTML = fetch5.roll;
-	
-
-
 }
 }
   </script>
