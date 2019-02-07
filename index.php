@@ -203,16 +203,6 @@ function fetch5(fetch5) {
   row.insertCell(7).innerHTML = fetch5.roll;
 	
 
-  if (fetch5.confirmation < 3) {
-  row.insertCell(8).innerHTML =  = `<a class="waves-effect waves-light btn-small pulse red" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
-  }else{
-  if (fetch5.result > 0) {
-     row.insertCell(8).innerHTML =  = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
-    <a class="waves-effect waves-light btn-small pulse" target="_blank" href="https://tradeblock.com/bitcoin/address/${fetch5.sender}" >Output</a>`;	  
-  } else {
-     row.insertCell(8).innerHTML =  = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
-  }
-  }
 
 }
 }
