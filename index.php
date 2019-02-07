@@ -51,7 +51,8 @@
 
 
       
-                <table class="responsive-table striped highlight" id="myTable">
+           <div class="responsive-table">
+           <table class="responsive-table highlight" id="myTable">
 				
 		<thead>
           <tr>
@@ -64,8 +65,7 @@
 			  <th>Block</th>
 			  <th>Trxn</th>
           </tr>
-        </thead>
-		</table>
+        </thead></table></div>
  
 	</div></div>
 
