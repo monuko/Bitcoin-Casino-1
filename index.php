@@ -22,9 +22,6 @@
       </ul></div></nav>    </div></div>
 
 
-
-
-
         <div class="container"> <div class="row">
         <div class="col s12 l6">
             <blockquote><span id="maxbet">Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</span></blockquote>
@@ -39,70 +36,12 @@
 
                         <p class="range-field">
                             <input type="range" id="myRange" min="2" max="20" class="tooltipped" data-position="bottom" data-tooltip="Set Your Multiplier" /> </p>
-                        Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span>
-
+                            Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span>
                     </div>
                 </div>
             </div>
-                            <div class="progress"> <div class="indeterminate"></div></div>
-
-            <ul class="collapsible popout">
-                <li class="active">
-                    <div class="collapsible-header"><i class="material-icons">grain</i>Graph</div>
-                    <div class="collapsible-body">
-                        <div id="myplot"></div>
-                    </div>
-                </li>
-
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">code</i>BETROLL VERIFY</div>
-                    <div class="collapsible-body">
-
-                        <div class="input-field">
-                            <textarea id="textarea2" class="materialize-textarea" data-length="64"></textarea>
-                            <label for="textarea2">Paste Deposit Transaction Hash</label>
-                        </div>
-
-                        <div class="input-field">
-                            <textarea id="ro1" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
-                            <label for="ro1">Player</label>
-                        </div>
-                        <div class="input-field">
-                            <textarea id="ro2" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
-                            <label for="ro2">Transaction Hash</label>
-                        </div>
-                        <div class="input-field">
-                            <textarea id="ro3" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
-                            <label for="ro3">Block Number</label>
-                        </div>
-                        <div class="input-field">
-                            <textarea id="ro4" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
-                            <label for="ro4">Block Hash</label>
-                        </div>
-                        <div class="input-field">
-                            <textarea id="ro5" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
-                            <label for="ro5">BETHASH</label>
-                        </div>
-                        <div class="input-field">
-                            <textarea id="ro6" type="text" placeholder="Press Enter" class="materialize-textarea"></textarea>
-                            <label for="ro6">BET ROLL</label>
-                        </div>
-
-                    </div>
-                </li>
-
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">blur_on</i>FAQ Payouts </div>
-                    <div class="collapsible-body"><span>When Your Transaction has 5+ Confirmation on blockchain, Payout is Automatically sent to you. 
-	    Its Sent To Same Address From Which You Send, if multiple inputs are used then winnings are sent to the 1st Input.
-	     </span></div>
-                </li>
-                <li>
-                    <div class="collapsible-header"><i class="material-icons">attach_money</i>FAQ House Edge/Fees</div>
-                    <div class="collapsible-body"><span>House Edge : 1%</span></div>
-                </li>
-            </ul>
-
+	<div id="myplot"></div>
+        <div class="progress"> <div class="indeterminate"></div></div>
         </div>
 
         <div class="col s12 l6">
@@ -143,35 +82,11 @@
             
 
 	
-	
-
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>  
-//ui script		
-$(document).ready(function(){
-$('.collapsible').collapsible();	
-M.toast({html: 'Loading Recent Bets.'});
-	
-//bet roll verify
-$("#textarea2").change(function(){
-M.toast({html: 'Fetching Bet Details'});
-$.getJSON('a.php?t=' + $('textarea#textarea2').val()).done(function(dataxxxx) {
-	$('#ro1').val(dataxxxx.sender); 	
-	$('#ro2').val(dataxxxx.trxn); 	
-	$('#ro3').val(dataxxxx.blocknum);
-	$('#ro4').val(dataxxxx.blockhash); 	
-	$('#ro5').val(dataxxxx.bethash); 	
-	$('#ro6').val(dataxxxx.roll); 	
-M.toast({html: 'Fetched !'});
-});
-});
-		
-});
-
 //https stuff
 if (location.protocol != 'https:') {
  location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
