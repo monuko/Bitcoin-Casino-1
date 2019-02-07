@@ -40,8 +40,8 @@
                     </div>
                 </div>
             </div>
-	<div id="myplot"></div>
         <div class="progress"> <div class="indeterminate"></div></div>
+	<div id="myplot"></div>
         </div>
 
         <div class="col s12 l6">
@@ -51,9 +51,6 @@
             </div>
         </div>
 	</div></div>
-
-
-	
 	
         <div class="container"> <div class="row">
  <footer class="page-footer">
@@ -232,7 +229,7 @@ function fetch5(fetch5) {
   var cell2 = row.insertCell(2);
   var tempk = (99/fetch5.winroll) + "X";
 	
-  cell0.innerHTML = `<img width=100px height=100px src="https://flathash.com/${fetch5.sender}" />`;
+  cell0.innerHTML = `<img width=80px height=80px src="https://flathash.com/${fetch5.sender}" />`;
   cell1.innerHTML = `${fetch5.sender} <br>
   Roll : ${fetch5.roll} <  Chance : ${fetch5.winroll.toFixed(2)}<br>
   Bet : ${fetch5.amount} BTC | Won : ${fetch5.winamount} BTC<br>
