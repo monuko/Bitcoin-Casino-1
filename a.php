@@ -110,7 +110,7 @@ if(0<$confirmation){
 $myJSON = json_encode($myObj);
 echo $myJSON;
 
-if($confirmation>2){
+if($confirmation>3){
 $fp = fopen($trxn.'.json', 'w');
 fwrite($fp,$myJSON);
 fclose($fp);
