@@ -205,7 +205,7 @@ function fetch5(fetch5) {
   Multiplier : ${tempk} | Block : ${fetch5.blocknum}
   `;	
 
-  if (fetch5.confirmation < 3) {
+  if (fetch5.confirmation < 2) {
   cell2.innerHTML = `<a class="waves-effect waves-light btn-small pulse red" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
   }else{
   if (fetch5.result > 0) {
