@@ -19,7 +19,6 @@
         <li><a target="_blank" href="https://bit.ly/2G1broA">View On Blockchain</a></li>
       </ul></div></nav>    </div></div>
 
-
         <div class="container"> <div class="row">
         <div class="col s12 l6">
                      <blockquote><span id="maxbet">Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</span></blockquote>
