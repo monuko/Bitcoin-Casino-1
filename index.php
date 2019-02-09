@@ -24,9 +24,24 @@
         <div class="col s12 l6">
             <blockquote><span id="maxbet">Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</span></blockquote>
 
+		
+		
+
+ <div class="card">
+        <div class="card-image">
+          <img  id="addrimg" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk">
+          <span class="card-title">Card Title</span>
+          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+        </div>
+        <div class="card-content">
+          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+        </div>
+      </div>
+
+
             <div id="deposit" class="card horizontal">
                 <div class="card-image">
-                    <img class="tooltipped" data-position="bottom" data-tooltip="Deposit BTC Only" id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
+                    <img  id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
                 </div>
                 <div class="card-stacked">
                     <div class="card-content">
@@ -38,6 +53,14 @@
                     </div>
                 </div>
             </div>
+
+
+
+
+
+
+		
+		
         <div class="progress"> <div class="indeterminate"></div></div>
 	<div id="myplot"></div>
         </div>
