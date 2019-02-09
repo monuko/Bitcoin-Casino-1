@@ -24,42 +24,11 @@
         <div class="col s12 l6">
             <blockquote><span id="maxbet">Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</span></blockquote>
 
-		
-		
-
- <div class="card">
-        <div class="card-image">
-          <img  id="addrimg" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk">
-          <span class="card-title">Card Title</span>
-          <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
-        </div>
-      </div>
-
-
-            <div id="deposit" class="card horizontal">
-                <div class="card-image">
-                    <img  id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
-                </div>
-                <div class="card-stacked">
-                    <div class="card-content">
+                        <img  id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
                         <input id="addrvalue" type="text" class="form-control" value="1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk">
-
                         <p class="range-field">
-                            <input type="range" id="myRange" min="2" max="20" class="tooltipped" data-position="bottom" data-tooltip="Set Your Multiplier" /> </p>
-                            Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-		
+                        <input type="range" id="myRange" min="2" max="20" class="tooltipped" data-position="bottom" data-tooltip="Set Your Multiplier" /> </p>
+                        Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span>
 		
         <div class="progress"> <div class="indeterminate"></div></div>
 	<div id="myplot"></div>
