@@ -23,7 +23,7 @@
         <div class="col s12 l6">
                      <blockquote><span id="maxbet">Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</span></blockquote>
                        <blockquote> <img width="100" height="100" id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" /></blockquote>
-                         <blockquote><input id="addrvalue" type="text" class="form-control" value="1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk"> </blockquote>
+                         <blockquote><span id="addrvalue">1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk</span></blockquote>
                       <blockquote>   <p class="range-field">
                         <input type="range" id="myRange" min="2" max="20" class="tooltipped" data-position="bottom" data-tooltip="Set Your Multiplier" /> </p> </blockquote>
                         <blockquote> Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span> </blockquote>
@@ -89,7 +89,7 @@ slider.oninput = function() {
   output3.innerHTML = "Maxbet " + parseFloat(tempbalx/this.value).toFixed(6) +" BTC";	
   output.innerHTML = this.value +"X";
   output2.innerHTML = parseFloat((99/this.value)).toFixed(3) +"%";
-  document.getElementById("addrvalue").value = addr[this.value];
+  document.getElementById("addrvalue").innerHTML = addr[this.value];
   $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
 }
 
