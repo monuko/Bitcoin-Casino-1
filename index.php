@@ -22,6 +22,8 @@
 
         <div class="container"> <div class="row">
         <div class="col s12 l6">
+		      <div class="blue-grey">
+
             <blockquote><span id="maxbet">Deposit Bitcoin (BTC) Only, 1 Confirmation Required. Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</span></blockquote>
 
                         <img  id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
@@ -29,7 +31,7 @@
                       <blockquote>   <p class="range-field">
                         <input type="range" id="myRange" min="2" max="20" class="tooltipped" data-position="bottom" data-tooltip="Set Your Multiplier" /> </p> </blockquote>
                         <blockquote> Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span> </blockquote>
-		
+		</div>
         <div class="progress"> <div class="indeterminate"></div></div>
 	<div id="myplot"></div>
         </div>
