@@ -21,14 +21,9 @@
 
         <div class="container"> <div class="row">
 
-<div class="col s12 l12"><center>
-Select Your Odds & Win Multiplier Below
-</center></div>
-
 <div class="col s12 l12">
 <center>
-<img src="https://i.ibb.co/fC32d31/infograph-venngage-com-edit-11f532ba-c567-42fb-80a1-646770e9fa2b.png" />
-<br>
+<img src="https://i.ibb.co/RvKWx2B/skobey.png"/><br>
 <img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=250x250&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
 <br>
 <span id="addrvalue">1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk</span>
