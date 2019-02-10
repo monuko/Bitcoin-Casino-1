@@ -34,17 +34,20 @@
 <p class="range-field"><input type="range" id="myRange" min="2" max="20" /></p>
 </div>
 
-<div class="col s12 l4"><blockquote>
-<span id="maxbet">Maxbet 0.2 BTC</span></blockquote>
+
+
+<div class="col s12 l4"><blockquote><center>
+<span id="maxbet">Maxbet 0.2 BTC</span></blockquote></center>
 </div>
 
-<div class="col s12 l4"><blockquote>
-Multiplier : <span id="demo">20X</span></blockquote>
+<div class="col s12 l4"><blockquote><center>
+Bet Multiplier : <span id="demo">20 X</span></blockquote></center>
 </div>
 
-<div class="col s12 l4"><blockquote>
-Winchance : <span id="demo2">4.950%</span></blockquote>
+<div class="col s12 l4"><blockquote><center>
+Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 </div>
+
 
 <div class="col s12 l12">
 <div id="myplot"></div>
