@@ -48,6 +48,9 @@ Bet Multiplier : <span id="demo">20 X</span></blockquote></center>
 Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 </div>
 
+<div class="col s12 l12"><blockquote><center>
+<span id="demo3">Move The Slider.........</span></blockquote></center>
+</div>
 
 <div class="col s12 l12">
 <div id="myplot"></div>
@@ -108,12 +111,14 @@ if (location.protocol != 'https:') {
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
 var output2 = document.getElementById("demo2");
-var output3 = document.getElementById("maxbet");	
+var output3 = document.getElementById("maxbet");
+var output4 = document.getElementById("demo3");
 output.innerHTML = slider.value;
 slider.oninput = function() {
   output3.innerHTML = "Maxbet " + parseFloat(tempbalx/this.value).toFixed(6) +" BTC";	
   output.innerHTML = this.value +"X";
   output2.innerHTML = parseFloat((99/this.value)).toFixed(3) +"%";
+  output4.innerHTML =  "Example : If You Bet 0.1 BTC, You Have " + parseFloat((99/this.value)).toFixed(3) +"% Chance Of Winning " + (this.value*0.1) + " BTC";
   document.getElementById("addrvalue").innerHTML = addr[this.value];
   $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
 }
