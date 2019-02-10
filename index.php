@@ -21,6 +21,9 @@
 
         <div class="container"> <div class="row">
 
+<div class="col s12 l12"><center>
+Select Your Odds & Win Multiplier Below
+</center></div>
 
 <div class="col s12 l12">
 <center>
