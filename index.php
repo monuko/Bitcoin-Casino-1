@@ -36,9 +36,6 @@
 		</div>
 
 
-
-
-        <div class="progress"> <div class="indeterminate"></div></div>
 	<div id="myplot"></div>
             <div class="responsive-table">
                 <table class="responsive-table" id="myTable"></table>
