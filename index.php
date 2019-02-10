@@ -24,11 +24,11 @@
 
 
 
-		<div class="col s12 l4">
+		<div class="col s12 l3">
                 <img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
 		</div>
 
-		<div class="col s12 l8">
+		<div class="col s12 l6">
                 <span id="addrvalue">1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk</span><br>
                 <p class="range-field"><input type="range" id="myRange" min="2" max="20" class="tooltipped" data-position="bottom" data-tooltip="Set Your Multiplier" /> </p> <br>
         	 Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span> <br>
@@ -37,22 +37,19 @@
 
 
 
-
 <div class="col s12 l12">
-	<div id="myplot"></div>
+<div id="myplot"></div>
  </div>
           
 <div class="col s12 l12">
- <div class="responsive-table">
-                <table class="responsive-table" id="myTable"></table>
-            </div>
+<div class="responsive-table">
+<table class="responsive-table" id="myTable"></table>
+</div>
 </div>
 
 
 
-
-
-	</div></div>
+</div></div>
 	
 
 
