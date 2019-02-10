@@ -21,29 +21,24 @@
 
         <div class="container"> <div class="row">
 
-<div class="col s12 l12">
-<blockquote>Deposit Bitcoin (BTC) Only, Deposit From Your Wallet Only, Payouts Are Sent Back To Same Address.</blockquote>
-</div>
 
 <div class="col s12 l12">
 <center>
 <img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
+<br>
+<span id="addrvalue">1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk</span>
 </center>
 </div>
 
-<div class="col s12 l12"><blockquote>
-<p class="range-field"><input type="range" id="myRange" min="2" max="20" /></p></blockquote>
+<div class="col s12 l12">
+<p class="range-field"><input type="range" id="myRange" min="2" max="20" /></p>
 </div>
 
-<div class="col s12 l4"><blockquote>
+<div class="col s12 l6"><blockquote>
 <span id="maxbet">Maxbet 0.2 BTC</span></blockquote>
 </div>
 
-<div class="col s12 l4"><blockquote>
-<span id="addrvalue">1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk</span></blockquote>
-</div>
-
-<div class="col s12 l4"><blockquote>
+<div class="col s12 l6"><blockquote>
 Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span></blockquote>
 </div>
 
