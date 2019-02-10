@@ -35,7 +35,7 @@
         <div class="col s12 l6">
             <blockquote>Recent Bets On Skobet :</blockquote>
             <div class="responsive-table">
-                <table class="responsive-table highlight" id="myTable"></table>
+                <table class="responsive-table" id="myTable"></table>
             </div>
         </div>
 	</div></div>
