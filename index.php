@@ -27,16 +27,12 @@
                       <blockquote>   <p class="range-field">
                         <input type="range" id="myRange" min="2" max="20" class="tooltipped" data-position="bottom" data-tooltip="Set Your Multiplier" /> </p> </blockquote>
                         <blockquote> Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span> </blockquote>
-
+        </div>
         <div class="progress"> <div class="indeterminate"></div></div>
 	<div id="myplot"></div>
-        </div>
-
-        <div class="col s12 l12">
             <div class="responsive-table">
                 <table class="responsive-table" id="myTable"></table>
             </div>
-        </div>
 	</div></div>
 	
 
