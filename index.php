@@ -28,7 +28,7 @@
 
 		<div class="col s12 l8">
                 <span id="addrvalue">1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk</span><br>
-                <input type="range" id="myRange" min="2" max="20" class="tooltipped" data-position="bottom" data-tooltip="Set Your Multiplier" /><br>
+                <input type="range" id="myRange" min="2" max="20" /><br>
         	 Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span> <br>
 		<span id="maxbet">Maxbet 0.2 BTC</span>
 		</div>
