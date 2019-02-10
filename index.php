@@ -25,7 +25,7 @@
 
 
 		<div class="col s12 l4">
-img width="150" height="150" id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
+<img width="150" height="150" id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
 		</div>
 
 		<div class="col s12 l8">
