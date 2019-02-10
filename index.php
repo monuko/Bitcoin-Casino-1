@@ -123,7 +123,7 @@ var addr = [
 
 
 // init & fetch JSON
-$.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcEiNk4KqoCzFJEfqDKkoyYZ1sEkJu3G4EKJVNczpNmUq9AYrdV8RJ4Swcd3N3CtBAZwat1RrqaQycG5wkZaVRCWQC5m6UiTL?dir=dasc&limit=7').done(function(datax) {
+$.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcEiNk4KqoCzFJEfqDKkoyYZ1sEkJu3G4EKJVNczpNmUq9AYrdV8RJ4Swcd3N3CtBAZwat1RrqaQycG5wkZaVRCWQC5m6UiTL?dir=dasc&limit=20').done(function(datax) {
 tempx = datax.address.transactions;
 tempbalx = datax.address.total.balance;	
 
