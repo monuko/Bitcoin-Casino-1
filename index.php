@@ -37,14 +37,17 @@ Select Your Odds & Win Multiplier Below
 <p class="range-field"><input type="range" id="myRange" min="2" max="20" /></p>
 </div>
 
-<div class="col s12 l6"><blockquote>
+<div class="col s12 l4"><blockquote>
 <span id="maxbet">Maxbet 0.2 BTC</span></blockquote>
 </div>
 
-<div class="col s12 l6"><blockquote>
-Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span></blockquote>
+<div class="col s12 l4"><blockquote>
+Multiplier : <span id="demo">20X</span></blockquote>
 </div>
 
+<div class="col s12 l4"><blockquote>
+Winchance : <span id="demo2">4.950%</span></blockquote>
+</div>
 
 <div class="col s12 l12">
 <div id="myplot"></div>
