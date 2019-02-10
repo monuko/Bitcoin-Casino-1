@@ -32,7 +32,7 @@
 </div>
 
 <div class="col s12 l12"><blockquote>
-<p class="range-field"><input type="range" id="myRange" min="2" max="20" /></p><br></blockquote>
+<p class="range-field"><input type="range" id="myRange" min="2" max="20" /></p></blockquote>
 </div>
 
 <div class="col s12 l4"><blockquote>
@@ -40,11 +40,11 @@
 </div>
 
 <div class="col s12 l4"><blockquote>
-<span id="addrvalue">1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk</span><br></blockquote>
+<span id="addrvalue">1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk</span></blockquote>
 </div>
 
 <div class="col s12 l4"><blockquote>
-Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span> <br></blockquote>
+Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span></blockquote>
 </div>
 
 
