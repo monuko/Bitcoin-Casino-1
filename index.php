@@ -36,8 +36,16 @@
 		</div>
 
 
-<div class="col s12 l12">
+<div class="col s12 l4">
 <p class="range-field"> <input type="range" id="myRange" min="2" max="20" /></p><br>
+</div>
+
+<div class="col s12 l4">
+<span id="addrvalue">1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk</span><br>
+</div>
+
+<div class="col s12 l4">
+Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span> <br>
 </div>
 
 
