@@ -36,10 +36,22 @@
 		</div>
 
 
+
+
+<div class="col s12 l12">
 	<div id="myplot"></div>
-            <div class="responsive-table">
+ </div>
+          
+<div class="col s12 l12">
+ <div class="responsive-table">
                 <table class="responsive-table" id="myTable"></table>
             </div>
+</div>
+
+
+
+
+
 	</div></div>
 	
 
