@@ -26,23 +26,25 @@
 </div>
 
 <div class="col s12 l12">
+<center>
 <img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
+</center>
 </div>
 
-<div class="col s12 l12">
-<p class="range-field"> <input type="range" id="myRange" min="2" max="20" /></p><br>
+<div class="col s12 l12"><blockquote>
+<p class="range-field"><input type="range" id="myRange" min="2" max="20" /></p><br></blockquote>
 </div>
 
-<div class="col s12 l4">
-<span id="maxbet">Maxbet 0.2 BTC</span>
+<div class="col s12 l4"><blockquote>
+<span id="maxbet">Maxbet 0.2 BTC</span></blockquote>
 </div>
 
-<div class="col s12 l4">
-<span id="addrvalue">1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk</span><br>
+<div class="col s12 l4"><blockquote>
+<span id="addrvalue">1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk</span><br></blockquote>
 </div>
 
-<div class="col s12 l4">
-Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span> <br>
+<div class="col s12 l4"><blockquote>
+Multiplier : <span id="demo">20X</span> - Winchance : <span id="demo2">4.950%</span> <br></blockquote>
 </div>
 
 
