@@ -27,7 +27,7 @@ Select Your Odds & Win Multiplier Below
 
 <div class="col s12 l12">
 <center>
-<img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
+<img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=250x250&cht=qr&chld=L|1&chl=bitcoin:1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk" />
 <br>
 <span id="addrvalue">1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk</span>
 </center>
