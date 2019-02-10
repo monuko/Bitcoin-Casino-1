@@ -201,12 +201,11 @@ function fetch5(fetch5) {
   if (fetch5.result > 0) {
      cell2.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
     <a class="waves-effect waves-light btn-small pulse" target="_blank" href="https://tradeblock.com/bitcoin/address/${fetch5.sender}" >Output</a>`;	  
-   row.setAttribute('class', 'table-success');
+   row.setAttribute('class', 'green');
 
   } else {
      cell2.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
-     row.setAttribute('class', 'table-danger');
-
+     row.setAttribute('class', 'red');
 }
   }
 
