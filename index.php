@@ -71,20 +71,13 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
  <footer class="page-footer">
           <div class="container">
             <div class="row">
-              <div class="col l6 s12">
+              <div class="col l12 s12">
                 <h5 class="white-text">Terms Of Service</h5>
                 <p class="grey-text text-lighten-4">
 		      You are 100% anonymous, Skobet Doesn't Store any Of Your Data. Privacy As Promised. House Edge: 1%
 		     </p>
               </div>
-              <div class="col l4 offset-l2 s12">
-		<h5 class="white-text">Know More</h5>
-                <ul>
-                  <li><a class="grey-text text-lighten-3" target="_blank" href="https://bit.ly/2UuQa9W">Fariness Verify</a></li>
-                  <li><a class="grey-text text-lighten-3" target="_blank" href="https://bit.ly/2G1broA">View Our Wallet</a></li>
-                  <li><a class="grey-text text-lighten-3" target="_blank" href="https://bitcointalk.org/index.php?topic=5098423">BitcoinTalk</a></li>
-                </ul>
-              </div>
+      
             </div>
           </div>
           <div class="footer-copyright">
