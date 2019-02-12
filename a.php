@@ -125,9 +125,6 @@ if(0<$confirmation){
 
 
 
-
-
-
 $myJSON = json_encode($myObj);
 echo $myJSON;
 
