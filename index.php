@@ -72,10 +72,9 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
           <div class="container">
             <div class="row">
               <div class="col l12 s12">
-                <h5 class="white-text">Terms Of Service</h5>
+                <h5 class="white-text">100% Anonymous</h5>
                 <p class="grey-text text-lighten-4">
-		      You are 100% anonymous, Skobet Doesn't Store any Of Your Data. Privacy As Promised. House Edge: 1%   
-			
+		    Skobet Doesn't Store any Of Your Data. Privacy As Promised.  
 			<a class="grey-text text-lighten-3" target="_blank" href="https://bit.ly/2UuQa9W">Fariness Verify</a>
 		     </p>
               </div>
