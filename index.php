@@ -25,7 +25,7 @@
 <img style="max-width:640px;" width=100% height=auto src="https://i.ibb.co/wcnqcxz/skobet.png"/><br>
 <img id="addrimg" alt="Deposit Bitcoin only" src="https://i.ibb.co/g41kYyM/30-1.gif" />
 <br>
-<span id="addrvalue"></span>
+<span id="addrvalue">Move the Slider</span>
 </center>
 </div>
 
