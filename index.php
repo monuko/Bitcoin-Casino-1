@@ -113,7 +113,7 @@ slider.oninput = function() {
   output2.innerHTML = parseFloat((99/this.value)).toFixed(3) +"%";
   output4.innerHTML =  "Example : If You Bet 0.1 BTC, You Have " + parseFloat((99/this.value)).toFixed(3) +"% Chance Of Winning " + (this.value*0.1).toFixed(3) + " BTC";
   document.getElementById("addrvalue").innerHTML = addr[this.value];
-  $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
+  $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=250x250&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
 }
 
 //address
