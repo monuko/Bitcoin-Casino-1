@@ -158,8 +158,7 @@ var addr = [
     "1Nb7KqtNyXSmcj2YdJqr2nMQPASpUqV6Xh",
     "1PFHPUEk5mkJcTUs375XvmNC6pmnd44tSq",
     "1Q5zHQiCz34gauntDMRh9Z9duXjrya3JJr",
-    "1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx",
-    "1V719KsaawFb63jNnuHYdS55prVgS3WLb"
+    "1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx"
 ];
 
 
