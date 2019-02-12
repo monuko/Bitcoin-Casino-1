@@ -59,8 +59,9 @@ $sender = $obj['transaction']['inputs'][0]['addresses'][0];
 $confirmation=  $obj['transaction']['confirmations'];
 $outputcount = $obj['transaction']['output_count'];
 
+
 for ($x = 1; $x <= 20; $x++) {
-for($i = 0; $i < $outputcount; $i++) {
+for($i = 0; $i =< $outputcount; $i++) {
   if($obj['transaction']['outputs'][$i]['addresses'][0] === $addrrrr[$x] ){
   $amountp= $obj['transaction']['outputs'][$i]['value'];
   $amount = $amount + $amountp;
