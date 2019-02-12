@@ -30,7 +30,7 @@
 </div>
 
 <div class="col s12 l12">
-<p class="range-field"><input type="range" id="myRange" min="2" max="20" /></p>
+<p class="range-field"><input type="range" id="myRange" min="2" max="40" /></p>
 </div>
 
 
