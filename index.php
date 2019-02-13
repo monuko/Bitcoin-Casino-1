@@ -52,8 +52,24 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 </div>
 
 <div class="col s12 l12">
+ <div class="progress">
+      <div class="indeterminate"></div>
+  </div>
+        
+</div>
+          
+
+<div class="col s12 l12">
 <div id="myplot"></div>
  </div>
+
+<div class="col s12 l12">
+ <div class="progress">
+      <div class="indeterminate"></div>
+  </div>
+        
+</div>
+          
           
 <div class="col s12 l12">
 <div class="responsive-table">
