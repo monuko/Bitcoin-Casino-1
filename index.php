@@ -248,7 +248,7 @@ function fetch5(fetch5) {
 
   } else {
      cell2.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
-     row.setAttribute('class', 'cyan accent-1');
+     row.setAttribute('class', 'red accent-1');
 }
   }
 
