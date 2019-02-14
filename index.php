@@ -63,14 +63,6 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 <div class="col s12 l12">
 <div id="myplot"></div>
  </div>
-
-<div class="col s12 l12">
- <div class="progress">
-      <div class="indeterminate"></div>
-  </div>
-        
-</div>
-          
           
 <div class="col s12 l12">
 <div class="responsive-table">
@@ -265,7 +257,6 @@ function fetch5(fetch5) {
 
   } else {
      cell2.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
-     row.setAttribute('class', 'red accent-1');
 }
   }
 
