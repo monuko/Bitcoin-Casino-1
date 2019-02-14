@@ -8,6 +8,7 @@
 <meta http-equiv="refresh" content="183">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://wchat.freshchat.com/js/widget.js"></script>
 </head>
 <body>
 
@@ -273,5 +274,14 @@ function fetch5(fetch5) {
 }
 }
   </script>
+
+<script>
+  window.fcWidget.init({
+    token: "dae7d463-01e7-4699-a240-958880ea520e",
+    host: "https://wchat.freshchat.com"
+  });
+</script>
+
+
  </body>
  </html>
