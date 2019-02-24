@@ -301,7 +301,7 @@ $obj2 = json_decode(file_get_contents("https://www.skobet.com/a.php?t=".$aa), tr
 $osender = $obj2['sender'];
 
 echo "
-<section><div id="heading"><center>
+<section><div id='heading'><center>
 <img src='https://flathash.com/$osender />
 <br> $osender
 <br> 
