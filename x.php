@@ -297,9 +297,7 @@ section:nth-child(even) {
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
   
-
     <script>
 	
 	$( () => {
