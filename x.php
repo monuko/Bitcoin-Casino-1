@@ -302,8 +302,8 @@ $osender = $obj2['sender'];
 
 echo "
 <section><div id='heading'><center>
-<img src='https://flathash.com/$osender />
-<br> $osender
+<img src='https://flathash.com/ />
+<br> 
 <br> 
 </center></div></section>
 ";
