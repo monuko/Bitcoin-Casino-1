@@ -173,6 +173,14 @@ section:nth-child(even) {
   margin-top: 40px;
 }
 
+#heading2 {
+  width: 180px;
+  height: 180px;
+  background: #fff;
+  border-radius: 90px;
+  margin-top: 90px;
+}
+
 /*** Responsive Menu For Smaller Device ***/
 @media screen and (max-width: 767px) {
   #menu-toggle {
@@ -277,14 +285,17 @@ section:nth-child(even) {
 
 <section id="section00">
 <img id="heading" src="https://flathash.com/jhghvhggvhgvhgv" />
+
+<img id="heading2" src="https://flathash.com/jhghvhggvhgvhgv" />
+
 </section>
 
 <?
 $a=array();
-$obj = json_decode(file_get_contents("https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=22"), true);
+$obj = json_decode(file_get_contents("https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=11"), true);
 $tempa = $obj['address']['total']['balance'];
 
-for ($x = 0; $x <= 10; $x++) {
+for ($x = 0; $x <= 11; $x++) {
 array_push($a,$obj['address']['transactions'][$x]['txid']);
 }
 
