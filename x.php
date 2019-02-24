@@ -178,7 +178,7 @@ section:nth-child(even) {
   height: 30px;
   background: #fff;
   border-radius: 90px;
-  margin-top: 140px;
+  margin-top: 240px;
 }
 
 /*** Responsive Menu For Smaller Device ***/
