@@ -174,11 +174,11 @@ section:nth-child(even) {
 }
 
 #heading2 {
-  width: 180px;
-  height: 180px;
+  width: 400px;
+  height: 30px;
   background: #fff;
   border-radius: 90px;
-  margin-top: 90px;
+  margin-top: 140px;
 }
 
 /*** Responsive Menu For Smaller Device ***/
