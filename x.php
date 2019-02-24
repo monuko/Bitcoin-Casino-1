@@ -297,7 +297,7 @@ array_push($a,$obj['address']['transactions'][$x]['txid']);
 
 
 foreach($a as $aa) {
-$obj2 = json_decode(file_get_contents("a.php?t=".$aa), true);
+$obj2 = json_decode(file_get_contents("https://www.skobet.com/a.php?t=".$aa), true);
 $osender = $obj2['sender'];
 
 echo "
