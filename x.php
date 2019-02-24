@@ -277,11 +277,13 @@ section:nth-child(even) {
 
 
 <section id="section00">
-<div id="heading">
+<div id="heading"><center>
 <img src="https://flathash.com/jhghvhggvhgvhgv" />
-<br> ADDDRESS
-<br> MULT
-</div>
+<br> 1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk 
+<br> Roll : 84.56 < Chance : 2.83
+<br> Bet : 0.04638808 BTC | Won : 0 BTC
+<br> Multiplier : 35X | Block : 562893
+</center></div>
 </section>
 
 <?
