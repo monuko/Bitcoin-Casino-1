@@ -284,9 +284,11 @@ section:nth-child(even) {
   <div id="heading"></div>
   <table id="myTable"></table>
 </section>
+
 <section id="section02">
   <div id="heading"></div>
 </section>
+
 <section id="section03">
   <div id="heading"></div>
 </section>
