@@ -286,33 +286,36 @@ section:nth-child(even) {
 </center></div>
 </section>
 
-<?
-$a=array();
-$obj = json_decode(file_get_contents("https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=11"), true);
-$tempa = $obj['address']['total']['balance'];
 
-for ($x = 0; $x <= 11; $x++) {
-array_push($a,$obj['address']['transactions'][$x]['txid']);
-}
+<section id="section00">
+<div id="heading"><center>
+<img src="https://flathash.com/jhghvhggvhgvhgv" />
+<br> 1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk 
+<br> Roll : 84.56 < Chance : 2.83
+<br> Bet : 0.04638808 BTC | Won : 0 BTC
+<br> Multiplier : 35X | Block : 562893
+</center></div>
+</section>
 
+<section id="section00">
+<div id="heading"><center>
+<img src="https://flathash.com/jhghvhggvhgvhgv" />
+<br> 1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk 
+<br> Roll : 84.56 < Chance : 2.83
+<br> Bet : 0.04638808 BTC | Won : 0 BTC
+<br> Multiplier : 35X | Block : 562893
+</center></div>
+</section>
 
-foreach($a as $aa) {
-$obj2 = json_decode(file_get_contents("https://www.skobet.com/a.php?t=".$aa), true);
-$osender = $obj2['sender'];
-
-echo "
-<section><div id='heading'><center>
-<img src='https://flathash.com/ />
-<br> 
-<br> 
-</center></div></section>
-";
-
-}
-
-?>
-
-
+<section id="section00">
+<div id="heading"><center>
+<img src="https://flathash.com/jhghvhggvhgvhgv" />
+<br> 1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk 
+<br> Roll : 84.56 < Chance : 2.83
+<br> Bet : 0.04638808 BTC | Won : 0 BTC
+<br> Multiplier : 35X | Block : 562893
+</center></div>
+</section>
 
 
 
@@ -367,7 +370,7 @@ var output3 = document.getElementById("maxbet");
 var output4 = document.getElementById("demo3");
 output.innerHTML = slider.value;
 slider.oninput = function() {
-  output3.innerHTML = "Maxbet " + parseFloat(<? echo $tempa; ?>/this.value).toFixed(6) +" BTC";	
+  output3.innerHTML = "Maxbet " + parseFloat(0.096/this.value).toFixed(6) +" BTC";	
   output.innerHTML = this.value +"X";
   output2.innerHTML = parseFloat((99/this.value)).toFixed(3) +"%";
   output4.innerHTML =  "Example : If You Bet 0.1 BTC, You Have " + parseFloat((99/this.value)).toFixed(3) +"% Chance Of Winning " + (this.value*0.1).toFixed(3) + " BTC";
