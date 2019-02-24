@@ -297,11 +297,15 @@ array_push($a,$obj['address']['transactions'][$x]['txid']);
 
 
 foreach($a as $aa) {
+$obj2 = json_decode(file_get_contents("a.php?t=".$aa), true);
+$osender = $obj2['sender'];
 
 echo "
-<section>
-<img id='heading' src='https://flathash.com/$aa' />
-</section>
+<section><div id="heading"><center>
+<img src='https://flathash.com/$osender />
+<br> $osender
+<br> 
+</center></div></section>
 ";
 
 }
