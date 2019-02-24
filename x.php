@@ -279,21 +279,31 @@ section:nth-child(even) {
 <img id="heading" src="https://flathash.com/jhghvhggvhgvhgv" />
 </section>
 
+<?
+$a=array();
+$obj = json_decode(file_get_contents("https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=22"), true);
+$tempa = $obj['address']['total']['balance'];
 
-<section id="section01">
-  <div id="heading"></div>
-  <table id="myTable"></table>
+for ($x = 0; $x <= 10; $x++) {
+array_push($a,$obj['address']['transactions'][$x]['txid']);
+}
+
+
+foreach($a as $aa) {
+
+echo "
+<section>
+<img id='heading' src='https://flathash.com/$aa' />
 </section>
+";
 
-<section id="section02">
-  <div id="heading"></div>
-</section>
+}
 
-<section id="section03">
-  <div id="heading"></div>
-</section>
+?>
 
-<div id="ttt"></div>
+
+
+
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -346,7 +356,7 @@ var output3 = document.getElementById("maxbet");
 var output4 = document.getElementById("demo3");
 output.innerHTML = slider.value;
 slider.oninput = function() {
-  output3.innerHTML = "Maxbet " + parseFloat(tempbalx/this.value).toFixed(6) +" BTC";	
+  output3.innerHTML = "Maxbet " + parseFloat(<? echo $yempa; ?>/this.value).toFixed(6) +" BTC";	
   output.innerHTML = this.value +"X";
   output2.innerHTML = parseFloat((99/this.value)).toFixed(3) +"%";
   output4.innerHTML =  "Example : If You Bet 0.1 BTC, You Have " + parseFloat((99/this.value)).toFixed(3) +"% Chance Of Winning " + (this.value*0.1).toFixed(3) + " BTC";
