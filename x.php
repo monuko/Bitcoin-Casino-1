@@ -166,8 +166,8 @@ section:nth-child(even) {
 }
 
 #heading {
-  width: 180px;
-  height: 180px;
+  width: 580px;
+  height: 580px;
   background: #fff;
   border-radius: 90px;
   margin-top: 40px;
@@ -277,10 +277,11 @@ section:nth-child(even) {
 
 
 <section id="section00">
-<img id="heading" src="https://flathash.com/jhghvhggvhgvhgv" />
-
-<img id="heading2" src="https://flathash.com/jhghvhggvhgvhgv" />
-<div style="background: #fff;">HELLLLLLLLLLLLLLLLL</div>
+<div id="heading">
+<img src="https://flathash.com/jhghvhggvhgvhgv" />
+<br> ADDDRESS
+<br> MULT
+</div>
 </section>
 
 <?
