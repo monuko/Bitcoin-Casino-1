@@ -165,13 +165,7 @@ section:nth-child(even) {
   background: #79edfc;
 }
 
-#heading {
-  width: 580px;
-  height: 580px;
-  background: #fff;
-  border-radius: 90px;
-  margin-top: 40px;
-}
+
 
 
 /*** Responsive Menu For Smaller Device ***/
@@ -277,45 +271,15 @@ section:nth-child(even) {
 
 
 <section id="section00">
-<div id="heading"><center>
+
 <img src="https://flathash.com/jhghvhggvhgvhgv" />
 <br> 1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk 
 <br> Roll : 84.56 < Chance : 2.83
 <br> Bet : 0.04638808 BTC | Won : 0 BTC
 <br> Multiplier : 35X | Block : 562893
-</center></div>
+
 </section>
 
-
-<section id="section00">
-<div id="heading"><center>
-<img src="https://flathash.com/jhghvhggvhgvhgv" />
-<br> 1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk 
-<br> Roll : 84.56 < Chance : 2.83
-<br> Bet : 0.04638808 BTC | Won : 0 BTC
-<br> Multiplier : 35X | Block : 562893
-</center></div>
-</section>
-
-<section id="section00">
-<div id="heading"><center>
-<img src="https://flathash.com/jhghvhggvhgvhgv" />
-<br> 1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk 
-<br> Roll : 84.56 < Chance : 2.83
-<br> Bet : 0.04638808 BTC | Won : 0 BTC
-<br> Multiplier : 35X | Block : 562893
-</center></div>
-</section>
-
-<section id="section00">
-<div id="heading"><center>
-<img src="https://flathash.com/jhghvhggvhgvhgv" />
-<br> 1V7L2QKLuZ1m7PNFfHAcR2ddnwoZBqhTk 
-<br> Roll : 84.56 < Chance : 2.83
-<br> Bet : 0.04638808 BTC | Won : 0 BTC
-<br> Multiplier : 35X | Block : 562893
-</center></div>
-</section>
 
 
 
