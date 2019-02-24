@@ -173,13 +173,6 @@ section:nth-child(even) {
   margin-top: 40px;
 }
 
-#heading2 {
-  width: 400px;
-  height: 30px;
-  background: #fff;
-  border-radius: 90px;
-  margin-top: 280px;
-}
 
 /*** Responsive Menu For Smaller Device ***/
 @media screen and (max-width: 767px) {
@@ -287,7 +280,7 @@ section:nth-child(even) {
 <img id="heading" src="https://flathash.com/jhghvhggvhgvhgv" />
 
 <img id="heading2" src="https://flathash.com/jhghvhggvhgvhgv" />
-
+<div style="background: #fff;">HELLLLLLLLLLLLLLLLL</div>
 </section>
 
 <?
