@@ -281,7 +281,7 @@ ika {
 
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   
     <script>
@@ -425,7 +425,22 @@ function fetch5(fetch5) {
   row.insertCell(3).innerHTML = `${fetch5.amount} BTC`;
   row.insertCell(4).innerHTML = `${fetch5.winamount} BTC`;
   row.insertCell(5).innerHTML = `${fetch5.blocknum}`;
-  row.insertCell(7).innerHTML = `<a target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
+  var cellx = row.insertCell(6);
+
+
+
+  if (fetch5.confirmation < 2) {
+  cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse red" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
+  }else{
+  if (fetch5.result > 0) {
+     cellx.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
+    <a class="waves-effect waves-light btn-small pulse" target="_blank" href="https://tradeblock.com/bitcoin/address/${fetch5.sender}" >Output</a>`;	  
+     row.setAttribute('class', 'teal accent-1');
+  } else {
+     cellx.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
+}
+  }
+
 
 }
 }
