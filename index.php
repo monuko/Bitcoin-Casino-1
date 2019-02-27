@@ -63,11 +63,11 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
   <thead>
           <tr>
               <th>Sender</th>
-              <th>Item Name</th>
-              <th>Item Price</th>
-              <th>Name</th>
-              <th>Item Name</th>
-              <th>Item Price</th>
+              <th>Mult</th>
+              <th>Roll Chance</th>
+              <th>Bet</th>
+              <th>Win</th>
+              <th>Blocknum</th>
               <th>TRXN</th>
           </tr>
         </thead>
