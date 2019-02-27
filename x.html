@@ -1,417 +1,106 @@
+ <!DOCTYPE html>
+  <html>
+<head>
+<title>SKOBET - Bitcoin Blockchain Betting</title>
+<meta name="Description" content="Bitcoin Blockchain Betting, Earn Upto 20 Times Your Bet.  SKOBET is Decenterlized, Fast, Fair, Provides Each Bet Verification Directly on Bitcoin Blockchain. ">
+<meta name="Keywords" content="Bitcoin Bet,SKOBET,skobet bitcoin,skobet btc,skobet play,skobet fair">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="refresh" content="183">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://wchat.freshchat.com/js/widget.js"></script>
+</head>
+<body>
 
-<!doctype html>
-<html lang="en">
-  <head>
-     <meta charset="utf-8">
-	 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" />
-	 <link rel="stylesheet" href="index.css?mm=9" />
-     <title>BTCJUA.COM - Simplest Casino</title>
 
-<style>
+<div class="container"> <div class="row">
+  <nav><div class="nav-wrapper">
+      <a href="#" onClick="window.location.href=window.location.href"  class="brand-logo"><i class="material-icons">dehaze</i> SKOBET</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a target="_blank" href="https://bit.ly/2UuQa9W">Fairness</a></li>
+        <li><a target="_blank" href="https://www.blockchain.com/btc/xpub/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7">View On Blockchain</a></li>
+      </ul></div></nav>    </div></div>
 
-    .container3 tr:hover {
-        -webkit-box-shadow: 0 6px 6px -6px #0E1119;
-    	   -moz-box-shadow: 0 6px 6px -6px #0E1119;
-    	        box-shadow: 0 6px 6px -6px #0E1119;
-    }
+        <div class="container"> <div class="row">
+<div class="col s12 l12">
+<center>
+<img style="max-width:640px;" width=100% height=auto src="https://i.ibb.co/wcnqcxz/skobet.png"/><br>
+<img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=280x280&cht=qr&chld=L|1&chl=bitcoin:1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H" />
+<br>
+<span id="addrvalue">1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H</span>
+</center>
+</div>
 
-    .container3 td:hover {
-      background-color: #ffffff;
-      color: #403E10;
-      font-weight: bold;
+<div class="col s12 l12">
+<p class="range-field"><input type="range" id="myRange" min="2" max="40" /></p>
+</div>
 
-      box-shadow: #e2e1c0 -1px 1px, #e2e1c0 -2px 2px, #e2e1c0 -3px 3px, #e2e1c0 -4px 4px, #e2e1c0 -5px 5px, #e2e1c0 -6px 6px;
-      transform: translate3d(6px, -6px, 0);
 
-      transition-delay: 0s;
-    	  transition-duration: 0.4s;
-    	  transition-property: all;
-      transition-timing-function: line;
-    }
 
-    @media (max-width: 800px) {
-    .container3 td:nth-child(6),
-    .container3 th:nth-child(6) { display: none; }
-    .container3 td:nth-child(5),
-    .container3 th:nth-child(5) { display: none; }
-    }
+<div class="col s12 l4"><blockquote><center>
+<span id="maxbet">Maxbet 0.2 BTC</span></blockquote></center>
+</div>
+
+<div class="col s12 l4"><blockquote><center>
+Bet Multiplier : <span id="demo">20 X</span></blockquote></center>
+</div>
+
+<div class="col s12 l4"><blockquote><center>
+Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
+</div>
+
+<div class="col s12 l12"><blockquote><center>
+<span id="demo3">Move The Slider.........</span></blockquote></center>
+</div>          
+
+<div class="col s12 l12">
+<div id="myplot"></div>
+ </div>
+          
+<div class="col s12 l12">
+<div class="responsive-table">
+<table class="responsive-table" id="myTable"></table>
+</div>
+</div>
+
+
+
+</div></div>
+	
+
+
+        <div class="container"> <div class="row">
+ <footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l12 s12">
+                <h5 class="white-text">100% Anonymous</h5>
+                <p class="grey-text text-lighten-4">
+		    Skobet Doesn't Store any Of Your Data. Privacy As Promised.  
+		     </p>
+              </div>
+      
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2019 SKOBET
+            </div>
+          </div>
+        </footer>          </div>          </div>
+            
 
 	
 
-@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-
-body {
-    font-family: 'Poppins', sans-serif;
-    background: #fafafa;
-}
-
-p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.1em;
-    font-weight: 300;
-    line-height: 1.7em;
-    color: #999;
-}
-
-a, a:hover, a:focus {
-    color: inherit;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.navbar {
-    padding: 15px 10px;
-    background: #fff;
-    border: none;
-    border-radius: 0;
-    margin-bottom: 40px;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-.navbar-btn {
-    box-shadow: none;
-    outline: none !important;
-    border: none;
-}
-
-.line {
-    width: 100%;
-    height: 1px;
-    border-bottom: 1px dashed #ddd;
-    margin: 40px 0;
-}
-
-/* ---------------------------------------------------
-    SIDEBAR STYLE
------------------------------------------------------ */
-.wrapper {
-    display: flex;
-    align-items: stretch;
-    perspective: 1500px;
-}
-
-#sidebar {
-    min-width: 250px;
-    max-width: 250px;
-    background: #7386D5;
-    color: #fff;
-    transition: all 0.6s cubic-bezier(0.945, 0.020, 0.270, 0.665);
-    transform-origin: bottom left;
-}
-
-#sidebar.active {
-    margin-left: -250px;
-    transform: rotateY(100deg);
-}
-
-#sidebar .sidebar-header {
-    padding: 20px;
-    background: #6d7fcc;
-}
-
-#sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #47748b;
-}
-
-#sidebar ul p {
-    color: #fff;
-    padding: 10px;
-}
-
-#sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
-    display: block;
-}
-#sidebar ul li a:hover {
-    color: #7386D5;
-    background: #fff;
-}
-
-
-
-
-
-
-ul ul a {
-    font-size: 0.9em !important;
-    padding-left: 30px !important;
-    background: #6d7fcc;
-}
-
-ul.CTAs {
-    padding: 20px;
-}
-
-ul.CTAs a {
-    text-align: center;
-    font-size: 0.9em !important;
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
-
-a.download {
-    background: #fff;
-    color: #7386D5;
-}
-
-a.article, a.article:hover {
-    background: #6d7fcc !important;
-    color: #fff !important;
-}
-
-
-
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
-#content {
-    padding: 20px;
-    min-height: 100vh;
-    transition: all 0.3s;
-}
-
-#sidebarCollapse {
-    width: 40px;
-    height: 40px;
-    background: #f5f5f5;
-}
-
-#sidebarCollapse span {
-    width: 80%;
-    height: 2px;
-    margin: 0 auto;
-    display: block;
-    background: #555;
-    transition: all 0.8s cubic-bezier(0.810, -0.330, 0.345, 1.375);
-    transition-delay: 0.2s;
-}
-
-#sidebarCollapse span:first-of-type {
-    transform: rotate(45deg) translate(2px, 2px);
-}
-#sidebarCollapse span:nth-of-type(2) {
-    opacity: 0;
-}
-#sidebarCollapse span:last-of-type {
-    transform: rotate(-45deg) translate(1px, -1px);
-}
-
-
-#sidebarCollapse.active span {
-    transform: none;
-    opacity: 1;
-    margin: 5px auto;
-}
-
-
-/* ---------------------------------------------------
-    MEDIAQUERIES
------------------------------------------------------ */
-@media (max-width: 768px) {
-    #sidebar {
-        margin-left: -250px;
-        transform: rotateY(90deg);
-    }
-    #sidebar.active {
-        margin-left: 0;
-        transform: none;
-    }
-    #sidebarCollapse span:first-of-type,
-    #sidebarCollapse span:nth-of-type(2),
-    #sidebarCollapse span:last-of-type {
-        transform: none;
-        opacity: 1;
-        margin: 5px auto;
-    }
-    #sidebarCollapse.active span {
-        margin: 0 auto;
-    }
-    #sidebarCollapse.active span:first-of-type {
-        transform: rotate(45deg) translate(2px, 2px);
-    }
-    #sidebarCollapse.active span:nth-of-type(2) {
-        opacity: 0;
-    }
-    #sidebarCollapse.active span:last-of-type {
-        transform: rotate(-45deg) translate(1px, -1px);
-    }
-
-}
-
-
-
-
-
-
-.slidecontainer {
-  width: 100%;
-}
-
-.slider {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 25px;
-  background: #d3d3d3;
-  outline: none;
-  opacity: 0.7;
-  -webkit-transition: .2s;
-  transition: opacity .2s;
-}
-
-.slider:hover {
-  opacity: 1;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  background: #4CAF50;
-  cursor: pointer;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  background: #4CAF50;
-  cursor: pointer;
-}
-
-	  </style>
-  </head>
-  <body>
-
-
-
-<div class="wrapper">
-  <!-- Sidebar Holder -->
-  <nav id="sidebar">
-    <div class="sidebar-header">
-      <h3>BTCJUA</h3>
-    </div>
-
-    <ul class="list-unstyled components">
-      <p>Join Telegram Group</p>
-	   <li>
-        <a target="_blank" href="https://pastebin.com/raw/QmeqNjNE">Fairness</a>
-      </li>
-      <li>
-        <a target="_blank" href="https://bitcointalk.org/index.php?topic=5073341.0">Bitcointalk</a>
-      </li>
-      <li>
-        <a target="_blank" href="https://t.me/btcjua">Telegram</a>
-      </li>
-    </ul>
-
-    <ul class="list-unstyled CTAs">
-      <li><a target="_blank" href="https://bit.ly/2CipTnR" class="article">View On Blockchain</a></li>
-    </ul>
-  </nav>
-
-  <div id="content">
-
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-
-        <div class="navbar-header">
-          <button type="button" id="sidebarCollapse" class="navbar-btn">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </button>
-        </div>
-
-        <div class="nav navbar-nav navbar-right">
-            <a id="ui1">No Pending Deposit</a>
-	    <a id="ui2">.....</a>
-        </div>
-      </div>
-    </nav>
-
-
-
-
-  
-<div class="container text-center">
-    <div class="row">
-        <div class="col-sm-4"><div class="p-2">
-            <img id="addrimg" src="https://chart.googleapis.com/chart?chs=200x200&cht=qr&chld=L|1&chl=bitcoin:12JyurJDarDCbtxdcMjfE59BQUyAP7Db5h" class="rounded mx-auto d-block" alt="...">
-        </div></div>
-        <div class="col-sm-8">
-            <div class="p-2">
-		    <p>Set Your Bet Chance or Multiplier Below </p>
-                </div>
-		            <div class="p-2">
-            
-                    <input id="addrvalue" type="text" class="form-control"  value="12JyurJDarDCbtxdcMjfE59BQUyAP7Db5h">
-            
-                </div>
-
-   
-				
-					
-					 <div class="p-2">
-                  
-				<div class="slidecontainer">
-  <input type="range" min="2" max="20" value="20" class="slider" id="myRange">
-  <p>Multiplier : <span id="demo">20</span>X - Winchance : <span id="demo2">4.95</span> %</p>
-</div>
-
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-
-
-
-
-
-  <div class="line"></div>	 
-         <table class="table table-sm container3"  id="myTable" >
-          <thead>
-            <tr>
-              <th scope="col">Roll</th>
-	      <th scope="col">Below</th>
-              <th scope="col">Mult</th>
-              <th scope="col">Bet</th>
-              <th scope="col">Payout</th>
-              <th scope="col">Player</th>
-              <th scope="col">Block</th>
-              <th scope="col">Trxn</th>
-              <th scope="col">Trxn</th>
-            </tr>
-          </thead>
-        </table>
-  </div>
-</div>
-
-
-        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
-	<script>
-
-	//theme bar
-$(document).ready(function() {
-  $("#sidebarCollapse").on("click", function() {
-    $("#sidebar").toggleClass("active");
-    $(this).toggleClass("active");
-  });
-});
-  
-
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>  
+//https stuff
+if (location.protocol != 'https:') {
+ location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+}		
+		
 //core starts		
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
@@ -427,9 +116,6 @@ slider.oninput = function() {
   document.getElementById("addrvalue").innerHTML = addr[this.value];
   $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=280x280&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
 }
-
-
-
 
 //address
 var addr = [
@@ -475,11 +161,18 @@ var addr = [
     "1Q5zHQiCz34gauntDMRh9Z9duXjrya3JJr",
     "1RFyvLeDJhrmGh1nRmr34kzKR9Z3uFLBx"
 ];
+
+
+
+
+
 // init & fetch JSON
 $.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=22').done(function(datax) {
 tempx = datax.address.transactions;
 tempbalx = datax.address.total.balance;	
+
 tempx.forEach(function(elementp) {
+
 $.ajax({
    url: elementp.txid + '.json',
    type: 'HEAD',
@@ -496,14 +189,20 @@ $.ajax({
     });
    }
   });
+
+
 });
 });
+
+
 // plot function
 var yar = [];
 var yar2 = [];
+
 function xplot(n,nn) {
  yar.push(n);
  yar2.push(nn);
+
  var roll = {
   y: yar,
   type: 'scatter',
@@ -515,42 +214,57 @@ function xplot(n,nn) {
   type: 'scatter',
   name: 'Roll To Win'
  };
+
 var data = [roll, roll2];
 var layout = {title: 'Recent Bets Roll', showlegend: false};
 Plotly.newPlot('myplot', data, layout, {showSendToCloud: true});
 }
+
+
+
 //fetch function
 function fetch5(fetch5) {
   if(fetch5.depositadd.localeCompare('null')){
   var table = document.getElementById("myTable");
   var row = table.insertRow(-1);
-  var cell0 = row.insertCell(0);
-  var cell1 = row.insertCell(1);
-  var cell2 = row.insertCell(2);
   var tempk = (99/fetch5.winroll) + "X";
 	
-  cell0.innerHTML = `<img width=80px height=80px src="https://flathash.com/${fetch5.sender}" />`;
-  cell1.innerHTML = `${fetch5.sender} <br>
-  Roll : ${fetch5.roll} <  Chance : ${fetch5.winroll.toFixed(2)}<br>
-  Bet : ${fetch5.amount} BTC | Won : ${fetch5.winamount} BTC<br>
-  Multiplier : ${tempk} | Block : ${fetch5.blocknum}
-  `;	
+  row.insertCell(0).innerHTML = `${fetch5.sender}`;
+  row.insertCell(1).innerHTML = `${tempk}`;
+  row.insertCell(2).innerHTML = ` Roll : ${fetch5.roll} < ${fetch5.winroll.toFixed(2)}`;
+  row.insertCell(3).innerHTML = `${fetch5.amount} BTC`;
+  row.insertCell(4).innerHTML = `${fetch5.winamount} BTC`;
+  row.insertCell(5).innerHTML = `${fetch5.blocknum}`;
+  var cellx = row.insertCell(6);
+
+
+
   if (fetch5.confirmation < 2) {
-  cell2.innerHTML = `<a class="waves-effect waves-light btn-small pulse red" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
+  cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse red" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
   }else{
   if (fetch5.result > 0) {
-     cell2.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
+     cellx.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
     <a class="waves-effect waves-light btn-small pulse" target="_blank" href="https://tradeblock.com/bitcoin/address/${fetch5.sender}" >Output</a>`;	  
      row.setAttribute('class', 'teal accent-1');
+
   } else {
-     cell2.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
+     cellx.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
 }
   }
+
   // plot
   xplot(fetch5.roll,fetch5.winroll);
 }
 }
   </script>
-	  
-  </body>
-</html>
+
+<script>
+  window.fcWidget.init({
+    token: "dae7d463-01e7-4699-a240-958880ea520e",
+    host: "https://wchat.freshchat.com"
+  });
+</script>
+
+
+ </body>
+ </html>
