@@ -59,8 +59,8 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
           
 <div class="col s12 l12">
 <div class="responsive-table">
-<table id="myTable">
-  <thead>
+<table id="myTable" class="responsive-table">
+  <thead >
           <tr>
               <th>Sender</th>
               <th>Mult</th>
