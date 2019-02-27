@@ -52,10 +52,6 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 <div class="col s12 l12"><blockquote><center>
 <span id="demo3">Move The Slider.........</span></blockquote></center>
 </div>          
-
-<div class="col s12 l12">
-<div id="myplot"></div>
- </div>
           
 <div class="col s12 l12">
 <div class="responsive-table">
@@ -106,7 +102,6 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 	
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>  
 //https stuff
@@ -267,8 +262,8 @@ function fetch5(fetch5) {
   }
   }
 
-  // plot
-  xplot(fetch5.roll,fetch5.winroll);
+
+
 }
 }
   </script>
