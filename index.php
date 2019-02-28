@@ -177,8 +177,8 @@ var addr = [
 // init & fetch JSON
 $.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=22').done(function(datax) {
 tempx = datax.address.transactions;
-tempbalxx = datax.address.total.balance;	
-tempbalx = tempbalxx + 0.23;
+// tempbalx = datax.address.total.balance;	
+tempbalx = 0.87;
 
 tempx.forEach(function(elementp) {
 
