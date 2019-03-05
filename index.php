@@ -52,11 +52,11 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 <div class="col s12 l12"><blockquote><center>
 
 <span id="demo3"></span><br>
-<span> Do not deposit from exchange wallet, please deposit from your own bitcoin wallet. We recommend Electrum Wallet for high secuirty.
-There is no need to send Bitcoins using high fees, send them with minimal fees. We Fully support CPFP means your Transactions do not need 
-any confirmations for spending them, you can reply your winnings without getting them confirmed. Payouts are automated.</span>
-
-
+<span>
+Deposit Bitcoin Only, Please deposit from your own bitcoin wallet. 
+There is no need to send Bitcoins using high fees, Send them with minimal fees. 
+We Fully support CPFP means your Transactions do not need any confirmations for spending them. 
+</span>
 </blockquote></center>
 </div>          
 
