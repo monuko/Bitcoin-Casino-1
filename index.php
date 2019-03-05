@@ -24,8 +24,8 @@
         <div class="container"> <div class="row">
 <div class="col s12 l12">
 <center>
-<img style="max-width:640px;" width=100% height=auto src="https://i.ibb.co/wcnqcxz/skobet.png"/><br>
-<img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=280x280&cht=qr&chld=L|1&chl=bitcoin:1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H" />
+<img class="z-depth-4" style="max-width:640px;" width=100% height=auto src="https://i.ibb.co/wcnqcxz/skobet.png"/><br>
+<img class="z-depth-4" id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=280x280&cht=qr&chld=L|1&chl=bitcoin:1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H" />
 <br>
 <span id="addrvalue">1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H</span>
 </center>
