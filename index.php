@@ -115,30 +115,6 @@ if (location.protocol != 'https:') {
  location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
 }		
 
- 
-// plot function
-var yar = [];
-var yar2 = [];
-function xplot(n,nn) {
- yar.push(n);
- yar2.push(nn);
- var roll = {
-  y: yar,
-  type: 'scatter',
-  name: 'Bet Roll'
- };
- 
-  var roll2 = {
-  y: yar2,
-  type: 'scatter',
-  name: 'Roll To Win'
- };
-var data = [roll, roll2];
-var layout = {title: 'Recent Bets Roll', showlegend: false};
-Plotly.newPlot('myplot', data, layout, {showSendToCloud: true});
-}
-
-
 		
 //core starts		
 var slider = document.getElementById("myRange");
