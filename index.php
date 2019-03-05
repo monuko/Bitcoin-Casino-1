@@ -24,8 +24,8 @@
         <div class="container"> <div class="row">
 <div class="col s12 l12">
 <center>
-<img class="z-depth-4" style="max-width:640px;" width=100% height=auto src="https://i.ibb.co/wcnqcxz/skobet.png"/><br>
-<img class="z-depth-4" id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=280x280&cht=qr&chld=L|1&chl=bitcoin:1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H" />
+<img style="max-width:640px;" width=100% height=auto src="https://i.ibb.co/wcnqcxz/skobet.png"/><br>
+<img class="z-depth-3" id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=240x240&cht=qr&chld=L|1&chl=bitcoin:1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H" />
 <br>
 <span id="addrvalue">1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H</span>
 </center>
@@ -120,7 +120,7 @@ slider.oninput = function() {
   output2.innerHTML = parseFloat((99/this.value)).toFixed(3) +"%";
   output4.innerHTML =  "Example : If You Deposit 0.1 BTC, You Have " + parseFloat((99/this.value)).toFixed(3) +"% Chance Of Getting " + (this.value*0.1).toFixed(3) + " BTC Back. ";
   document.getElementById("addrvalue").innerHTML = addr[this.value];
-  $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=280x280&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
+  $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=240x240&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
 }
 
 //address
