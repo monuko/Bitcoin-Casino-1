@@ -71,32 +71,23 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 </div>
 </div>
 
-
-
 </div></div>
 	
 
 
-        <div class="container"> <div class="row">
- <footer class="page-footer">
-          <div class="container">
-            <div class="row">
-              <div class="col l12 s12">
-                <h5 class="white-text">100% Anonymous</h5>
-                <p class="grey-text text-lighten-4">
-		    Skobet Doesn't Store any Of Your Data. Privacy As Promised.  
-		     </p>
-              </div>
-      
-            </div>
-          </div>
-          <div class="footer-copyright">
-            <div class="container">
-            © 2019 SKOBET
-            </div>
-          </div>
-        </footer>          </div>          </div>
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 	
 
