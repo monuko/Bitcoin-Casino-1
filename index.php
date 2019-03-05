@@ -60,7 +60,8 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
           <tr>
               <th>Sender</th>
               <th>Mult</th>
-              <th>Roll Chance</th>
+              <th>Roll</th>
+	      <th>Chance</th>
               <th>Bet</th>
               <th>Win</th>
               <th>Blocknum</th>
@@ -212,11 +213,12 @@ if(fetch5.depositadd.localeCompare('null')){
 	
   row.insertCell(0).innerHTML = `${fetch5.sender}`;
   row.insertCell(1).innerHTML = `${tempk}`;
-  row.insertCell(2).innerHTML = ` Roll : ${fetch5.roll} < ${fetch5.winroll.toFixed(2)}`;
-  row.insertCell(3).innerHTML = `${fetch5.amount} BTC`;
-  row.insertCell(4).innerHTML = `${fetch5.winamount} BTC`;
-  row.insertCell(5).innerHTML = `${fetch5.blocknum}`;
-  var cellx = row.insertCell(6);
+  row.insertCell(2).innerHTML = `${fetch5.roll}`;
+  row.insertCell(3).innerHTML = `${fetch5.winroll.toFixed(2)}`;
+  row.insertCell(4).innerHTML = `${fetch5.amount} BTC`;
+  row.insertCell(5).innerHTML = `${fetch5.winamount} BTC`;
+  row.insertCell(6).innerHTML = `${fetch5.blocknum}`;
+  var cellx = row.insertCell(7);
 
 
 
