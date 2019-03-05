@@ -65,7 +65,7 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
               <th>Bet</th>
               <th>Win</th>
               <th>Blocknum</th>
-              <th>TRXN</th>
+              <th>Result</th>
           </tr>
 </table>
 </div>
@@ -217,7 +217,7 @@ if(fetch5.depositadd.localeCompare('null')){
   row.insertCell(3).innerHTML = `${fetch5.winroll.toFixed(2)}`;
   row.insertCell(4).innerHTML = `${fetch5.amount} BTC`;
   row.insertCell(5).innerHTML = `${fetch5.winamount} BTC`;
-  row.insertCell(6).innerHTML = `${fetch5.blocknum}`;
+  row.insertCell(6).innerHTML = `<a class="waves-light btn-small pulse yellow" target="_blank" href="https://tradeblock.com/bitcoin/block/${fetch5.blocknum}" >${fetch5.blocknum} </a>`;
   var cellx = row.insertCell(7);
 
 
