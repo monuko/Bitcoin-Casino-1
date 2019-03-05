@@ -49,7 +49,7 @@ Bet Multiplier : <span id="demo">20 X</span></blockquote></center>
 Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 </div>
 
-<div class="col s12 l12"><blockquote><center>
+<div class="col s12 l12"><blockquote>
 <span id="demo3"></span>
 
 <span>
@@ -57,8 +57,7 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 There is no need to send Bitcoins using high fees, Send them with minimal fees. 
 We Fully support CPFP means your Transactions do not need any confirmations for spending them. 
 </span>
-</blockquote></center>
-</div>
+</blockquote></div>
        
 
 
