@@ -62,7 +62,6 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 <div class="col s12 l12">
 <div class="responsive-table">
 <table id="myTable" class="responsive-table">
-  <thead >
           <tr>
               <th>Sender</th>
               <th>Mult</th>
@@ -72,8 +71,6 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
               <th>Blocknum</th>
               <th>TRXN</th>
           </tr>
-        </thead>
-
 </table>
 </div>
 </div>
@@ -184,8 +181,7 @@ var addr = [
 // init & fetch JSON
 $.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=220').done(function(datax) {
 tempx = datax.address.transactions;
-// tempbalx = datax.address.total.balance;	
-tempbalx = 0.87;
+tempbalx = datax.address.total.balance;	
 
 tempx.forEach(function(elementp) {
 
@@ -240,7 +236,8 @@ Plotly.newPlot('myplot', data, layout, {showSendToCloud: true});
 
 //fetch function
 function fetch5(fetch5) {
-  if(fetch5.depositadd.localeCompare('null')){
+if(fetch5.depositadd.localeCompare('null')){
+
   var table = document.getElementById("myTable");
   var row = table.insertRow(-1);
   var tempk = (99/fetch5.winroll) + "X";
@@ -262,19 +259,14 @@ function fetch5(fetch5) {
      cellx.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
     <a class="waves-effect waves-light btn-small pulse" target="_blank" href="https://tradeblock.com/bitcoin/address/${fetch5.sender}" >Output</a>`;	  
      row.setAttribute('class', 'teal accent-1');
-
   } else {
      cellx.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
      row.setAttribute('class', 'red accent-1');
-
-  }
-  }
+  }}
 
 
-  xplot(fetch5.roll,fetch5.winroll);
-
-}
-}
+xplot(fetch5.roll,fetch5.winroll);
+}}
   </script>
 
 <script>
