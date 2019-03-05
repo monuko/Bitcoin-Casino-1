@@ -223,13 +223,12 @@ if(fetch5.depositadd.localeCompare('null')){
 
 
   if (fetch5.confirmation < 2) {
-  cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse red" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
+  cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse yellow" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
   }else{
   if (fetch5.result > 0) {
-     cellx.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>
-    <a class="waves-effect waves-light btn-small pulse" target="_blank" href="https://tradeblock.com/bitcoin/address/${fetch5.sender}" >Output</a>`;	  
+     cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse green" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >WIN</a>`;  
   } else {
-     cellx.innerHTML = `<a class="waves-effect waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Input</a>`;  
+     cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse red" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >LOST</a>`;  
   }}
 
 
