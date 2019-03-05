@@ -27,8 +27,7 @@
 <img style="max-width:640px;" width=100% height=auto src="https://i.ibb.co/wcnqcxz/skobet.png"/><br>
 <img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=280x280&cht=qr&chld=L|1&chl=bitcoin:1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H" />
 <br>
-<span id="addrvalue">1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H</span><br>
-<span id="demo3"></span>
+<span id="addrvalue">1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H</span>
 </center>
 </div>
 
@@ -50,13 +49,20 @@ Bet Multiplier : <span id="demo">20 X</span></blockquote></center>
 Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 </div>
 
-<div class="col s12 l12">
+<div class="col s12 l12"><blockquote><center>
+<span id="demo3"></span>
+</blockquote></center>
+</div>
+
+<div class="col s12 l12"><blockquote><center>
 <span>
 Deposit Bitcoin Only, Please deposit from your own bitcoin wallet. 
 There is no need to send Bitcoins using high fees, Send them with minimal fees. 
 We Fully support CPFP means your Transactions do not need any confirmations for spending them. 
 </span>
-</div>          
+</blockquote></center>
+</div>
+       
 
 
 <div class="col s12 l12">
