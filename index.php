@@ -53,12 +53,7 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 <span id="demo3">Move The Slider.........</span></blockquote></center>
 </div>          
 
-<div class="col s12 l12">
-<div id="myplot"></div>
- </div>
 
-
-          
 <div class="col s12 l12">
 <div class="responsive-table">
 <table id="myTable" class="responsive-table">
@@ -207,33 +202,6 @@ $.ajax({
 });
 
 
-// plot function
-var yar = [];
-var yar2 = [];
-
-function xplot(n,nn) {
- yar.push(n);
- yar2.push(nn);
-
- var roll = {
-  y: yar,
-  type: 'scatter',
-  name: 'Bet Roll'
- };
- 
-  var roll2 = {
-  y: yar2,
-  type: 'scatter',
-  name: 'Roll To Win'
- };
-
-var data = [roll, roll2];
-var layout = {title: 'Recent Bets Roll', showlegend: false};
-Plotly.newPlot('myplot', data, layout, {showSendToCloud: true});
-}
-
-
-
 //fetch function
 function fetch5(fetch5) {
 if(fetch5.depositadd.localeCompare('null')){
@@ -265,7 +233,6 @@ if(fetch5.depositadd.localeCompare('null')){
   }}
 
 
-xplot(fetch5.roll,fetch5.winroll);
 }}
   </script>
 
