@@ -25,7 +25,6 @@
 <div class="col s12 l12">
 <center>
 <img style="max-width:640px;" width=100% height=auto src="https://i.ibb.co/wcnqcxz/skobet.png"/><br>
-<span>Deposit Bitcoin Only</span><br>
 <img id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=280x280&cht=qr&chld=L|1&chl=bitcoin:1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H" />
 <br>
 <span id="addrvalue">1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H</span>
@@ -51,7 +50,12 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 </div>
 
 <div class="col s12 l12"><blockquote><center>
-<span id="demo3">Move The Slider.........</span></blockquote></center>
+
+<span id="demo3">........</span>
+<span> Do not deposit from exchange wallet, please deposit from your own bitcoin wallet. We recommend Electrum Wallet for high secuirty. </span>
+
+
+</blockquote></center>
 </div>          
 
 
@@ -59,8 +63,8 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 <div class="responsive-table">
 <table id="myTable" class="responsive-table striped">
           <tr>
-              <th>Sender</th>
-              <th>Mult</th>
+              <th>Player</th>
+              <th>Multiplier</th>
               <th>Roll</th>
 	      <th>Chance</th>
               <th>Bet</th>
