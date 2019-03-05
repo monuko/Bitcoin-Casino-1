@@ -14,7 +14,7 @@
 
 
 <div class="container"> <div class="row">
-  <nav><div class="nav-wrapper">
+  <nav><div class="nav-wrapper"> 
       <a href="#" onClick="window.location.href=window.location.href"  class="brand-logo"><i class="material-icons">dehaze</i> SKOBET</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a target="_blank" href="https://bit.ly/2UuQa9W">Fairness</a></li>
@@ -217,7 +217,7 @@ if(fetch5.depositadd.localeCompare('null')){
   row.insertCell(3).innerHTML = `${fetch5.winroll.toFixed(2)}`;
   row.insertCell(4).innerHTML = `${fetch5.amount} BTC`;
   row.insertCell(5).innerHTML = `${fetch5.winamount} BTC`;
-  row.insertCell(6).innerHTML = `<a class="waves-light btn-small pulse yellow" target="_blank" href="https://tradeblock.com/bitcoin/block/${fetch5.blocknum}" >${fetch5.blocknum} </a>`;
+  row.insertCell(6).innerHTML = `<a class="waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/block/${fetch5.blocknum}" >${fetch5.blocknum} </a>`;
   var cellx = row.insertCell(7);
 
 
@@ -226,9 +226,9 @@ if(fetch5.depositadd.localeCompare('null')){
   cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse yellow" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
   }else{
   if (fetch5.result > 0) {
-     cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse green" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >WIN</a>`;  
+  cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse green" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >WIN</a>`;  
   } else {
-     cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse red" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >LOST</a>`;  
+  cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse red" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >LOST</a>`;  
   }}
 
 
