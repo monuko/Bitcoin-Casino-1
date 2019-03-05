@@ -52,6 +52,12 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 <div class="col s12 l12"><blockquote><center>
 <span id="demo3">Move The Slider.........</span></blockquote></center>
 </div>          
+
+<div class="col s12 l12">
+<div id="myplot"></div>
+ </div>
+
+
           
 <div class="col s12 l12">
 <div class="responsive-table">
@@ -108,6 +114,31 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 if (location.protocol != 'https:') {
  location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
 }		
+
+ 
+// plot function
+var yar = [];
+var yar2 = [];
+function xplot(n,nn) {
+ yar.push(n);
+ yar2.push(nn);
+ var roll = {
+  y: yar,
+  type: 'scatter',
+  name: 'Bet Roll'
+ };
+ 
+  var roll2 = {
+  y: yar2,
+  type: 'scatter',
+  name: 'Roll To Win'
+ };
+var data = [roll, roll2];
+var layout = {title: 'Recent Bets Roll', showlegend: false};
+Plotly.newPlot('myplot', data, layout, {showSendToCloud: true});
+}
+
+
 		
 //core starts		
 var slider = document.getElementById("myRange");
@@ -120,7 +151,7 @@ slider.oninput = function() {
   output3.innerHTML = "Maxbet " + parseFloat(tempbalx/this.value).toFixed(6) +" BTC";	
   output.innerHTML = this.value +"X";
   output2.innerHTML = parseFloat((99/this.value)).toFixed(3) +"%";
-  output4.innerHTML =  "Example : If You Bet 0.1 BTC, You Have " + parseFloat((99/this.value)).toFixed(3) +"% Chance Of Winning " + (this.value*0.1).toFixed(3) + " BTC";
+  output4.innerHTML =  "Example : If You Deposit 0.1 BTC, You Have " + parseFloat((99/this.value)).toFixed(3) +"% Chance Of Getting " + (this.value*0.1).toFixed(3) + " BTC Back";
   document.getElementById("addrvalue").innerHTML = addr[this.value];
   $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=280x280&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
 }
@@ -175,7 +206,7 @@ var addr = [
 
 
 // init & fetch JSON
-$.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=22').done(function(datax) {
+$.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=220').done(function(datax) {
 tempx = datax.address.transactions;
 // tempbalx = datax.address.total.balance;	
 tempbalx = 0.87;
@@ -264,6 +295,7 @@ function fetch5(fetch5) {
   }
 
 
+  xplot(fetch5.roll,fetch5.winroll);
 
 }
 }
