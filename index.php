@@ -51,12 +51,9 @@ Bet Winchance : <span id="demo2">4.950 %</span></blockquote></center>
 
 <div class="col s12 l12"><blockquote><center>
 <span id="demo3"></span>
-</blockquote></center>
-</div>
 
-<div class="col s12 l12"><blockquote><center>
 <span>
-Deposit Bitcoin Only, Please deposit from your own bitcoin wallet. 
+ Deposit Bitcoin Only, Please deposit from your own bitcoin wallet. 
 There is no need to send Bitcoins using high fees, Send them with minimal fees. 
 We Fully support CPFP means your Transactions do not need any confirmations for spending them. 
 </span>
@@ -122,7 +119,7 @@ slider.oninput = function() {
   output3.innerHTML = "Maxbet " + parseFloat(tempbalx/this.value).toFixed(6) +" BTC";	
   output.innerHTML = this.value +"X";
   output2.innerHTML = parseFloat((99/this.value)).toFixed(3) +"%";
-  output4.innerHTML =  "Example : If You Deposit 0.1 BTC, You Have " + parseFloat((99/this.value)).toFixed(3) +"% Chance Of Getting " + (this.value*0.1).toFixed(3) + " BTC Back";
+  output4.innerHTML =  "Example : If You Deposit 0.1 BTC, You Have " + parseFloat((99/this.value)).toFixed(3) +"% Chance Of Getting " + (this.value*0.1).toFixed(3) + " BTC Back. ";
   document.getElementById("addrvalue").innerHTML = addr[this.value];
   $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=280x280&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
 }
