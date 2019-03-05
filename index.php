@@ -21,11 +21,16 @@
         <li><a target="_blank" href="https://www.blockchain.com/btc/xpub/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7">View On Blockchain</a></li>
       </ul></div></nav>    </div></div>
 
-        <div class="container"> <div class="row">
+
+
+
+
+
+<div class="container"> <div class="row">
 <div class="col s12 l12">
 <center>
 <img style="max-width:640px;" width=100% height=auto src="https://i.ibb.co/wcnqcxz/skobet.png"/><br>
-<img class="z-depth-3" id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=240x240&cht=qr&chld=L|1&chl=bitcoin:1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H" />
+<img class="z-depth-1" id="addrimg" alt="Deposit Bitcoin only" src="https://chart.googleapis.com/chart?chs=240x240&cht=qr&chld=L|1&chl=bitcoin:1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H" />
 <br>
 <span id="addrvalue">1HD4t4thE9scBeR8CZnweQQoAFB9tCau7H</span>
 </center>
