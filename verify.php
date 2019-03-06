@@ -41,15 +41,24 @@ PHP CODE TO VERIFY YOURSELF<br>
 
 <pre>
 
+// change this
 $trxn ="transaction hash";
-$blocknum = "transaction blocknum";
-$blockhash = "transaction blockhash";
 
+//json fetch blockhash & blocknumber
+$url = 'https://api.smartbit.com.au/v1/blockchain/tx/'. $trxn;
+$obj = json_decode(file_get_contents($url), true);
+$blocknum =  $obj['transaction']['block'];
+$url = 'https://api.smartbit.com.au/v1/blockchain/block/'.$blocknum;
+$obj = json_decode(file_get_contents($url), true);
+$blockhash =  $obj['block']['hash'];
+
+//roll genration 
 $imphash = hash('sha512', hash('sha512', $trxn) . hash('sha512', $blockhash) . hash('sha512', $blocknum) );
 $roll = hexdec(substr($imphash, 0, 4));
 $roll = $roll%(10000);
 $roll = $roll/100;
 
+//output roll
 echo $roll;
 </pre><br>
 
