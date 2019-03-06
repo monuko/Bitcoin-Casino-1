@@ -78,6 +78,7 @@ We Fully support CPFP means your Transactions do not need any confirmations for 
               <th>Win</th>
               <th>Blocknum</th>
               <th>Result</th>
+	      <th>Verify</th>
           </tr>
 </table>
 </div>
