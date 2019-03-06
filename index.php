@@ -74,6 +74,7 @@ We Fully support CPFP means your Transactions do not need any confirmations for 
 	      <th>Chance</th>
               <th>Bet</th>
               <th>Win</th>
+              <th>Transaction</th>
               <th>Blocknum</th>
               <th>Result</th>
           </tr>
@@ -215,11 +216,12 @@ if(fetch5.depositadd.localeCompare('null')){
   row.insertCell(3).innerHTML = `${fetch5.winroll.toFixed(2)}`;
   row.insertCell(4).innerHTML = `${fetch5.amount} BTC`;
   row.insertCell(5).innerHTML = `${fetch5.winamount} BTC`;
-  row.insertCell(6).innerHTML = `<a class="waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/block/${fetch5.blocknum}" >${fetch5.blocknum} </a>`;
-  var cellx = row.insertCell(7);
+  row.insertCell(6).innerHTML = `<a class="waves-light btn-small purple lighten-3" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >Transaction</a>`;
+  row.insertCell(7).innerHTML = `<a class="waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/block/${fetch5.blocknum}" >${fetch5.blocknum} </a>`;
+  var cellx = row.insertCell(8);
 
   if (fetch5.confirmation < 2) {
-  cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse yellow" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
+  cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse blue" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
   }else{
   if (fetch5.result > 0) {
   cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse green" target="_blank" href="https://skobet.com/verify.php?t=${fetch5.trxn}" >WIN</a>`;  
