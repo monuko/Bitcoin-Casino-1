@@ -77,7 +77,6 @@ We Fully support CPFP means your Transactions do not need any confirmations for 
               <th>Win</th>
               <th>Blocknum</th>
               <th>Result</th>
-	      <th>Verify</th>
           </tr>
 </table>
 </div>
@@ -219,8 +218,6 @@ if(fetch5.depositadd.localeCompare('null')){
   row.insertCell(5).innerHTML = `${fetch5.winamount} BTC`;
   row.insertCell(6).innerHTML = `<a class="waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/block/${fetch5.blocknum}" >${fetch5.blocknum} </a>`;
   var cellx = row.insertCell(7);
-  row.insertCell(8).innerHTML = `<a class="waves-effect waves-light btn modal-trigger pulse" href="#modal1">Verify</a>`;
-
 
   if (fetch5.confirmation < 2) {
   cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse yellow" target="_blank" href="https://tradeblock.com/bitcoin/tx/${fetch5.trxn}" >${fetch5.confirmation} Confirmations</a>`;  
