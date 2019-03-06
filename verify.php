@@ -34,3 +34,24 @@ echo  "ROLL is :" . $obj[roll] ."<br>";
 
 ?>
 </h3>
+<br>
+
+PHP CODE TO VERIFY YOURSELF<br>
+<code>
+<?
+$trxn ="transaction hash";
+$blocknum = "transaction blocknum";
+$blockhash = "transaction blockhash";
+
+$imphash = hash('sha512', hash('sha512', $trxn) . hash('sha512', $blockhash) . hash('sha512', $blocknum) );
+$roll = hexdec(substr($imphash, 0, 4));
+$roll = $roll%(10000);
+$roll = $roll/100;
+
+echo $roll;
+?>
+</code><br>
+
+
+
+
