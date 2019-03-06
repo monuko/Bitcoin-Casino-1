@@ -30,13 +30,15 @@ echo  "<br>";
 echo  "<br>";
 
 echo  "ROLL is :" . $obj[roll] ."<br>";
-
+echo  "ROLL Below To Win :" . $obj[winroll] ."<br>";
+echo  "Won Amount  :" . $obj[winamount] ."<br>";
 
 ?>
 </h3>
-
-<br>--------------------------------------------------<br>
+<br><br><br><br><br>
 PHP CODE TO VERIFY YOURSELF<br>
+<br>--------------------------------------------------<br>
+
 <pre>
 
 $trxn ="transaction hash";
