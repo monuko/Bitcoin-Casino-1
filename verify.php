@@ -41,8 +41,8 @@ PHP CODE TO VERIFY YOURSELF<br>
 
 <pre>
 
-// change this
-$trxn ="transaction hash";
+// change this transaction to any bet transaction hash
+$trxn ="<? echo $obj[trxn] ; ?>";
 
 //json fetch blockhash & blocknumber
 $url = 'https://api.smartbit.com.au/v1/blockchain/tx/'. $trxn;
