@@ -31,7 +31,7 @@ echo  "<br>";
 
 echo  "ROLL is :" . $obj[roll] ."<br>";
 echo  "ROLL Below To Win :" . $obj[winroll] ."<br>";
-echo  "Won Amount  :" . $obj[winamount] ."<br>";
+
 
 ?>
 </h3>
