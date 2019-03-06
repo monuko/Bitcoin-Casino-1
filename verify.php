@@ -34,11 +34,12 @@ echo  "ROLL is :" . $obj[roll] ."<br>";
 
 ?>
 </h3>
-<br>
 
+
+<br><br><br>
 PHP CODE TO VERIFY YOURSELF<br>
 <code>
-<?
+
 $trxn ="transaction hash";
 $blocknum = "transaction blocknum";
 $blockhash = "transaction blockhash";
@@ -49,7 +50,6 @@ $roll = $roll%(10000);
 $roll = $roll/100;
 
 echo $roll;
-?>
 </code><br>
 
 
