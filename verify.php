@@ -9,7 +9,7 @@ $obj = json_decode(file_get_contents($url), true);
 
 echo "Sender : " . $obj[sender] . "<br>";
 echo "Transaction Hash : " . $obj[trxn] . "<br>";
-echo "Confirmed In : " . $obj[blocknum] . "<br>";
+echo "Confirmed In Block : " . $obj[blocknum] . "<br>";
 echo "Block " . $obj[blocknum] . " Hash is " . $obj[blockhash] . "<br>";
 echo  "<br>";
 
