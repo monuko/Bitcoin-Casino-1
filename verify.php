@@ -41,16 +41,11 @@ PHP CODE TO VERIFY YOURSELF<br>
 
 <pre>
 
-// change this transaction to any bet transaction hash
+// change this according to any bet
 $trxn ="<? echo $obj[trxn] ; ?>";
+$blocknum ="<? echo $obj[blocknum] ; ?>";
+$blockhash ="<? echo $obj[blockhash] ; ?>";
 
-//json fetch blockhash & blocknumber
-$url = 'https://api.smartbit.com.au/v1/blockchain/tx/'. $trxn;
-$obj = json_decode(file_get_contents($url), true);
-$blocknum =  $obj['transaction']['block'];
-$url = 'https://api.smartbit.com.au/v1/blockchain/block/'.$blocknum;
-$obj = json_decode(file_get_contents($url), true);
-$blockhash =  $obj['block']['hash'];
 
 //roll genration 
 $imphash = hash('sha512', hash('sha512', $trxn) . hash('sha512', $blockhash) . hash('sha512', $blocknum) );
