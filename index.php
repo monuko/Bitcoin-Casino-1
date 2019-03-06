@@ -65,20 +65,6 @@ We Fully support CPFP means your Transactions do not need any confirmations for 
 </blockquote></div>
  
 
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-    </div>
-  </div>
-                
-
-
 <div class="col s12 l12">
 <div class="responsive-table">
 <table id="myTable" class="responsive-table striped">
@@ -117,15 +103,6 @@ We Fully support CPFP means your Transactions do not need any confirmations for 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>  
-
-//init
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.modal');
-    var instances = M.Modal.init(elems, options);
-  });
-
-
-
 //https stuff
 if (location.protocol != 'https:') {
  location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
@@ -242,7 +219,7 @@ if(fetch5.depositadd.localeCompare('null')){
   row.insertCell(5).innerHTML = `${fetch5.winamount} BTC`;
   row.insertCell(6).innerHTML = `<a class="waves-light btn-small blue" target="_blank" href="https://tradeblock.com/bitcoin/block/${fetch5.blocknum}" >${fetch5.blocknum} </a>`;
   var cellx = row.insertCell(7);
-  row.insertCell(8).innerHTML = `<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Verify</a>`;
+  row.insertCell(8).innerHTML = `<a class="waves-effect waves-light btn modal-trigger pulse" href="#modal1">Verify</a>`;
 
 
   if (fetch5.confirmation < 2) {
