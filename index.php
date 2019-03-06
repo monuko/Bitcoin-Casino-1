@@ -63,7 +63,20 @@ There is no need to send Bitcoins using high fees, Send them with minimal fees.
 We Fully support CPFP means your Transactions do not need any confirmations for spending them. 
 </span>
 </blockquote></div>
-       
+ 
+
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+    </div>
+  </div>
+                
 
 
 <div class="col s12 l12">
@@ -92,19 +105,6 @@ We Fully support CPFP means your Transactions do not need any confirmations for 
 
 
 
-
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Modal Header</h4>
-      <p>A bunch of text</p>
-    </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
-    </div>
-  </div>
-          
 
 
 
