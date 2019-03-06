@@ -35,15 +35,15 @@
 </center>
 </div>
 
-<div class="col s0 l2">
+<div class="col s0 l3">
 </div>
 
-<div class="col s12 l8">
+<div class="col s12 l6">
   <input type="range" min="2" max="40" value="4" id="myRange">
 </div>
 
 
-<div class="col s0 l2">
+<div class="col s0 l3">
 </div>
 
 <div class="col s12 l4"><blockquote><center>
