@@ -39,7 +39,7 @@
 </div>
 
 <div class="col s12 l6">
-  <input type="range" min="2" max="40" value="4" id="myRange">
+  <p class="range-field"><input type="range" min="2" max="40" value="4" id="myRange"></p>
 </div>
 
 
