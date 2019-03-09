@@ -5,10 +5,9 @@
 <meta name="Description" content="Bitcoin Blockchain Betting, Earn Upto 20 Times Your Bet.  SKOBET is Decenterlized, Fast, Fair, Provides Each Bet Verification Directly on Bitcoin Blockchain. ">
 <meta name="Keywords" content="Bitcoin Bet,SKOBET,skobet bitcoin,skobet btc,skobet play,skobet fair">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta http-equiv="refresh" content="183">
+<meta http-equiv="refresh" content="<? echo(rand(1,300)); ?> ">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-<script src="https://wchat.freshchat.com/js/widget.js"></script>
 </head>
 <body>
 
@@ -19,10 +18,6 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a target="_blank" href="https://www.blockchain.com/btc/xpub/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7">View On Blockchain</a></li>
       </ul></div></nav>    </div></div>
-
-
-
-
 
 
 <div class="container"> <div class="row">
@@ -107,12 +102,16 @@ We Fully support CPFP means your Transactions do not need any confirmations for 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <script>  
+
+
+
 //https stuff
 if (location.protocol != 'https:') {
  location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
 }		
 
-		
+	
+	
 //core starts		
 var slider = document.getElementById("myRange");
 var output = document.getElementById("demo");
@@ -128,6 +127,9 @@ slider.oninput = function() {
   document.getElementById("addrvalue").innerHTML = addr[this.value];
   $("#addrimg").attr("src","https://chart.googleapis.com/chart?chs=240x240&cht=qr&chld=L|1&chl=bitcoin:" + addr[this.value]);
 }
+
+
+
 
 //address
 var addr = [
@@ -177,7 +179,6 @@ var addr = [
 
 
 
-
 // init & fetch JSON
 $.getJSON('https://api.smartbit.com.au/v1/blockchain/address/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7?dir=dasc&limit=50').done(function(datax) {
 tempx = datax.address.transactions;
@@ -207,6 +208,8 @@ $.ajax({
 });
 
 
+
+
 //fetch function
 function fetch5(fetch5) {
 if(fetch5.depositadd.localeCompare('null')){
@@ -234,18 +237,9 @@ if(fetch5.depositadd.localeCompare('null')){
   cellx.innerHTML = `<a class="waves-effect waves-light btn-small pulse red" target="_blank" href="https://skobet.com/verify.php?t=${fetch5.trxn}" >LOST</a>`;  
   }}
 
-
-
-
 }}
-  </script>
-
-<script>
-  window.fcWidget.init({
-    token: "dae7d463-01e7-4699-a240-958880ea520e",
-    host: "https://wchat.freshchat.com"
-  });
 </script>
+
 
 
  </body>
