@@ -5,9 +5,10 @@
 <meta name="Description" content="Bitcoin Blockchain Betting, Earn Upto 20 Times Your Bet.  SKOBET is Decenterlized, Fast, Fair, Provides Each Bet Verification Directly on Bitcoin Blockchain. ">
 <meta name="Keywords" content="Bitcoin Bet,SKOBET,skobet bitcoin,skobet btc,skobet play,skobet fair">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<meta http-equiv="refresh" content="<? echo(rand(1,300)); ?> ">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+<meta http-equiv="refresh" content="<? echo(rand(1,300)); ?>">
 </head>
 <body>
 
