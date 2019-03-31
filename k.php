@@ -30,7 +30,7 @@ $server_output = curl_exec($ch);
 curl_close($ch);
 $obj = json_decode($server_output, true);
 
-$boonk = object_to_array($obj);
+$boonk = object_to_array($obj['btc']['blocks']);
 
 print_r($boonk);
 
