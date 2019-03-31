@@ -14,8 +14,6 @@ $server_output = curl_exec($ch);
 curl_close($ch);
 $obj = json_decode($server_output, true);
 
-print   $obj['btc']['round_duration'];
-
 
 $conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTnO');
 
