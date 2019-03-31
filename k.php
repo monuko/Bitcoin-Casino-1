@@ -22,7 +22,7 @@ $j1 = $j['date_found'];
 $j2 = $j['mining_duration'];
 $j3 = "LUCK";
 
-$sql = "INSERT INTO part (blocknum, time, duration) VALUES ('$j1', '$j2', '$j3') ";
+$sql = "INSERT INTO part (date_found, mining_duration, luck) VALUES ('$j1', '$j2', '$j3') ";
 mysqli_query($conn, $sql);
 
 }
