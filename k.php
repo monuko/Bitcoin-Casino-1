@@ -1,20 +1,4 @@
 <?
-
-function object_to_array($data){
-    if (is_array($data) || is_object($data))
-    {
-        $result = array();
-        foreach ($data as $key => $value)
-        {
-            $result[$key] = object_to_array($value);
-        }
-        return $result;
-    }
-    return $data;
-}
-
-
-
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,"https://slushpool.com/stats/json/btc/");
 curl_setopt($ch, CURLOPT_POST, 1);
@@ -30,22 +14,18 @@ $server_output = curl_exec($ch);
 curl_close($ch);
 $obj = json_decode($server_output, true);
 
-$boonk = object_to_array($obj['btc']['blocks']);
 
-print_r($boonk);
+$conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTnO');
+foreach($obj['btc']['blocks'] as $j){
 
+$j1 = $j['date_found'];
+$j2 = $j['mining_duration'];
+$j3 = "LUCK";
 
-foreach($boonk as $j){
+$sql = "INSERT INTO part (blocknum, time, duration) VALUES ('$j1', '$j2', '$j3') ";
+mysqli_query($conn, $sql);
 
-$j1 = $j;
-$j2 = $j['date_found'];
-$j3 = $j['mining_duration'];
-
-echo " $j1 $j2 $j3 ";
 }
-
-
-
 ?>
 
 
