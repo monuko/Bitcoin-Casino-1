@@ -1,5 +1,6 @@
 <?
 $p = 0;
+$s = 10000000;
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,"https://slushpool.com/stats/json/btc/");
 curl_setopt($ch, CURLOPT_POST, 1);
@@ -17,13 +18,15 @@ $server_output = curl_exec($ch);
 curl_close($ch);
 $obj = json_decode($server_output, true);
 
+
 if($obj['btc']['luck_b10'] < 1){
-echo "MOKA HE   ";
+echo "Moka He  ";
 }
 
 if($obj['btc']['luck_b50'] < 1){
-echo "Chode LE   ";
+echo "Chod Le.. ";
 }
+
 
 
 
@@ -32,10 +35,14 @@ if($p<$j['mining_duration']){
 $p =  $j['mining_duration'];
 }
 
-echo "<br> Longest Block Yet $p Sec";
+if($s>$j['mining_duration']){
+$s =  $j['mining_duration'];
+}
 
 }
 
 
+echo "<br> Longest Block Yet $p Sec";
+echo "<br> Short Block Yet $s Sec";
 
 ?>
