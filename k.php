@@ -18,8 +18,8 @@ $obj = json_decode($server_output, true);
 $conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTnO');
 
 foreach($obj['btc']['blocks'] as $j){
-$j3 = $j->569513->mining_duration;
-echo $j3;
+
+echo $j . "<br>";
 
 //$sql = "INSERT INTO part (blocknum, time, duration) VALUES ('$j1', '$j2', '$j3') ";
 //mysqli_query($conn, $sql);
