@@ -23,7 +23,7 @@ foreach($obj['btc']['blocks'] as $j){
 
 $j2 = $j->date_found;
 
-$sql = "INSERT INTO part (blocknum, time, duration) VALUES ('$j2', '1', '1')";
+$sql = "INSERT INTO part (blocknum, time, duration) VALUES ($j2, '1', '1')";
 mysqli_query($conn, $sql);
 
 }
