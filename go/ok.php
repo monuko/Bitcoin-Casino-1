@@ -1,3 +1,5 @@
+<meta http-equiv="refresh" content="300">
+
 <?
 $p = 0;
 $s = 10000000;
