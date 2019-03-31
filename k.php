@@ -18,8 +18,8 @@ $obj = json_decode($server_output, true);
 $conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTnO');
 
 foreach($obj['btc']['blocks'] as $j){
-$j1 = $j;
-$j2 = $j->date_found;
+$j1 = $j[];
+$j2 = $j['date_found'];
 $j3 = $j->mining_duration;
 
 
