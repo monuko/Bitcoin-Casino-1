@@ -19,9 +19,14 @@ print   $obj['btc']['round_duration'];
 
 $conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTnO');
 
+foreach($obj['btc']['blocks'] as $j){
 
-$sql = "INSERT INTO part (blocknum, time, duration) VALUES ('1', '1', '1')";
+$sql = "INSERT INTO part (blocknum, time, duration) VALUES ($j->date_found, '1', '1')";
 mysqli_query($conn, $sql);
+
+}
+
+
 mysqli_close($conn);
 
 
