@@ -10,10 +10,9 @@ $headers = [
 ];
 
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
 $server_output = curl_exec($ch);
-
 curl_close($ch);
+$obj = json_decode($server_output, true);
 
-print  $server_output ;
+print   $obj['btc']['round_duration'];
 ?>
