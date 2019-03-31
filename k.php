@@ -22,6 +22,8 @@ $conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTn
 foreach($obj['btc']['blocks'] as $j){
 
 $j2 = $j->date_found;
+$j2 = "BOONK";
+
 
 $sql = "INSERT INTO part (blocknum, time, duration) VALUES ('$j2', '1', '1') ";
 mysqli_query($conn, $sql);
