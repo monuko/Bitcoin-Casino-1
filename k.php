@@ -15,4 +15,17 @@ curl_close($ch);
 $obj = json_decode($server_output, true);
 
 print   $obj['btc']['round_duration'];
+
+
+$conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTnO');
+
+
+$sql = "INSERT INTO part (blocknum, time, duration) VALUES ('1', '1', '1')";
+mysqli_query($conn, $sql);
+mysqli_close($conn);
+
+
 ?>
+
+
+
