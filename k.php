@@ -35,6 +35,17 @@ $boonk = object_to_array($obj['btc']['blocks']);
 print_r($boonk);
 
 
+foreach($boonk as $j){
+
+$j1 = $j;
+$j2 = $j['date_found'];
+$j3 = $j['mining_duration'];
+
+echo " $j1 $j2 $j3 ";
+}
+
+
+
 ?>
 
 
