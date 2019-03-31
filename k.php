@@ -1,7 +1,4 @@
 <?
-$url = '';
-$obj = json_decode(file_get_contents($url), true);
-
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,"https://slushpool.com/stats/json/btc/");
 curl_setopt($ch, CURLOPT_POST, 1);
