@@ -19,10 +19,14 @@ $conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTn
 
 foreach($obj['btc']['blocks'] as $j){
 
-echo $j['date_found'] . "<br>";
+$j1 = "BLIOCK";
+$j2 = $j['date_found'];
+$j3 = $j['mining_duration'];
 
-//$sql = "INSERT INTO part (blocknum, time, duration) VALUES ('$j1', '$j2', '$j3') ";
-//mysqli_query($conn, $sql);
+
+
+$sql = "INSERT INTO part (blocknum, time, duration) VALUES ('$j1', '$j2', '$j3') ";
+mysqli_query($conn, $sql);
 
 }
 
