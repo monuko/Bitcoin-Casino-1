@@ -44,6 +44,8 @@ $s =  $j['mining_duration'];
 }
 
 
+$x = $obj['btc']['round_duration'];
+echo "<br> No Block From Last  $x Sec";
 echo "<br> Longest Block Yet $p Sec";
 echo "<br> Short Block Yet $s Sec";
 
