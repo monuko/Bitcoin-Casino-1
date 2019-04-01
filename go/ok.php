@@ -51,6 +51,7 @@ echo "Chod Le.. ";
 if($totalmine < $x ){
 echo "Zor Se.. ";
 }
+echo "<br> ______________________________________" ;
 
 
 
