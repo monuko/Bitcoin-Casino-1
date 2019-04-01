@@ -22,18 +22,6 @@ curl_close($ch);
 $obj = json_decode($server_output, true);
 
 
-if($obj['btc']['luck_b10'] < 1){
-echo "Moka He  ";
-}
-
-
-if($obj['btc']['luck_b50'] < 1){
-echo "Chod Le.. ";
-}
-
-
-
-
 foreach($obj['btc']['blocks'] as $j){
 if($p<$j['mining_duration']){
 $p =  $j['mining_duration'];
@@ -49,6 +37,21 @@ $ab = $j['mining_duration'] + $ab;
 
 $totalmine = $ab/15;
 $x = $obj['btc']['round_duration'];
+
+
+if($obj['btc']['luck_b10'] < 1){
+echo "Moka He  ";
+}
+
+
+if($obj['btc']['luck_b50'] < 1){
+echo "Chod Le.. ";
+}
+
+if($totalmine < $x ){
+echo "Zor Se.. ";
+}
+
 
 
 echo "<br> Current Luck " . $obj['btc']['round_probability'];
