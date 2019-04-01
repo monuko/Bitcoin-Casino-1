@@ -1,6 +1,7 @@
 <meta http-equiv="refresh" content="300">
 
 <?
+$ab = 0;
 $p = 0;
 $s = 10000000;
 $ch = curl_init();
@@ -25,6 +26,7 @@ if($obj['btc']['luck_b10'] < 1){
 echo "Moka He  ";
 }
 
+
 if($obj['btc']['luck_b50'] < 1){
 echo "Chod Le.. ";
 }
@@ -41,10 +43,16 @@ if($s>$j['mining_duration']){
 $s =  $j['mining_duration'];
 }
 
+$ab = $j['mining_duration'] + $ab;
 }
 
 
+$totalmine = $ab/15;
 $x = $obj['btc']['round_duration'];
+
+
+echo "<br> Current Luck " . $obj['btc']['round_probability'];
+echo "<br> Avg Block $totalmine Sec";
 echo "<br> No Block From Last  $x Sec";
 echo "<br> Longest Block Yet $p Sec";
 echo "<br> Short Block Yet $s Sec";
