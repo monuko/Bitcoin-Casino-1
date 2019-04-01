@@ -36,7 +36,6 @@ $ab = $j['mining_duration'] + $ab;
 
 
 $totalmine = $ab/15;
-$totalmine2 = $ab/5;
 $x = $obj['btc']['round_duration'];
 
 
@@ -60,7 +59,6 @@ echo "<br> 10 Luck " . $obj['btc']['luck_b10'];
 echo "<br> 50 Luck " . $obj['btc']['luck_b50'];
 
 echo "<br> Avg Block $totalmine Sec";
-echo "<br> Avg 5 Block $totalmine2 Sec";
 echo "<br> No Block From Last  $x Sec";
 echo "<br> Longest Block Yet $p Sec";
 echo "<br> Short Block Yet $s Sec";
