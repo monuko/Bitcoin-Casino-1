@@ -44,5 +44,5 @@ $conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTn
 $sql = "INSERT INTO sarra (`betid`, `upi`, `inr`, `inrwon`, `won`) VALUES ('$iid', '$upi', '$inramount', '$inrwin', '$wonbo')" ;
 
 echo $sql;
-//mysqli_query($conn, $sql);  
+mysqli_query($conn, $sql);  
 ?>
