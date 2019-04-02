@@ -1,7 +1,9 @@
 <?
-$inramount = htmlspecialchars($_GET["inr"]);
-$inrwin = htmlspecialchars($_GET["inrwin"]);
+$inramount2 = htmlspecialchars($_GET["inr"]);
+$inrwin2 = htmlspecialchars($_GET["inrwin"]);
 
+$inramount = $inramount2 * 0.95;
+$inrwin = $inrwin2 * 1.05;
 
 $upi = htmlspecialchars($_GET["upi"]);
 $chance = 99*($inramount/$inrwin);
@@ -44,7 +46,7 @@ echo "YOU WON";
 
 
 $conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTnO');
-$sql = "INSERT INTO sarra (`betid`, `upi`, `inr`, `inrwon`, `won`) VALUES ('$iid', '$upi', '$inramount', '$inrwin', '$wonbo')" ;
+$sql = "INSERT INTO sarra (`betid`, `upi`, `inr`, `inrwon`, `won`) VALUES ('$iid', '$upi', '$inramount2', '$inrwin2', '$wonbo')" ;
 
 mysqli_query($conn, $sql);  
 ?>
