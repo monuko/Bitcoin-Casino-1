@@ -1,6 +1,8 @@
 <?
 $inramount = htmlspecialchars($_GET["inr"]);
 $inrwin = htmlspecialchars($_GET["inrwin"]);
+
+
 $upi = htmlspecialchars($_GET["upi"]);
 $chance = 99*($inramount/$inrwin);
 
