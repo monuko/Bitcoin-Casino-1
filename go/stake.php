@@ -1,7 +1,10 @@
 <?
 $inramount = htmlspecialchars($_GET["inr"]);
+$inrwin = htmlspecialchars($_GET["inrwin"]);
+$chance = 99*($inramount/$inrwin);
+
+
 $amount = file_get_contents("https://blockchain.info/tobtc?currency=INR&value=" . $inramount );
-$chance = 50;
 
 
 $ch = curl_init();
