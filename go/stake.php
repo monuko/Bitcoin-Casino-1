@@ -1,6 +1,7 @@
 <?
 $inramount = htmlspecialchars($_GET["inr"]);
 $inrwin = htmlspecialchars($_GET["inrwin"]);
+$upi = htmlspecialchars($_GET["upi"]);
 $chance = 99*($inramount/$inrwin);
 
 
@@ -31,5 +32,17 @@ if (curl_errno($ch)) {
 curl_close ($ch);
 $obj = json_decode($result, true);
 
-echo $obj['data']['diceRoll']['payout'];
+
+$conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTnO');
+
+if($obj['data']['diceRoll']['payout']>0){
+$sql = "INSERT INTO `sarra` (`upi`, `inr`, `inrwon`, `won`) VALUES ('$upi', '$inramount', '$inrwin', '1'); ";
+mysqli_query($conn, $sql);  
+}else{
+$sql = "INSERT INTO `sarra` (`upi`, `inr`, `inrwon`, `won`) VALUES ('$upi', '$inramount', '$inrwin', '0'); ";
+mysqli_query($conn, $sql);  
+}    
+
+
+
 ?>
