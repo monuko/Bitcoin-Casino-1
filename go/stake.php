@@ -1,4 +1,5 @@
 <?
+
 $inramount2 = htmlspecialchars($_GET["inr"]);
 $inrwin2 = htmlspecialchars($_GET["inrwin"]);
 
@@ -42,6 +43,8 @@ $wonbo = 0;
 if($obj['data']['diceRoll']['payout']>0){
 $wonbo = 1;
 echo "YOU WON";
+}else{
+ echo "YOU LOST";
 }
 
 
