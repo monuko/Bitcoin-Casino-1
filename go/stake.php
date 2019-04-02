@@ -1,10 +1,11 @@
 <?
 
+
 $ch = curl_init();
 
 curl_setopt($ch, CURLOPT_URL, 'https://api.stake.com/graphql');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"query\":\"mutation {  diceRoll (amount: 0.00000000, target: 49, condition: below, currency: btc) { iid    payout    nonce  }}\"}");
+curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"query\":\"mutation {  diceRoll (amount: 0.00000000, target: 49, condition: below, currency: eth) { iid    payout    nonce  }}\"}");
 curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_ENCODING, 'gzip, deflate');
 
