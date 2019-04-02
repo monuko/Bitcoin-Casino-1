@@ -31,5 +31,5 @@ if (curl_errno($ch)) {
 curl_close ($ch);
 
 
-echo $result;
+echo $result['data']['diceRoll']['payout'];
 ?>
