@@ -41,6 +41,8 @@ if($obj['data']['diceRoll']['payout']>0){
 $wonbo = 1;
 }
 
-$sql = "INSERT INTO `sarra` (`betid`, `upi`, `inr`, `inrwon`, `won`) VALUES ('$iid','$upi', '$inramount', '$inrwin', '$wonbo'); ";
+
+
+$sql = "INSERT INTO `sarra` (`betid`, `upi`, `inr`, `inrwon`, `won`) VALUES ('$iid', '$upi', '$inramount', '$inrwin', '$wonbo')" ;
 mysqli_query($conn, $sql);  
 ?>
