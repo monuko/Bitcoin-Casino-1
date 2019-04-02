@@ -1,11 +1,9 @@
 <?
+$inramount = htmlspecialchars($_GET["inr"]);
+$amount = file_get_contents("https://blockchain.info/tobtc?currency=INR&value=" . $inramount );
 
-echo file_get_contents("https://blockchain.info/tobtc?currency=INR&value=500");
-
-
-$amount = 0.00000003;
+if (isset($inramount)) {
 $ch = curl_init();
-
 curl_setopt($ch, CURLOPT_URL, 'https://api.stake.com/graphql');
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 curl_setopt($ch, CURLOPT_POSTFIELDS, "{\"query\":\"mutation {  diceRoll (amount: $amount, target: 49, condition: below, currency: eth) { iid    payout    nonce  }}\"}");
@@ -30,4 +28,6 @@ curl_close ($ch);
 
 
 echo $result;
+
+}
 ?>
