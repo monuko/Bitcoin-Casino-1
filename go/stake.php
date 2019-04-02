@@ -34,11 +34,12 @@ $obj = json_decode($result, true);
 
 
 $conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTnO');
+$iid = $obj['data']['diceRoll']['iid'];
 
 if($obj['data']['diceRoll']['payout']>0){
-$sql = "INSERT INTO `sarra` (`upi`, `inr`, `inrwon`, `won`) VALUES ('$upi', '$inramount', '$inrwin', '1'); "; 
+$sql = "INSERT INTO `sarra` (`betid`, `upi`, `inr`, `inrwon`, `won`) VALUES ('$iid','$upi', '$inramount', '$inrwin', '1'); "; 
 }else{
-$sql = "INSERT INTO `sarra` (`upi`, `inr`, `inrwon`, `won`) VALUES ('$upi', '$inramount', '$inrwin', '0'); ";
+$sql = "INSERT INTO `sarra` (`betid`, `upi`, `inr`, `inrwon`, `won`) VALUES ('$iid','$upi', '$inramount', '$inrwin', '0'); ";
 }    
 
 
