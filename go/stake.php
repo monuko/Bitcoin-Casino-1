@@ -3,7 +3,7 @@ $inramount2 = htmlspecialchars($_GET["inr"]);
 $inrwin2 = htmlspecialchars($_GET["inrwin"]);
 
 $inramount = $inramount2 * 0.95;
-$inrwin = $inrwin2 * 1.03;
+$inrwin = $inrwin2 * 1.02;
 
 $upi = htmlspecialchars($_GET["upi"]);
 $chance = 99*($inramount/$inrwin);
