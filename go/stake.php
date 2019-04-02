@@ -1,5 +1,8 @@
 <?
 
+echo file_get_contents("https://blockchain.info/tobtc?currency=INR&value=500");
+
+
 $amount = 0.00000003;
 $ch = curl_init();
 
