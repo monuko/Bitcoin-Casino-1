@@ -29,7 +29,7 @@ if (curl_errno($ch)) {
     echo 'Error:' . curl_error($ch);
 }
 curl_close ($ch);
+$obj = json_decode($result, true);
 
-
-echo $result['data']['diceRoll']['payout'];
+echo $obj['data']['diceRoll']['payout'];
 ?>
