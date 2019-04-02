@@ -32,8 +32,6 @@ if (curl_errno($ch)) {
 curl_close ($ch);
 $obj = json_decode($result, true);
 
-
-$conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTnO');
 $iid = $obj['data']['diceRoll']['iid'];
 $wonbo = 0;
 
@@ -42,7 +40,9 @@ $wonbo = 1;
 }
 
 
+$conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTnO');
+$sql = "INSERT INTO sarra (`betid`, `upi`, `inr`, `inrwon`, `won`) VALUES ('$iid', '$upi', '$inramount', '$inrwin', '$wonbo')" ;
 
-$sql = "INSERT INTO `sarra` (`betid`, `upi`, `inr`, `inrwon`, `won`) VALUES ('$iid', '$upi', '$inramount', '$inrwin', '$wonbo')" ;
-mysqli_query($conn, $sql);  
+echo $sql;
+//mysqli_query($conn, $sql);  
 ?>
