@@ -37,12 +37,12 @@ $wonbo = 0;
 
 if($obj['data']['diceRoll']['payout']>0){
 $wonbo = 1;
+echo "YOU WON";
 }
 
 
 $conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTnO');
 $sql = "INSERT INTO sarra (`betid`, `upi`, `inr`, `inrwon`, `won`) VALUES ('$iid', '$upi', '$inramount', '$inrwin', '$wonbo')" ;
 
-echo $sql;
 mysqli_query($conn, $sql);  
 ?>
