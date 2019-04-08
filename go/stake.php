@@ -42,9 +42,9 @@ $wonbo = 0;
 
 if($obj['data']['diceRoll']['payout']>0){
 $wonbo = 1;
-echo "YOU WON";
+$msgs = "WON";
 }else{
- echo "YOU LOST";
+$msgs = "Loss";
 }
 
 
@@ -53,3 +53,12 @@ $sql = "INSERT INTO sarra (`betid`, `upi`, `inr`, `inrwon`, `won`) VALUES ('$iid
 
 mysqli_query($conn, $sql);  
 ?>
+
+
+
+{
+ "messages": [
+   {"text": "You <? echo $msgs; ?> !!"},
+   {"text": "TICKET ID : <? echo $iid; ?> "}
+ ]
+}
