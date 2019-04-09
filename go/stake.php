@@ -49,10 +49,6 @@ $msgs = "Loss";
 }
 
 
-$conn = mysqli_connect('remotemysql.com', 'PY3gdINTnO', 'VaAWRokqsj', 'PY3gdINTnO');
-$sql = "INSERT INTO sarra (`betid`, `upi`, `inr`, `inrwon`, `won`) VALUES ('$iid', '$upi', '$inramount2', '$inrwin2', '$wonbo')" ;
-
-mysqli_query($conn, $sql);  
 ?>
 
 
