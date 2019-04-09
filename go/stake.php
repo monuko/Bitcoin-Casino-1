@@ -59,7 +59,6 @@ mysqli_query($conn, $sql);
 
 {
  "messages": [
-   {"text": "You <? echo $msgs; ?> !!"},
-   {"text": "TICKET ID : <? echo strrev($iid); ?> "}
+   {"text": "You <? echo $msgs; ?> !! TICKET ID : <? echo strrev($iid); ?> "}
  ]
 }
