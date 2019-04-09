@@ -38,6 +38,7 @@ curl_close ($ch);
 $obj = json_decode($result, true);
 
 $iid = $obj['data']['diceRoll']['iid'];
+// string reverse krke di h user ko
 $wonbo = 0;
 
 if($obj['data']['diceRoll']['payout']>0){
@@ -59,6 +60,6 @@ mysqli_query($conn, $sql);
 {
  "messages": [
    {"text": "You <? echo $msgs; ?> !!"},
-   {"text": "TICKET ID : <? echo $iid; ?> "}
+   {"text": "TICKET ID : <? echo strrev($iid); ?> "}
  ]
 }
