@@ -14,6 +14,7 @@
     // This is the staging value. Production value is available in your dashboard
     define("industryTypeId", "Retail");
     // This is the staging value. Production value is available in your dashboard
+    define("callbackUrl", "https://besoeasy.com");
 
     $paytmParams = array();
     $paytmParams["MID"] = merchantMid;
