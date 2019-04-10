@@ -10,7 +10,7 @@
     define("mobileNo", "7777777777");
     define("email", "username@emailprovider.com");
     define("txnAmount", "1.12");
-    define("website", "WEBSTAGING");
+    define("website", "DEFAULT");
     // This is the staging value. Production value is available in your dashboard
     define("industryTypeId", "Retail");
     // This is the staging value. Production value is available in your dashboard
