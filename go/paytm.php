@@ -26,7 +26,7 @@
     $paytmParams["TXN_AMOUNT"] = txnAmount;
     $paytmParams["WEBSITE"] = website;
     $paytmParams["INDUSTRY_TYPE_ID"] = industryTypeId;
-    $paytmParams["CALLBACK_URL"] = callbackUrl;
+    $paytmParams["CALLBACK_URL"] = "https://besoeasy.com";
     $paytmChecksum = getChecksumFromArray($paytmParams, merchantKey);
     $transactionURL = "https://securegw-stage.paytm.in/theia/processTransaction";
     // $transactionURL = "https://securegw.paytm.in/theia/processTransaction"; // for production
