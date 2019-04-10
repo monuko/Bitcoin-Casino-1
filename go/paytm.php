@@ -14,7 +14,7 @@
     // This is the staging value. Production value is available in your dashboard
     define("industryTypeId", "Retail");
     // This is the staging value. Production value is available in your dashboard
-    define("callbackUrl", "https://coinupi.com");
+    define("callbackUrl", "https://skobet.com/go/paytm2.php");
 
     $paytmParams = array();
     $paytmParams["MID"] = merchantMid;
