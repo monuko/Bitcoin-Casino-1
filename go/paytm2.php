@@ -1,6 +1,6 @@
 <?php
     $paytmParams = $_POST;
-    $merchantKey="gKpu7IKaLSbkchFS";
+    $merchantKey="N_5JQs&QKfkk4dWC";
     $paytmChecksum = isset($_POST["CHECKSUMHASH"]) ? $_POST["CHECKSUMHASH"] : "";
     $isValidChecksum = verifychecksum_e($paytmParams, $merchantKey, $paytmChecksum);
     if($isValidChecksum == "TRUE") {
