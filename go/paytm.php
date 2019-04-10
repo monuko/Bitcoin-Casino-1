@@ -1,15 +1,15 @@
 <?php
     require_once("encdec_paytm.php");
-    define("merchantMid", "jHfICw44630863637692");
+    define("merchantMid", "mOICpl88892901389332");
     // Key in your staging and production MID available in your dashboard
-    define("merchantKey", "8Eftxd9EIK@vq8jO");
+    define("merchantKey", "N_5JQs&QKfkk4dWC");
     // Key in your staging and production merchant key available in your dashboard
     define("orderId", "order1");
     define("channelId", "WEB");
     define("custId", "cust123");
     define("mobileNo", "7777777777");
     define("email", "username@emailprovider.com");
-    define("txnAmount", "100.12");
+    define("txnAmount", "1.12");
     define("website", "WEBSTAGING");
     // This is the staging value. Production value is available in your dashboard
     define("industryTypeId", "Retail");
@@ -28,8 +28,8 @@
     $paytmParams["INDUSTRY_TYPE_ID"] = industryTypeId;
     $paytmParams["CALLBACK_URL"] = "https://besoeasy.com";
     $paytmChecksum = getChecksumFromArray($paytmParams, merchantKey);
-    $transactionURL = "https://securegw-stage.paytm.in/theia/processTransaction";
-    // $transactionURL = "https://securegw.paytm.in/theia/processTransaction"; // for production
+  //  $transactionURL = "https://securegw-stage.paytm.in/theia/processTransaction";
+    $transactionURL = "https://securegw.paytm.in/theia/processTransaction"; // for production
 ?>
 <html>
     <head>
