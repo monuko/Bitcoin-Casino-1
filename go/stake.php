@@ -31,15 +31,16 @@ $headers[] = 'X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiO
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
 $result = curl_exec($ch);
-if (curl_errno($ch)) {
-    echo 'Error:' . curl_error($ch);
-}
 curl_close ($ch);
+
+
 $obj = json_decode($result, true);
 
 $iid = $obj['data']['diceRoll']['iid'];
 // string reverse krke di h user ko
 $wonbo = 0;
+
+
 
 if($obj['data']['diceRoll']['payout']>0){
 $wonbo = 1;
