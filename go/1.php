@@ -1,20 +1,15 @@
 <?php
-    $html = file_get_contents("http://www.amazon.in/gp/aw/d/B077Y3GCD4");
-
-function getBetween($content,$start,$end){
-    $r = explode($start, $content);
-    if (isset($r[1])){
-        $r = explode($end, $r[1]);
-        return $r[0];
-    }
-    return '';
+ 
+include('simple_html_dom.php');
+ 
+$url = 'https://www.amazon.in/Sennheiser-CX-507447-Wireless-Earphones/dp/B077Y3GCD4';
+ 
+$html = file_get_html($url);
+$links = array();
+foreach($html->find('span[class="currencyINR"]') as $a) {
+ $links[] = $a->href;
 }
-
-
-$content = $html;
-$start = "data-asin-price=";
-$end = " data-asin-shipping ";
-$output = getBetween($content,$start,$end);
-echo $output;
-
+ 
+print_r($links);
+ 
 ?>
