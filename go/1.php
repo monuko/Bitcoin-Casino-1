@@ -18,7 +18,7 @@
         $price = number_format((float)($price[2]/100), 2, '.', '');
         echo "The price for amazon.com/dp/$amazonISIN is $price";
     } else {
-        echo "Sorry, the item is out-of-stock on Amazon";
+        echo "Sorry";
     }
 
 ?>
