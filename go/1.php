@@ -1,6 +1,5 @@
 <?php
 $product = htmlspecialchars($_GET["product"]);
-$upi = htmlspecialchars($_GET["upi"]);
 $inramount2 = htmlspecialchars($_GET["inr"]);
 
 
@@ -16,14 +15,9 @@ return $unit;
 }
 
 
-    $url=$product;
-    $url =  file_get_contents($url);
-    $data= extract_unit($url, 'asin-price=', 'data-asin-shipping');
-    $inrwant = str_replace('"', '', $data);
-
-
-
-
+$url =  file_get_contents($product);
+$data= extract_unit($url, 'asin-price=', 'data-asin-shipping');
+$inrwant = str_replace('"', '', $data);
 
 
 // core val
@@ -49,7 +43,6 @@ $headers[] = 'Dnt: 1';
 $headers[] = 'Origin: https://api.stake.com';
 $headers[] = 'X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyZjA3ODhlOS1mNThkLTRjNTgtYjk5NS01NWY3MDc0NGFlNWIiLCJzY29wZXMiOlsiYmV0Il0sImlhdCI6MTU1NDIxMjc2NSwiZXhwIjoxNTU5Mzk2NzY1fQ.sJOyRjQrCJLwX_Ef-1F733J56MWOnMWOytBW2QPTiKU';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
 $result = curl_exec($ch);
 curl_close ($ch);
 
