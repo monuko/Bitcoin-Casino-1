@@ -31,6 +31,6 @@ function amazon($search)
 }
 
 
-echo amazon("oneplus");
+print_r(amazon("oneplus"));
 
 ?>
