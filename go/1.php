@@ -17,7 +17,7 @@ return $unit;
 
     $url="https://www.amazon.in/dp/B07DJHV6VZ/";
     $url =  file_get_contents($url);
-   // $url = clean($url);
+    $data= clean(extract_unit($url, 'asin-price=', 'data-asin-shipping'));
 
 
 
@@ -25,5 +25,5 @@ return $unit;
 
 
 
-echo extract_unit($url, 'asin-price=', 'data-asin-shipping');
+echo $data;
 ?>
