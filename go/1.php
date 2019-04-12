@@ -69,6 +69,6 @@ $msgs = "Loss";
 {
  "messages": [
    {"text": "You <? echo $msgs; ?> !! TICKET ID : <? echo strrev($iid); ?> "},
-   {"text": "Item Cost : <? echo $inrwant; ?> !!"}
+   {"text": "Your Sent : <? echo $inramount2; ?>  ->  Item Cost : <? echo $inrwant; ?> INR !!"}
  ]
 }
