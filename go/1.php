@@ -1,4 +1,6 @@
 <?php
+$product = htmlspecialchars($_GET["product"]);
+
 
 
 function extract_unit($string, $start, $end){
@@ -13,16 +15,15 @@ return $unit;
 }
 
 
-    $url="https://www.amazon.in/dp/B07DJHV6VZ/";
+    $url=$product;
     $url =  file_get_contents($url);
     $data= extract_unit($url, 'asin-price=', 'data-asin-shipping');
     $inrwant = str_replace('"', '', $data);
-    $data= extract_unit($url, 'data-old-hires=', '"');
-    $img = str_replace('"', '', $data);
+
 
 
 
 
 echo $inrwant;
-echo $img;
+
 ?>
