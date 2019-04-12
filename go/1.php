@@ -18,11 +18,8 @@ function getHTMLcode($url) {
 
     $url="https://www.amazon.in/dp/B07DJHV6VZ/";
     $html= getHTMLcode($url);
-    $price ='/<span class="a-size-base a-color-price s-price a-text-bold"><span class="currencyINR">&nbsp;&nbsp;<\/span>(?P<price>[^>]*)<\/span>/';
-    preg_match_all($price,$html,$cost);
-   
 
 
-print_r($cost);
+echo $html;
 
 ?>
