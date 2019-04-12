@@ -23,6 +23,6 @@ function getHTMLcode($url) {
    
 
 
-echo $cost;
+print_r($cost);
 
 ?>
