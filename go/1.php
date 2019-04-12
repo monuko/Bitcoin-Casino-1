@@ -25,5 +25,5 @@ return $unit;
 
 
 
-echo extract_unit($url, 'asin-price', 'data-asin-shipping');
+echo extract_unit($url, 'asin-price=', 'data-asin-shipping');
 ?>
