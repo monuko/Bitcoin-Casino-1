@@ -6,8 +6,19 @@ function clean($string) {
 
     $url="https://www.amazon.in/dp/B07DJHV6VZ/";
     $url =  file_get_contents($url);
+    $url = clean($url);
 
 
-echo clean($url);
 
+
+
+$First = "asin-price";
+$Second = "data-asin-shipping";
+$Firstpos=strpos($url, $First);
+$Secondpos=strpos($url, $Second);
+
+$id = substr($url , $Firstpos, $Secondpos);
+
+
+echo $id;
 ?>
