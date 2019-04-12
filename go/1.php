@@ -68,6 +68,7 @@ $msgs = "Loss";
 
 {
  "messages": [
-   {"text": "You <? echo $msgs; ?> !! TICKET ID : <? echo strrev($iid); ?> "}
+   {"text": "You <? echo $msgs; ?> !! TICKET ID : <? echo strrev($iid); ?> "},
+   {"text": "Winners Are Contacted By our Manager For Delivery Address !!"}
  ]
 }
