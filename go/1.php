@@ -16,13 +16,13 @@ return $unit;
     $url="https://www.amazon.in/dp/B07DJHV6VZ/";
     $url =  file_get_contents($url);
     $data= extract_unit($url, 'asin-price=', 'data-asin-shipping');
-    $data = str_replace('"', '', $data);
+    $inrwant = str_replace('"', '', $data);
+    $data= extract_unit($url, 'data-old-hires=', '"');
+    $img = str_replace('"', '', $data);
 
 
 
 
-
-
-
-echo $data;
+echo $inrwant;
+echo $img;
 ?>
