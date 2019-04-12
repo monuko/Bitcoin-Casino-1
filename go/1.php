@@ -3,6 +3,17 @@ function clean($string) {
    return preg_replace('/[^A-Za-z0-9\-]/', '', $string); // Removes special chars.
 }
 
+function extract_unit($string, $start, $end){
+$pos = stripos($string, $start);
+$str = substr($string, $pos);
+$str_two = substr($str, strlen($start));
+$second_pos = stripos($str_two, $end);
+$str_three = substr($str_two, 0, $second_pos);
+$unit = trim($str_three); 
+
+return $unit;
+}
+
 
     $url="https://www.amazon.in/dp/B07DJHV6VZ/";
     $url =  file_get_contents($url);
@@ -12,13 +23,7 @@ function clean($string) {
 
 
 
-$First = "asin-price";
-$Second = "data-asin-shipping";
-$Firstpos=strpos($url, $First);
-$Secondpos=strpos($url, $Second);
-
-$id = substr($url , $Firstpos, $Secondpos);
 
 
-echo $id;
+echo extract_unit($text, 'asin-price', 'data-asin-shipping');
 ?>
