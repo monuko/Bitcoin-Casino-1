@@ -45,8 +45,8 @@ $headers[] = 'X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiO
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
 
-$result = curl_exec($ch);
-curl_close ($ch);
+// $result = curl_exec($ch);
+// curl_close ($ch);
 
 
 $obj = json_decode($result, true);
