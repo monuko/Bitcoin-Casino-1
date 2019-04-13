@@ -44,10 +44,9 @@ $headers[] = 'Origin: https://api.stake.com';
 $headers[] = 'X-Access-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIyZjA3ODhlOS1mNThkLTRjNTgtYjk5NS01NWY3MDc0NGFlNWIiLCJzY29wZXMiOlsiYmV0Il0sImlhdCI6MTU1NDIxMjc2NSwiZXhwIjoxNTU5Mzk2NzY1fQ.sJOyRjQrCJLwX_Ef-1F733J56MWOnMWOytBW2QPTiKU';
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 
-if (strpos($product, 'boonkgangforlife') !== false) {
+
 $result = curl_exec($ch);
 curl_close ($ch);
-}
 
 
 $obj = json_decode($result, true);
