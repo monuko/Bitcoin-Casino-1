@@ -1,5 +1,5 @@
 <?
-$id = "193027" ;
+$id = 193027;
 $key= "9295f08b-d659-a348-7b1d-365539733937" ;
 
 $url = "https://api.nicehash.com/api?method=orders.get&my&id=" . $id." &key=". $key . "&location=0&algo=1";
