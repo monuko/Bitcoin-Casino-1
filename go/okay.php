@@ -1,4 +1,4 @@
-  <meta http-equiv="refresh" content="33">
+<meta http-equiv="refresh" content="33">
 
 <?
 //pool check
@@ -13,11 +13,6 @@ $obj = json_decode(file_get_contents($url), true);
 $limit = $obj['result']['orders'][0]['limit_speed'];
 $id = $obj['result']['orders'][0]['id'];
 $newlimit = $limit*1.1;
-
-
-
-
-
 
 
 
