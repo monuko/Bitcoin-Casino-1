@@ -16,7 +16,8 @@ $url2 = "https://api.nicehash.com/api?method=orders.set.limit&id=". $id ."&key="
 
 $result =  file_get_contents($url2);
 
-
+echo $id . "<br>";
+echo $newlimit . "<br>";
 echo $result;
 ?>
 
