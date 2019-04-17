@@ -1,4 +1,4 @@
-<meta http-equiv="refresh" content="<? echo rand(1,160); ?>">
+<meta http-equiv="refresh" content="<? echo rand(1,100); ?>">
 
 <?
 //pool check
@@ -24,7 +24,7 @@ $url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9
 $result =  file_get_contents($url2);
 }else{
 
-if(rand(1,160)<3){    
+if(rand(1,100)<2){    
 $url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=$newlimit" ;
 $result =  file_get_contents($url2);
 }    
