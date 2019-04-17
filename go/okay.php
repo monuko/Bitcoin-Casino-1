@@ -1,4 +1,4 @@
-  <meta http-equiv="refresh" content="43">
+  <meta http-equiv="refresh" content="33">
 
 <?
 //pool check
