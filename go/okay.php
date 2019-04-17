@@ -1,3 +1,5 @@
+  <meta http-equiv="refresh" content="30">
+
 <?
 //pool check
 $block = json_decode(file_get_contents("https://chain.api.btc.com/v3/block/latest"), true); 
@@ -10,7 +12,7 @@ $obj = json_decode(file_get_contents($url), true);
 //logic
 $limit = $obj['result']['orders'][0]['limit_speed'];
 $id = $obj['result']['orders'][0]['id'];
-$newlimit = $limit*1.1;
+$newlimit = $limit*1.02;
 
 
 
