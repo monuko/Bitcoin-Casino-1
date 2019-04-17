@@ -1,4 +1,4 @@
-<meta http-equiv="refresh" content="23">
+<meta http-equiv="refresh" content="<? echo rand(1,160); ?>">
 
 <?
 //pool check
