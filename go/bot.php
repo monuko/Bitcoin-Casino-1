@@ -15,7 +15,6 @@ return $unit;
 
 
 if (strpos($product, 'amazon.in') !== false) {
-echo 'RESET LIMIT';
 
 $url =  file_get_contents($product);
 $data= extract_unit($url, 'asin-price=', 'data-asin-shipping');
