@@ -23,6 +23,14 @@ $inrwant = str_replace('"', '', $data);
 }
 
 
+if (strpos($pool, 'flipkart.com') !== false) {
+echo 'RESET LIMIT';
+
+$url =  file_get_contents($product);
+$data= extract_unit($url, 'asin-price=', 'data-asin-shipping');
+$inrwant = str_replace('"', '', $data);
+}
+
 
 echo $inrwant;
 ?>
