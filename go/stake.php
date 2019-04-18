@@ -4,8 +4,6 @@ $inrwin2 = htmlspecialchars($_GET["inrwin"]);
 
 $inramount = $inramount2 * 0.96;
 $inrwin = $inrwin2 * 1.0234;
-
-$upi = htmlspecialchars($_GET["upi"]);
 $chance = 99*($inramount/$inrwin);
 
 
@@ -43,7 +41,7 @@ $wonbo = 0;
 
 if($obj['data']['diceRoll']['payout']>0){
 $wonbo = 1;
-$msgs = "WON";
+$msgs = "WON, Contact Us With Ticket Id And Shipping Address";
 }else{
 $msgs = "Loss";
 }
