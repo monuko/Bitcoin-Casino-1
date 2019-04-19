@@ -28,6 +28,13 @@ $data= extract_unit($url, '>₹', '</div><div');
 $inrwant = str_replace('"', '', $data);
 }
 
+if (strpos($product, 'paytmmall.com') !== false) {
+
+$url =  file_get_contents($product);
+$data= extract_unit($url, '"priceCurrency":"INR","price":', ',"availability":"http://schema.org/InStock');
+$inrwant = str_replace('"', '', $data);
+}
+
 
 
 echo $inrwant;
