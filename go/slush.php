@@ -80,20 +80,19 @@ $limit = $obj9['result']['orders'][0]['limit_speed'];
 $id = $obj9['result']['orders'][0]['id'];
 
 
-//$newlimit = $limit*1.1;
-$newlimit = 1 + $obj['btc']['round_probability'] + $obj['btc']['round_probability'];
-
-
 $result = $limit;
 $rlimit = 0.2;
 
 if($obj['btc']['luck_b10'] < 1){
-$rlimit = 0.4;
+$rlimit = $rlimit + 0.2;
 }
 
 if($obj['btc']['luck_b50'] < 1){
 $rlimit = $rlimit + 0.2;
 }
+
+//$newlimit = $limit*1.1;
+$newlimit = ($rlimit + $obj['btc']['round_probability'] + $obj['btc']['round_probability'])/2 ;
 
 
 
