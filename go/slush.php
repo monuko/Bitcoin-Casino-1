@@ -54,31 +54,32 @@ $id = $obj9['result']['orders'][0]['id'];
 
 
 $result = $limit;
-$rlimit = 1.2;
+$rlimit = 1.33;
 
 if($obj['btc']['luck_b10'] < 1){
-$temp = (1 - $obj['btc']['luck_b10'])*1.2;
+$temp = (1 - $obj['btc']['luck_b10'])*1.33;
 $rlimit = $rlimit * (1 + $temp) ;
 
 }
 
 if($obj['btc']['luck_b50'] < 1){
-$temp = (1 - $obj['btc']['luck_b50'])*1.2;
+$temp = (1 - $obj['btc']['luck_b50'])*1.33;
 $rlimit = $rlimit * (1 + $temp) ;
 }
 
 if($obj['btc']['luck_b10'] > 1){
-$temp = $obj['btc']['luck_b10']* 1.2;
+$temp = $obj['btc']['luck_b10']* 1.33;
 $rlimit = $rlimit/$temp;
 }
 
 if($totalmine < $x ){
-$rlimit = $rlimit * 1.2;
+$rlimit = $rlimit * 1.33;
 }
 
 
 
 $newlimit = $obj['btc']['round_probability'] * $rlimit;
+
 
 if($newlimit<0.05){
 $newlimit = 0.1;
