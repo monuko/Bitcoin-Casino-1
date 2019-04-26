@@ -81,15 +81,19 @@ $result = $limit;
 $rlimit = 1.33;
 
 if($obj['btc']['luck_b10'] < 1){
-$rlimit = $rlimit * 1.33;
+$temp = (1 - $obj['btc']['luck_b10'])*1.2;
+$rlimit = $rlimit * (1 + $temp) ;
+
 }
 
 if($obj['btc']['luck_b50'] < 1){
-$rlimit = $rlimit * 1.33;
+$temp = (1 - $obj['btc']['luck_b50'])*1.2;
+$rlimit = $rlimit * (1 + $temp) ;
 }
 
-if($obj['btc']['luck_b10'] > 1.33){
-$rlimit = $rlimit * 0.66;
+if($obj['btc']['luck_b10'] > 1){
+$temp = $obj['btc']['luck_b10']* 1.2;
+$rlimit = $rlimit/$temp;
 }
 
 
