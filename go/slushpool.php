@@ -58,17 +58,17 @@ $rlimit = 0.2;
 
 if($obj['btc']['luck_b10'] < 1){
 $temp = (1 - $obj['btc']['luck_b10']);
-$rlimit = $rlimit * (1 + $temp) ;
+$rlimit = $rlimit * ((1 + $temp)*3) ;
 
 }
 
 if($obj['btc']['luck_b50'] < 1){
 $temp = (1 - $obj['btc']['luck_b50']);
-$rlimit = $rlimit * (1 + $temp) ;
+$rlimit = $rlimit * ((1 + $temp)*3) ;
 }
 
 if($obj['btc']['luck_b10'] > 1){
-$temp = $obj['btc']['luck_b10'];
+$temp = $obj['btc']['luck_b10']*2.4;
 $rlimit = $rlimit/$temp;
 
 }
