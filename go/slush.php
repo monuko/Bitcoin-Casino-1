@@ -81,36 +81,24 @@ $id = $obj9['result']['orders'][0]['id'];
 
 
 $result = $limit;
-$rlimit = 0.2;
+$rlimit = 2;
 
 if($obj['btc']['luck_b10'] < 1){
-$rlimit = $rlimit + 0.2;
+$rlimit = $rlimit * 1.33;
 }
 
 if($obj['btc']['luck_b50'] < 1){
-$rlimit = $rlimit + 0.2;
+$rlimit = $rlimit * 1.33;
 }
 
-$spclvar = $obj['btc']['round_probability'] * 3.14;
 
-
-//$newlimit = $limit*1.1;
-$newlimit = ($rlimit + $spclvar)/2 ;
-
+$newlimit = $obj['btc']['round_probability'] * $rlimit;
  
 $url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=$newlimit" ;
 $result =  file_get_contents($url2);
 
 
 
-
-if($obj['btc']['luck_b10'] > 0.9){
-if (strpos($pool, 'slushpool') !== false) {
-
-$url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=0.1" ;
-$result =  file_get_contents($url2);
-}
-}
 
 
 echo "<br> limit to Set : $newlimit";
