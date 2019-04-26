@@ -91,7 +91,7 @@ if($obj['btc']['luck_b50'] < 1){
 $rlimit = $rlimit + 0.2;
 }
 
-$spclvar = $obj['btc']['round_probability'] * 2.5;
+$spclvar = $obj['btc']['round_probability'] * 3.14;
 
 
 //$newlimit = $limit*1.1;
