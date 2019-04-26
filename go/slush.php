@@ -88,6 +88,11 @@ if($obj['btc']['luck_b50'] < 1){
 $rlimit = $rlimit * 1.33;
 }
 
+if($obj['btc']['luck_b10'] > 1.33){
+$rlimit = $rlimit * 0.66;
+}
+
+
 
 $newlimit = $obj['btc']['round_probability'] * $rlimit;
  
