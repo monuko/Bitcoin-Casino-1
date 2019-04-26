@@ -81,7 +81,7 @@ $id = $obj9['result']['orders'][0]['id'];
 
 
 $result = $limit;
-$rlimit = 2;
+$rlimit = 1.33;
 
 if($obj['btc']['luck_b10'] < 1){
 $rlimit = $rlimit * 1.33;
