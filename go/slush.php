@@ -54,7 +54,7 @@ $id = $obj9['result']['orders'][0]['id'];
 
 
 $result = $limit;
-$rlimit = 1.33;
+$rlimit = 0.2;
 
 if($obj['btc']['luck_b10'] < 1){
 $temp = (1 - $obj['btc']['luck_b10'])*1.33;
@@ -78,8 +78,8 @@ $rlimit = $rlimit * 1.33;
 
 
 
-$newlimit = $obj['btc']['round_probability'] * $rlimit;
-
+//$newlimit = $obj['btc']['round_probability'] * $rlimit;
+$newlimit = 1.01 * $rlimit;
 
 if($newlimit<0.05){
 $newlimit = 0.1;
