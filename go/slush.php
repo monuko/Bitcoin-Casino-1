@@ -41,30 +41,6 @@ $totalmine = $ab/15;
 $x = $obj['btc']['round_duration'];
 
 
-if($obj['btc']['luck_b10'] < 1){
-echo "Moka He  ";
-}
-
-
-if($obj['btc']['luck_b50'] < 1){
-echo "Chod Le.. ";
-}
-
-if($totalmine < $x ){
-echo "Zor Se.. ";
-}
-
-
-echo "<br> ______________________________________" ;
-echo "<br> Current Luck " . $obj['btc']['round_probability'];
-echo "<br> 10 Luck " . $obj['btc']['luck_b10'];
-echo "<br> 50 Luck " . $obj['btc']['luck_b50'];
-
-echo "<br> Avg Block $totalmine Sec";
-echo "<br> No Block From Last  $x Sec";
-echo "<br> Longest Block Yet $p Sec";
-echo "<br> Short Block Yet $s Sec";
-
 
 
 
@@ -78,7 +54,7 @@ $id = $obj9['result']['orders'][0]['id'];
 
 
 $result = $limit;
-$rlimit = 1.33;
+$rlimit = 1.2;
 
 if($obj['btc']['luck_b10'] < 1){
 $temp = (1 - $obj['btc']['luck_b10'])*1.2;
@@ -96,6 +72,10 @@ $temp = $obj['btc']['luck_b10']* 1.2;
 $rlimit = $rlimit/$temp;
 }
 
+if($totalmine < $x ){
+$rlimit = $rlimit * 1.2;
+}
+
 
 
 $newlimit = $obj['btc']['round_probability'] * $rlimit;
@@ -104,9 +84,30 @@ $url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9
 $result =  file_get_contents($url2);
 
 
+///////////////////////////
+if($obj['btc']['luck_b10'] < 1){
+echo "<img src=http://icons.iconarchive.com/icons/paomedia/small-n-flat/32/star-icon.png />";
+}
 
-echo "<br> limit to Set : $newlimit";
-echo "<br> if Block Found, then limit : $rlimit";
-echo "<br> Current Bid $result";
+
+if($obj['btc']['luck_b50'] < 1){
+echo "<img src=http://icons.iconarchive.com/icons/paomedia/small-n-flat/32/star-icon.png />";
+}
+
+if($totalmine < $x ){
+echo "<img src=http://icons.iconarchive.com/icons/paomedia/small-n-flat/32/star-icon.png />";
+}
+
+
+echo "<br> ______________________________________" ;
+echo "<br> Current Luck " . $obj['btc']['round_probability'];
+echo "<br> 10 Luck " . $obj['btc']['luck_b10'];
+echo "<br> 50 Luck " . $obj['btc']['luck_b50'];
+echo "<br> Avg Block $totalmine Sec";
+echo "<br> No Block From Last  $x Sec";
+echo "<br> Longest Block Yet $p Sec";
+echo "<br> Short Block Yet $s Sec";
+echo "<br> Limit to Set : $newlimit";
+echo "<br> RESULT :  $result";
 ?>
 
