@@ -89,6 +89,13 @@ if($obj['btc']['luck_b10'] < 1){
 echo "<img src=http://icons.iconarchive.com/icons/paomedia/small-n-flat/32/star-icon.png />";
 }
 
+if($obj['btc']['luck_b10'] < 0.88){
+echo "<img src=http://icons.iconarchive.com/icons/paomedia/small-n-flat/32/star-icon.png />";
+}
+
+if($obj['btc']['luck_b10'] < 0.75){
+echo "<img src=http://icons.iconarchive.com/icons/paomedia/small-n-flat/32/star-icon.png />";
+}
 
 if($obj['btc']['luck_b50'] < 1){
 echo "<img src=http://icons.iconarchive.com/icons/paomedia/small-n-flat/32/star-icon.png />";
