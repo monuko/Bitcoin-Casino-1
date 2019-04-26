@@ -91,6 +91,7 @@ if($obj['btc']['luck_b50'] < 1){
 $rlimit = $rlimit + 0.2;
 }
 
+
 //$newlimit = $limit*1.1;
 $newlimit = ($rlimit + $obj['btc']['round_probability'] + $obj['btc']['round_probability'])/2 ;
 
@@ -109,6 +110,8 @@ $result =  file_get_contents($url2);
 }    
 
 }
+
+
 
 echo "<br> limit to Set : $newlimit";
 echo "<br> if Block Found, then limit : $rlimit";
