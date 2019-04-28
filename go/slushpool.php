@@ -88,6 +88,9 @@ if(($totalmine*3) < $x ){
 $rlimit = $rlimit * 1.4;
 }
 
+if($p < $x){
+$rlimit = $rlimit * 1.4;
+}
 
 
 
