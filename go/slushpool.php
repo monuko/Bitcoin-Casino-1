@@ -76,10 +76,18 @@ $temp = $obj['btc']['luck_b50']*1.4;
 $rlimit = $rlimit/$temp;
 }
 
-
 if($totalmine < $x ){
-$rlimit = $rlimit * 1.33;
+$rlimit = $rlimit * 1.4;
 }
+
+if(($totalmine*2) < $x ){
+$rlimit = $rlimit * 1.4;
+}
+
+if(($totalmine*3) < $x ){
+$rlimit = $rlimit * 1.4;
+}
+
 
 
 
