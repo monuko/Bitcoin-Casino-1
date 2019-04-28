@@ -19,6 +19,7 @@ echo $j['confirmations'] . " -> " . $j['pool']['name'] . "<br>";
 
 
 $p = ($a[1] + $a[2])/2;
+$p = $p/10;
 
-echo "$p      Total Blocks $i -> %age of  " . (100/$i);
+echo "$p PH/s  <br>   Total Blocks $i <br> %age of  " . (100/$i);
 ?>
