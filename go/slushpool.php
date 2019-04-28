@@ -54,7 +54,7 @@ $id = $obj9['result']['orders'][0]['id'];
 
 
 $result = $limit;
-$rlimit = 0.2;
+$rlimit = 0.5;
 
 if($obj['btc']['luck_b10'] < 1){
 $temp = (1 - $obj['btc']['luck_b10']);
@@ -89,9 +89,6 @@ $rlimit = $rlimit * 1.4;
 $newlimit = $obj['btc']['round_probability'] * $rlimit;
 
 
-if($newlimit<0.05){
-$newlimit = 0.06;
-}
  
 $url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=$newlimit" ;
 $result =  file_get_contents($url2);
