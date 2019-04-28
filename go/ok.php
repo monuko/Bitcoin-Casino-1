@@ -10,6 +10,9 @@ echo $j['pool']['name'];
 echo $j['confirmations'];
 echo "<br>";
 
+if(strcmp($j['pool']['name'], "SlushPool")){
+echo "BOOONK<br>";
+}
     
 }
 ?>
