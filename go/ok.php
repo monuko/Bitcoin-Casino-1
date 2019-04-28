@@ -1,7 +1,7 @@
 <meta http-equiv="refresh" content="300">
 
 <?
-$url = "https://api.smartbit.com.au/v1/blockchain/blocks?limit=150";
+$url = "https://api.smartbit.com.au/v1/blockchain/blocks?limit=300";
 $obj9 = json_decode(file_get_contents($url), true);
 
 foreach($obj9['blocks'] as $j){
