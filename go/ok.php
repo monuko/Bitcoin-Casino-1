@@ -1,4 +1,4 @@
-<meta http-equiv="refresh" content="300">
+<meta http-equiv="refresh" content="30">
 
 <?
 $i = 0;
