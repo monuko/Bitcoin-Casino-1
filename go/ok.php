@@ -2,7 +2,7 @@
 
 <?
 $i = 0;
-$url = "https://api.smartbit.com.au/v1/blockchain/blocks?limit=100";
+$url = "https://api.smartbit.com.au/v1/blockchain/blocks?limit=300";
 $obj9 = json_decode(file_get_contents($url), true);
 
 
