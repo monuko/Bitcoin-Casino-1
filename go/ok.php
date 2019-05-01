@@ -22,3 +22,4 @@ $p = ($a[1] + $a[2])/10;
 
 echo "$p PH/s  <br>   Total Blocks $i";
 ?>
+
