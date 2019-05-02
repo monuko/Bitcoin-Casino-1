@@ -17,7 +17,7 @@ echo $j['confirmations'] . " -> " . $j['pool']['name'] . "<br>";
 }
 
 
-$p = ($a[1] + ($a[2]/3) )/10;
+$p = $a[1]/10;
 
 //nicehash get
 $url = "https://api.nicehash.com/api?method=orders.get&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1";
