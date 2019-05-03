@@ -20,7 +20,7 @@ echo $j['confirmations'] . " -> " . $j['pool']['name'] . "<br>";
 $p = $a[1]/10;
 
 if($p>1.9){
-$a[1]/7;  
+$p = $a[1]/7;
 }  
 
 
