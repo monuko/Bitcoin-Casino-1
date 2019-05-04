@@ -33,7 +33,9 @@ $id = $obj9['result']['orders'][0]['id'];
 
 
 if( (1.05*$reward) > $paid){
-echo "In Profit";
+echo "In Profit ($limit PH) <br> ";
+echo " Paid -> $paid | Reward -> $reward ";
+
 }else{
 $newlimit = $limit*1.1;
 $url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=$newlimit" ;
