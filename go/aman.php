@@ -24,9 +24,14 @@ $url = "https://api.nicehash.com/api?method=orders.get&my&id=193027&key=9295f08b
 $obj9 = json_decode(file_get_contents($url), true);
 
 $paid = $obj9['result']['orders'][0]['btc_paid'];
+$limit = $obj9['result']['orders'][0]['limit_speed'];
+$id = $obj9['result']['orders'][0]['id'];
 
 
-if($reward> $paid){
+if( (1.05*$reward) > $paid){
 echo "In Profit";
 }
+
+
+
 ?>
