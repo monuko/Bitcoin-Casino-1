@@ -3,6 +3,14 @@
 
 
 <?
+
+if(isset($_GET['bal']) && !empty($_GET['bal'])){
+$bal = $_GET['bal'];
+}else{
+$bal = 0;
+}
+
+
 $boonk = 0;
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,"https://slushpool.com/accounts/profile/json/btc/");
@@ -28,7 +36,7 @@ $paid = $obj9['result']['orders'][0]['btc_paid'];
 $paidx = 1.1*$paid;
 $limit = $obj9['result']['orders'][0]['limit_speed'];
 $id = $obj9['result']['orders'][0]['id'];
-$reward =  $obj['btc']['estimated_reward'] + $obj['btc']['unconfirmed_reward'];
+$reward =  $obj['btc']['estimated_reward'] + $obj['btc']['unconfirmed_reward'] - $bal;
 
 
 //if block found
