@@ -3,6 +3,7 @@
 
 
 <?
+$boonk = 0;
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,"https://slushpool.com/accounts/profile/json/btc/");
 curl_setopt($ch, CURLOPT_POST, 1);
@@ -30,6 +31,25 @@ $id = $obj9['result']['orders'][0]['id'];
 
 
 
+
+$obj5 = json_decode(file_get_contents("https://api.smartbit.com.au/v1/blockchain/blocks?limit=5"), true);
+
+
+foreach($obj5['blocks'] as $j){
+if(!strcmp($j['pool']['name'], "SlushPool")){
+$boonk = 1;
+}else{
+    
+$url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=0.05" ;
+$result =  file_get_contents($url2);
+
+echo $result;
+    
+}
+}
+
+
+
 echo "Limit -> $limit PH | Paid -> $paid | Reward -> $reward <br>";
 
 
@@ -38,11 +58,14 @@ echo "In Profit <br> ";
 
 }else{
 
+if($boonk<1){
+
 $newlimit = $limit*1.1;
 $url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=$newlimit" ;
 $result =  file_get_contents($url2);
 
 echo $result;
+}
 }
 
 
