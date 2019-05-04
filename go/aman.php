@@ -1,10 +1,8 @@
-<meta http-equiv="refresh" content="<? echo rand(1,300); ?>">
+<meta http-equiv="refresh" content="<? echo rand(1,711); ?>">
 
 
 
 <?
-
-
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,"https://slushpool.com/accounts/profile/json/btc/");
 curl_setopt($ch, CURLOPT_POST, 1);
