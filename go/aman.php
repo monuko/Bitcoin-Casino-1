@@ -34,7 +34,7 @@ $id = $obj9['result']['orders'][0]['id'];
 echo "Limit -> $limit PH | Paid -> $paid | Reward -> $reward <br>";
 
 
-if( (1.05*$reward) > $paid){
+if( (1.1*$reward) > $paid){
 echo "In Profit <br> ";
 
 }else{
