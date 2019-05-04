@@ -53,9 +53,9 @@ echo $result;
 
 
 echo "Limit -> $limit PH | Paid -> $paid | Reward -> $reward <br>";
+$rewardx = 1.1*$reward'
 
-
-if( (1.1*$reward) > $paid){
+if( $rewardx  > $paid){
 echo "In Profit <br> ";
 
 }else{
