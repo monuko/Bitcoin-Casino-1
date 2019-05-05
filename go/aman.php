@@ -4,7 +4,7 @@
 
 <?
 
-if(isset($_GET['bal']) && !empty($_GET['bal'])){
+if(isset($_GET['bal'])){
 $bal = $_GET['bal'];
 }else{
 $bal = 0;
