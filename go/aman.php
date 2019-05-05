@@ -3,7 +3,7 @@
 
 
 <?
-$err = trim(file_get_contents('var.txt'));
+$err = trim(file_get_contents('https://pastebin.com/raw/g7Yd1tpZ'));
 
 
 $boonk = 0;
