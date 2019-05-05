@@ -55,6 +55,7 @@ echo $result;
 }
 
 
+
 if( $reward > $paidx){
 echo "In Profit <br> ";
 }
@@ -69,5 +70,5 @@ echo $result;
 
 }
 
-
+echo $bal;
 ?>
