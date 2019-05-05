@@ -36,7 +36,9 @@ $paid = $obj9['result']['orders'][0]['btc_paid'];
 $paidx = 1.1*$paid;
 $limit = $obj9['result']['orders'][0]['limit_speed'];
 $id = $obj9['result']['orders'][0]['id'];
-$reward =  $obj['btc']['estimated_reward'] + $obj['btc']['unconfirmed_reward'] - $bal;
+$reward =  $obj['btc']['estimated_reward'] + $obj['btc']['unconfirmed_reward'] ;
+$reward = $reward - $bal
+
 
 
 //if block found
@@ -45,12 +47,12 @@ if(!strcmp($j['pool']['name'], "SlushPool")){
 $boonk = 1;
 }}
 
+
 //print details
 echo "Limit -> $limit PH | Paid -> $paid | Reward -> $reward <br>";
 
 
 //logics
-
 if($boonk>0){
 $url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=0.05" ;
 $result =  file_get_contents($url2);
