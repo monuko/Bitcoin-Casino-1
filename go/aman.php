@@ -28,7 +28,7 @@ curl_close($ch);
 $obj = json_decode($server_output, true);
 
 $obj9 = json_decode(file_get_contents("https://api.nicehash.com/api?method=orders.get&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1"), true);
-$obj5 = json_decode(file_get_contents("https://api.smartbit.com.au/v1/blockchain/blocks?limit=5"), true);
+$obj5 = json_decode(file_get_contents("https://api.smartbit.com.au/v1/blockchain/blocks?limit=3"), true);
 
 
 //vars
