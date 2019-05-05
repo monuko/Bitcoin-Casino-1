@@ -16,14 +16,14 @@ echo $j['confirmations'] . " -> " . $j['pool']['name'] . "<br>";
 }
 }
 
-
+//logic
 $p = $a[1]/10;
 
-if($p>1.7){
+if($a[1]>17){
 $p = $a[1]/8;
 }  
 
-if($p>2.3){
+if($a[1]>23){
 $p = $a[1]/7;
 }  
 
