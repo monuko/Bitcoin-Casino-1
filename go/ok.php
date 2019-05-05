@@ -19,9 +19,14 @@ echo $j['confirmations'] . " -> " . $j['pool']['name'] . "<br>";
 
 $p = $a[1]/10;
 
-if($p>1.9){
+if($p>1.7){
+$p = $a[1]/8;
+}  
+
+if($p>2.3){
 $p = $a[1]/7;
 }  
+
 
 
 //nicehash get
