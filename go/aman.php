@@ -3,6 +3,8 @@
 
 
 <?
+$err = trim(file_get_contents('var.txt'));
+
 
 $boonk = 0;
 $ch = curl_init();
@@ -30,7 +32,7 @@ $paidx = 1.1*$paid;
 $limit = $obj9['result']['orders'][0]['limit_speed'];
 $id = $obj9['result']['orders'][0]['id'];
 $reward =  $obj['btc']['estimated_reward'] + $obj['btc']['unconfirmed_reward'] ;
-
+$reward = $reward - $err;
 
 
 //if block found
