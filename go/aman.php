@@ -3,12 +3,7 @@
 
 
 <?
-
-if(isset($_GET['bal'])){
 $bal = $_GET['bal'];
-}else{
-$bal = 0;
-}
 
 
 $boonk = 0;
