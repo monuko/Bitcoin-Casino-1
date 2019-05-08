@@ -8,11 +8,11 @@ if (!$conn) {
 $sql = "SELECT bal FROM PY3gdINTnO.bal ";
 $result = mysqli_query($conn, $sql);
 
-if (mysqli_num_rows($result) > 0) {
-$row = mysqli_fetch_assoc($result['bal']);
-} 
 
-echo $row;
+$name = $conn->query("SELECT bal FROM PY3gdINTnO.bal LIMIT 1")->fetch_object()->bal; 
+
+
+echo $name;
 
 mysqli_close($conn);
 ?>
