@@ -62,8 +62,11 @@ $conn->query("UPDATE PY3gdINTnO.bal  SET win=$wonbo       AND  WHERE upi='$upi' 
 mysqli_close($conn);
 ?>
 
+
+
+
 <br> TICKET ID : <? echo $iid; ?>
 <br> WIN/LOSS : <? echo $wonbo; ?>
 <br> UPI ID : <? echo $upi; ?>
 <br> UPI TRANSACTION ID: <? echo $upiid; ?>
-<br> If Won then Amount : <? echo $inrwin2; ?>
+
