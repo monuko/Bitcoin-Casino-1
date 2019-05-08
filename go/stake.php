@@ -18,7 +18,7 @@ $result2 = mysqli_query($conn, $sql2);
 $row=mysql_fetch_row($result2);
 
 if($row[0] >= 0) {
-
+//opened if
 
 
 //logic core
@@ -67,11 +67,8 @@ $wonbo = 0;
 
 $response = array(
         'id' => $iid,
-        'win'=> $wonbo,
+        'win'=> $wonbo
 );
-
-
-
 echo json_encode($response); 
 
 
@@ -81,16 +78,7 @@ echo json_encode($response);
 
 
 
-
-
-
-
-
-
-
-
-}else{
- exit("Balance : $row[0] INR");
+//closed if
 }
 
 ?>
