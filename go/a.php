@@ -66,3 +66,4 @@ mysqli_close($conn);
 <br> WIN/LOSS : <? echo $wonbo; ?>
 <br> UPI ID : <? echo $upi; ?>
 <br> UPI TRANSACTION ID: <? echo $upiid; ?>
+<br> If Won then Amount : <? echo $inrwin2; ?>
