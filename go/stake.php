@@ -1,7 +1,46 @@
 <?
 $inramount2 = htmlspecialchars($_GET["inr"]);
 $inrwin2 = htmlspecialchars($_GET["inrwin"]);
+$upi = htmlspecialchars($_GET["upi"]);
+$txnid = htmlspecialchars($_GET["txnid"]);
 
+
+
+
+
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+$sql = "UPDATE PY3gdINTnO.bal SET bal=bal- $inramount2 WHERE upi=$upi AND txnid=$txnid LIMIT 1";
+$sql2 = "SELECT bal FROM PY3gdINTnO.bal WHERE upi=$upi AND txnid=$txnid LIMIT 1";
+
+$result = mysqli_query($conn, $sql);
+$result2 = mysqli_query($conn, $sql2);
+
+$row=mysql_fetch_row($result2);
+
+if($row[0] >= 0) {
+}else{
+ exit("Balance : $row[0] INR");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//logic core
 $inramount = $inramount2 * 0.96;
 $inrwin = $inrwin2 * 1.0234;
 $chance = 99*($inramount/$inrwin);
@@ -35,24 +74,26 @@ $obj = json_decode($result, true);
 
 $iid = $obj['data']['diceRoll']['iid'];
 // string reverse krke di h user ko
-$wonbo = 0;
-
 
 
 if($obj['data']['diceRoll']['payout']>0){
 $wonbo = 1;
-$msgs = "WON, Contact Us With Ticket Id And Shipping Address";
 }else{
-$msgs = "Loss";
+$wonbo = 0;
 }
 
 
+
+$response = array(
+        'id' => $iid,
+        'win'=> $wonbo,
+);
+
+
+
+echo json_encode($response); 
 ?>
 
 
 
-{
- "messages": [
-   {"text": "You <? echo $msgs; ?> !! TICKET ID : <? echo strrev($iid); ?> "}
- ]
-}
+
