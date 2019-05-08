@@ -9,10 +9,8 @@ $sql = "SELECT bal FROM PY3gdINTnO.bal ";
 $result = mysqli_query($conn, $sql);
 
 if (mysqli_num_rows($result) > 0) {
- echo "1 results";
-} else {
-    echo "0 results";
-}
+ echo "11 results";
+} 
 
 echo $result['bal'];
 
