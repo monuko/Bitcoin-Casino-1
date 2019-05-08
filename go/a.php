@@ -4,7 +4,7 @@ $upi = $_GET["upi"];
 $txnid = $_GET["txnid"];
 
 $conn = mysqli_connect("remotemysql.com", "PY3gdINTnO", "VaAWRokqsj", "PY3gdINTnO");
-$result = $conn->query("SELECT bal FROM PY3gdINTnO.bal WHERE upi='$upi' AND txnid=$txnid"); 
+$result = $conn->query("SELECT bal,ticketid FROM PY3gdINTnO.bal WHERE upi='$upi' AND txnid=$txnid"); 
 $inramount2 = $result ->fetch_object()->bal;
 $ticketid = $result ->fetch_object()->ticketid; 
 
@@ -14,9 +14,6 @@ if($ticketid<1){
 
 
 /////////////////////
-
-
-/logic core
 $inramount = $inramount2 * 0.96;
 $inrwin = $inrwin2 * 1.0234;
 $chance = 99*($inramount/$inrwin);
