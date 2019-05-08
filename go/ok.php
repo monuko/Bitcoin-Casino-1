@@ -23,7 +23,7 @@ echo $j['confirmations'] . " -> " . $j['pool']['name'] . "<br>";
 }
 
 //logic
-$p = $a[1]*0.05;
+$p = $a[1]*0.07;
 
 
 
