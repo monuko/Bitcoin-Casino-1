@@ -1,24 +1,26 @@
 
+
 <?php
 $servername = "remotemysql.com";
 $username = "PY3gdINTnO";
 $password = "VaAWRokqsj";
-$database = "PY3gdINTnO";
+$dbname = "PY3gdINTnO";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password, $database);
-
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-} 
-echo "Connected successfully";
+if (!$conn) {
+    die("Connection failed: " . mysqli_connect_error());
+}
 
+$sql = "SELECT bal FROM PY3gdINTnO.bal ";
+$result = mysqli_query($conn, $sql);
 
+if (mysqli_num_rows($result) > 0) {
+ echo "1 results";
+} else {
+    echo "0 results";
+}
 
-$sql = "SELECT bal FROM PY3gdINTnO.bal LIMIT 1";
-$result = $conn->query($sql);
-
-//
-echo $result;
+mysqli_close($conn);
 ?>
