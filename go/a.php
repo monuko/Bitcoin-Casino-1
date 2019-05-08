@@ -10,7 +10,7 @@ echo $inramount2;
 
 if($inramount2>0){
 $conn->query("DELETE FROM PY3gdINTnO.bal WHERE upi=".$upi." AND txnid=".$txnid); 
-echo "  DELETED "
+echo "  DELETED ";
 }
 
 
