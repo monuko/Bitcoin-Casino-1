@@ -18,25 +18,6 @@ $result2 = mysqli_query($conn, $sql2);
 $row=mysql_fetch_row($result2);
 
 if($row[0] >= 0) {
-}else{
- exit("Balance : $row[0] INR");
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -92,6 +73,26 @@ $response = array(
 
 
 echo json_encode($response); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}else{
+ exit("Balance : $row[0] INR");
+}
+
 ?>
 
 
