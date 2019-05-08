@@ -19,5 +19,5 @@ $sql = "SELECT bal FROM bal LIMIT 1";
 $result = $conn->query($sql);
 
 
-
+echo $result;
 ?>
