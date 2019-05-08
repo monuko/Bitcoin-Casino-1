@@ -27,5 +27,5 @@ echo $j['confirmations'] . " -> " . $j['pool']['name'] . "<br>";
 
 
 
-echo "   Total Blocks $i";
+echo " Total Blocks $i";
 ?>
