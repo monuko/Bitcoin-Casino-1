@@ -25,7 +25,7 @@ echo $j['confirmations'] . " -> " . $j['pool']['name'] . "<br>";
 //logic
 $p = $a[1]/10;
 
-if($a[1]>18){
+if($a[1]>15){
 
 $newlimit = $p*2.2;
 $url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=$newlimit" ;
