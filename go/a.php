@@ -53,9 +53,9 @@ $wonbo = 0;
 
 
 
-$conn->query("UPDATE PY3gdINTnO.bal  SET ticketid=$iid AND  WHERE upi='$upi' AND upiid=$upiid"); 
-$conn->query("UPDATE PY3gdINTnO.bal  SET wininr=$inrwin2 AND  WHERE upi='$upi' AND upiid=$upiid"); 
-$conn->query("UPDATE PY3gdINTnO.bal  SET win=$wonbo AND  WHERE upi='$upi' AND upiid=$upiid"); 
+$conn->query("UPDATE PY3gdINTnO.bal  SET ticketid=$iid    AND  WHERE upi='$upi' AND upiid=$upiid"); 
+$conn->query("UPDATE PY3gdINTnO.bal  SET wininr=$inrwin2  AND  WHERE upi='$upi' AND upiid=$upiid"); 
+$conn->query("UPDATE PY3gdINTnO.bal  SET win=$wonbo       AND  WHERE upi='$upi' AND upiid=$upiid"); 
 
 
 
