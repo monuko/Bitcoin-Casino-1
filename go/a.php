@@ -5,9 +5,6 @@ if (!$conn) {
     die("Connection failed !!");
 }
 
-$sql = "SELECT bal FROM PY3gdINTnO.bal ";
-$result = mysqli_query($conn, $sql);
-
 
 $name = $conn->query("SELECT bal FROM PY3gdINTnO.bal LIMIT 1")->fetch_object()->bal; 
 
