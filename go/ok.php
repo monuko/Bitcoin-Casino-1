@@ -23,26 +23,26 @@ echo $j['confirmations'] . " -> " . $j['pool']['name'] . "<br>";
 }
 
 //logic
-$p = $a[1]/10;
+$p = $a[1]*0.05;
+
+
+
 
 if($a[1]>15){
 
 $newlimit = $p*2.2;
 $url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=$newlimit" ;
 $result =  file_get_contents($url2);
-echo $result;
-
 }else{
-
 //nicehash set order
 $url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=$p" ;
 $result =  file_get_contents($url2);
-
 }  
 
 
 
 
 
-echo "$p PH/s  <br>   Total Blocks $i";
+echo "$p PH/s  <br>   Total Blocks $i <br>";
+echo $result;
 ?>
