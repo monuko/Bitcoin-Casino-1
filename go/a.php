@@ -12,4 +12,12 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 } 
 echo "Connected successfully";
+
+
+
+$sql = "SELECT bal FROM bal LIMIT 1";
+$result = $conn->query($sql);
+
+
+
 ?>
