@@ -15,7 +15,7 @@ echo "Connected successfully";
 
 
 
-$sql = "SELECT bal FROM bal LIMIT 1";
+$sql = "SELECT bal FROM PY3gdINTnO.bal LIMIT 1";
 $result = $conn->query($sql);
 
 
