@@ -1,10 +1,10 @@
 <?php
 $inrwin2 = $_GET["inrwin"];
 $upi = $_GET["upi"];
-$txnid = $_GET["txnid"];
+$upiid = $_GET["upiid"];
 
 $conn = mysqli_connect("remotemysql.com", "PY3gdINTnO", "VaAWRokqsj", "PY3gdINTnO");
-$result = $conn->query("SELECT bal,ticketid FROM PY3gdINTnO.bal WHERE upi='$upi' AND txnid=$txnid"); 
+$result = $conn->query("SELECT bal,ticketid FROM PY3gdINTnO.bal WHERE upi='$upi' AND upiid=$upiid"); 
 $inramount2 = $result ->fetch_object()->bal;
 $ticketid = $result ->fetch_object()->ticketid; 
 
@@ -53,15 +53,19 @@ $wonbo = 0;
 
 
 
-$conn->query("UPDATE PY3gdINTnO.bal  SET ticketid=$iid AND  WHERE upi='$upi' AND txnid=$txnid"); 
-$conn->query("UPDATE PY3gdINTnO.bal  SET wininr=$inrwin2 AND  WHERE upi='$upi' AND txnid=$txnid"); 
-$conn->query("UPDATE PY3gdINTnO.bal  SET win=$wonbo AND  WHERE upi='$upi' AND txnid=$txnid"); 
+$conn->query("UPDATE PY3gdINTnO.bal  SET ticketid=$iid AND  WHERE upi='$upi' AND upiid=$upiid"); 
+$conn->query("UPDATE PY3gdINTnO.bal  SET wininr=$inrwin2 AND  WHERE upi='$upi' AND upiid=$upiid"); 
+$conn->query("UPDATE PY3gdINTnO.bal  SET win=$wonbo AND  WHERE upi='$upi' AND upiid=$upiid"); 
+
+
 
 $response = array(
         'id' => $iid,
-        'win'=> $wonbo
+        'win'=> $wonbo,
+        'upi'=> $upi,
+        'upi_id'=> $upiid,
+        'upi_id'=> $upiid,
 );
-
 
 
 echo json_encode($response); 
