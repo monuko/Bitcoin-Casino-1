@@ -63,6 +63,7 @@ mysqli_close($conn);
 ?>
 
 
+<meta http-equiv="refresh" content="20;URL='http://onefastway.com/'" />    
 
 
 <br> TICKET ID : <? echo $iid; ?>
