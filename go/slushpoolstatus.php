@@ -17,7 +17,7 @@ if(!strcmp($j['pool']['name'], "SlushPool")){
 $i = $i+1;
 $a[$i] = $j['confirmations'] ;
 
-echo $j['confirmations'] . " -> " . $j['pool']['name'] . "<br>";
+echo $j['confirmations'] . "<br>";
 
 }
 }
@@ -28,4 +28,15 @@ echo $j['confirmations'] . " -> " . $j['pool']['name'] . "<br>";
 
 
 echo " Total Blocks $i";
+
+if($a[$i]>18){
+?>
+
+
+<audio controls autoplay>
+  <source src="horse.mp3" type="audio/mpeg">
+</audio>
+
+<?
+}
 ?>
