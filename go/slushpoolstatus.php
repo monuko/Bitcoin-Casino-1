@@ -27,7 +27,7 @@ echo " Total Blocks $i";
 
 
 
-if($a[1]>14){
+if($a[1]>24){
 ?>
 
 
