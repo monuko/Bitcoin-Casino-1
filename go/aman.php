@@ -43,7 +43,7 @@ $boonk = 1;
 
 //print details
 echo "Limit -> $limit PH | Paid -> $paid | Reward -> $reward <br>";
-
+echo $reward/$paid  ."     -Profit Ratio<br>";
 
 
 //logics
