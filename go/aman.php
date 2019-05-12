@@ -3,7 +3,9 @@
 
 
 <?
-$err = trim(file_get_contents('https://pastebin.com/raw/g7Yd1tpZ'));
+$err = trim(file_get_contents('err.txt'));
+
+
 $boonk = 0;
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL,"https://slushpool.com/accounts/profile/json/btc/");
