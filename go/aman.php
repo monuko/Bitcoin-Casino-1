@@ -25,7 +25,7 @@ $obj5 = json_decode(file_get_contents("https://api.smartbit.com.au/v1/blockchain
 
 //vars
 $paid = $obj9['result']['orders'][0]['btc_paid'];
-$paidx = 1.21*$paid;
+
 
 
 $limit = $obj9['result']['orders'][0]['limit_speed'];
@@ -43,7 +43,7 @@ $boonk = 1;
 
 //print details
 echo "Limit -> $limit PH | Paid -> $paid | Reward -> $reward <br>";
-echo $reward/$paid  ."     -Profit Ratio<br>";
+echo $reward/$paid  ."     - Profit Ratio<br>";
 
 
 //logics
@@ -54,7 +54,7 @@ echo $result;
 }
 
 
-if ( $boonk<1 && $reward < $paidx ){
+if ( $boonk<1 && ($reward/$paid) < 1.5 ){
 $newlimit = $limit*1.21;
 $url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=$newlimit" ;
 $result =  file_get_contents($url2);
@@ -62,5 +62,5 @@ echo $result;
 }
 
 
-echo $bal;
+
 ?>
