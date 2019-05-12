@@ -1,4 +1,4 @@
-<meta http-equiv="refresh" content="555">
+<meta http-equiv="refresh" content="255">
 
 
 
