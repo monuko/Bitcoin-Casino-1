@@ -8,7 +8,7 @@ $bal = $obj['result']['balance_confirmed'] + $obj['result']['balance_pending']  
 
 
 $result2 =  file_get_contents("https://blockchain.info/ticker");
-$obj = json_decode($result, true);
+$obj = json_decode($result2, true);
 $inr = $obj['INR']["15m"];
 
 $c= $inr * $bal;
