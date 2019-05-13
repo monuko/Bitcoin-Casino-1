@@ -32,7 +32,7 @@ $c= $inr * $bal;
 $c= round($c);
 
 
-echo "<font size=90> " . $bal . " BTC  ->  " . $c  . " INR    </font>";
+echo "<font size=80> " . $bal . " BTC  <br>  " . $c  . " INR </font>";
 ?>
 
 
