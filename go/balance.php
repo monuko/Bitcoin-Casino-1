@@ -11,6 +11,9 @@ div {
 	left: 0;
 	right: 0;
 	margin: auto;
+
+        font-size: 90px;
+
 }
 
 </style>
@@ -32,7 +35,7 @@ $c= $inr * $bal;
 $c= round($c);
 
 
-echo "<font size=80> " . $bal . " BTC  <br>  " . $c  . " INR </font>";
+echo "$bal BTC <br> $c INR";
 ?>
 
 
