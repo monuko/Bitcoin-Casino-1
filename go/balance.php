@@ -1,7 +1,6 @@
-<meta http-equiv="refresh" content="55">
+<meta http-equiv="refresh" content="99">
 
 <style>
-
 div {
 	width: 700px;
 	height: 200px;	
@@ -15,10 +14,10 @@ div {
         font-size: 90px;
 
 }
-
 </style>
-<div>
 
+
+<div>
 
 
 <?
