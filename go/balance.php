@@ -7,5 +7,5 @@ $obj = json_decode($result, true);
 $bal = $obj['result']['balance_confirmed'] + $obj['result']['balance_pending']  ;
 
 
-echo "<h1>" . $bal . "</h1>;
+echo "<h1>" . $bal . "</h1>";
 ?>
