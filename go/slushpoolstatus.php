@@ -23,18 +23,4 @@ echo $j['confirmations'] . " -> "  . ($a[$i] -$a[$i-1]) . "<br>";
 }
 
 echo " Total Blocks $i";
-
-
-
-
-if($a[1]>24){
-?>
-
-
-<audio controls autoplay>
-  <source src="audio.mp3" type="audio/mpeg">
-</audio>
-
-<?
-}
 ?>
