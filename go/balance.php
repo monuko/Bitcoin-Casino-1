@@ -7,5 +7,12 @@ $obj = json_decode($result, true);
 $bal = $obj['result']['balance_confirmed'] + $obj['result']['balance_pending']  ;
 
 
-echo "<h1>" . $bal . "</h1>";
+$result2 =  file_get_contents("https://blockchain.info/ticker");
+$obj = json_decode($result, true);
+$inr = $obj['INR']["15m"];
+
+$c= $inr * $bal;
+
+
+echo "<h1>" . $bal . " BTC  ->  " . $c  . " INR </h1>";
 ?>
