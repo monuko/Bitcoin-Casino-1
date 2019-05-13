@@ -32,9 +32,12 @@ $inr = $obj['INR']["15m"];
 
 $c= $inr * $bal;
 $c= round($c);
+$profit = $c*0.0058;
+$profit= round($profit);
 
 
-echo "$bal BTC <br> $c INR";
+
+echo "$bal BTC <br> $c INR <br> $profit INR/MONTH";
 ?>
 
 
