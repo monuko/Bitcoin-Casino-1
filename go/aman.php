@@ -44,7 +44,7 @@ $boonk = 1;
 //print details
 echo "Limit -> $limit PH | Paid -> $paid | Reward -> $reward <br>";
 echo $reward/$paid  ."     - Profit Ratio<br>";
-
+echo ($reward-$paid)  ."     - Profit BTC<br>";
 
 //logics
 if($boonk>0){
