@@ -12,6 +12,7 @@ $obj = json_decode($result2, true);
 $inr = $obj['INR']["15m"];
 
 $c= $inr * $bal;
+$c= round($c);
 
 
 echo "<center><font size=60> " . $bal . " BTC  ->  " . $c  . " INR    </font></center>";
