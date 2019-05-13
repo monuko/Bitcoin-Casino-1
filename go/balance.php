@@ -14,5 +14,5 @@ $inr = $obj['INR']["15m"];
 $c= $inr * $bal;
 
 
-echo "<center><font size="60"> " . $bal . " BTC  ->  " . $c  . " INR    </font></center>";
+echo "<center><font size=60> " . $bal . " BTC  ->  " . $c  . " INR    </font></center>";
 ?>
