@@ -3,7 +3,7 @@
 <style>
 
 div {
-	width: 800px;
+	width: 700px;
 	height: 200px;	
 	position: absolute;
 	top:0;
