@@ -3,8 +3,8 @@
 <style>
 
 div {
-	width: 100px;
-	height: 100px;	
+	width: 400px;
+	height: 200px;	
 	position: absolute;
 	top:0;
 	bottom: 0;
