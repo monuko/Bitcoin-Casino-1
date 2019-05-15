@@ -48,8 +48,7 @@ $obj9 = json_decode(file_get_contents("https://api.nicehash.com/api?method=order
 //vars
 $paid = $obj9['result']['orders'][0]['btc_paid'];
 $limit = $obj9['result']['orders'][0]['limit_speed'];
-$id = $obj9['result']['orders'][0]['id'];
-$reward =  $obj['btc']['estimated_reward'] + $obj['btc']['unconfirmed_reward'] ;
+$reward =  $obj['btc']['estimated_reward'] ;
 
 
 //print details
