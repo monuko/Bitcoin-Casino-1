@@ -22,7 +22,7 @@ echo  $a[$i] . " -> "  . ($a[$i] -$a[$i-1]) . "<br>";
 }
 }
 
-echo " Total Blocks : $i <br>";
+echo "<br><br> Total Blocks : $i <br>";
 
 
 
