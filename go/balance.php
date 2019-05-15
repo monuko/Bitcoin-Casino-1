@@ -32,6 +32,8 @@ $headers = [
 curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 $server_output = curl_exec($ch);
 curl_close($ch);
+
+
 $obj9 = json_decode($server_output, true);
 
 
@@ -39,7 +41,7 @@ $obj9 = json_decode($server_output, true);
 
 $result =  file_get_contents("https://api.nicehash.com/api?method=balance&id=193027&key=9295f08b-d659-a348-7b1d-365539733937");
 $obj = json_decode($result, true);
-$bal = $obj['result']['balance_confirmed'] + $obj['result']['balance_pending'] + $obj9['btc']['estimated_reward'] + $obj9['btc']['unconfirmed_reward'] ;
+$bal = $obj['result']['balance_confirmed'] + $obj9['btc']['confirmed_reward'] + $obj9['btc']['unconfirmed_reward'] ;
 
 
 $result2 =  file_get_contents("https://blockchain.info/ticker");
