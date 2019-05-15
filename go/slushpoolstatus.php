@@ -22,10 +22,6 @@ echo  $a[$i] . " -> "  . ($a[$i] -$a[$i-1]) . "<br>";
 }
 }
 
-echo "<br><br> Total Blocks : $i <br>";
-
-
-
 
 
 
@@ -51,10 +47,34 @@ $limit = $obj9['result']['orders'][0]['limit_speed'];
 $reward =  $obj['btc']['estimated_reward'] ;
 
 
-//print details
-echo "Limit -> $limit PH <br>";
-echo "Paid -> $paid  <br>";
-echo "Reward -> $reward <br>";
-echo $reward/$paid  ."     - Profit Ratio<br>";
-echo ($reward-$paid)  ."     - Profit BTC<br>";
+
 ?>
+
+
+<br><br>
+<table>
+  <tr>
+    <td>Total Blocks </td>
+    <td><? echo $i; ?></td>
+  </tr>
+  <tr>
+    <td>Limit PH </td>
+    <td><? echo $limit; ?></td>
+  </tr>
+  <tr>
+    <td>Paid </td>
+    <td><? echo $paid; ?></td>
+  </tr>
+  <tr>
+    <td>Reward </td>
+    <td><? echo $reward; ?></td>
+  </tr>
+  <tr>
+    <td>Profit Ratio </td>
+    <td><? echo $reward/$paid; ?></td>
+  </tr>
+  <tr>
+    <td>Profit </td>
+    <td><? echo ($reward-$paid) ; ?></td>
+  </tr>
+</table>
