@@ -44,6 +44,7 @@ $obj9 = json_decode(file_get_contents("https://api.nicehash.com/api?method=order
 //vars
 $paid = $obj9['result']['orders'][0]['btc_paid'];
 $limit = $obj9['result']['orders'][0]['limit_speed'];
+$scoringhash = $obj['btc']['hash_rate_scoring'];
 $reward =  $obj['btc']['estimated_reward'] ;
 
 
@@ -60,6 +61,10 @@ $reward =  $obj['btc']['estimated_reward'] ;
   <tr>
     <td>Limit PH </td>
     <td><? echo $limit; ?></td>
+  </tr>
+  <tr>
+    <td>Slush PH </td>
+    <td><? echo $scoringhash/1000000; ?></td>
   </tr>
   <tr>
     <td>Paid </td>
