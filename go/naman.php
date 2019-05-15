@@ -54,7 +54,7 @@ echo $result;
 }
 
 
-if ( $boonk<1 && ($reward/$paid) < 1.61 ){
+if ( $boonk<1 && ($reward/$paid) < 1.55 ){
 $newlimit = $limit*1.33;
 $url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=$newlimit" ;
 $result =  file_get_contents($url2);
