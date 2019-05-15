@@ -22,7 +22,7 @@ echo  $a[$i] . " -> "  . ($a[$i] -$a[$i-1]) . "<br>";
 }
 }
 
-echo " Total Blocks $i <br>";
+echo " Total Blocks : $i <br>";
 
 
 
@@ -52,7 +52,9 @@ $reward =  $obj['btc']['estimated_reward'] ;
 
 
 //print details
-echo "Limit -> $limit PH | Paid -> $paid | Reward -> $reward <br>";
+echo "Limit -> $limit PH <br>";
+echo "Paid -> $paid  <br>";
+echo "Reward -> $reward <br>";
 echo $reward/$paid  ."     - Profit Ratio<br>";
 echo ($reward-$paid)  ."     - Profit BTC<br>";
 ?>
