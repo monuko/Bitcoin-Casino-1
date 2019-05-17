@@ -1,4 +1,4 @@
-<meta http-equiv="refresh" content="155">
+<meta http-equiv="refresh" content="<? echo rand(44,333); ?>">
 
 
 
