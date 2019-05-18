@@ -47,8 +47,9 @@ $limit = $obj9['result']['orders'][0]['limit_speed'];
 $scoringhash = $obj['btc']['hash_rate_scoring'];
 $reward =  $obj['btc']['estimated_reward'] ;
 
-
-
+if(a[1]>3){
+file_get_contents("https://api.telegram.org/bot858284517:AAEosSyg1Wt4LF47N3UtTM_Y7UJov5DTHRg/sendMessage?chat_id=793785085&text=OYEKAKA");
+}
 ?>
 
 
