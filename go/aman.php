@@ -1,4 +1,4 @@
-<meta http-equiv="refresh" content="255">
+<meta http-equiv="refresh" content="<? echo rand(44,333); ?>">
 
 
 
@@ -20,7 +20,7 @@ curl_close($ch);
 
 $obj = json_decode($server_output, true);
 $obj9 = json_decode(file_get_contents("https://api.nicehash.com/api?method=orders.get&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1"), true);
-$obj5 = json_decode(file_get_contents("https://api.smartbit.com.au/v1/blockchain/blocks?limit=4"), true);
+$obj5 = json_decode(file_get_contents("https://api.smartbit.com.au/v1/blockchain/blocks?limit=3"), true);
 
 
 //vars
@@ -54,7 +54,7 @@ echo $result;
 }
 
 
-if ( $boonk<1 && ($reward/$paid) < 1.51 ){
+if ( $boonk<1 && ($reward/$paid) < 1.65 ){
 $newlimit = $limit*1.5;
 $url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=$newlimit" ;
 $result =  file_get_contents($url2);
