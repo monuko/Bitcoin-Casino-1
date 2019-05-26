@@ -1,3 +1,6 @@
+<meta http-equiv="refresh" content="40">
+
+
 <?
 
 $ss = 99;
