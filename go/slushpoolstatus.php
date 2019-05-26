@@ -17,7 +17,7 @@ if(!strcmp($j['pool']['name'], "SlushPool")){
 $i = $i+1;
 $a[$i] = $j['confirmations'] ;
 
-echo "<br>". $a[$i] . " -> "  . ($a[$i] -$a[$i-1]) . " -> " . (($a[$i] + $a[$i-1]  + $a[$i-2]  + $a[$i-3])/4);
+echo "<br>". $a[$i] . " -> "  . ($a[$i] -$a[$i-1]) ;
 
 }
 }
