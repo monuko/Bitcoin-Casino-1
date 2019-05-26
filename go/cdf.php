@@ -23,7 +23,7 @@ $id = $obj9['result']['orders'][0]['id'];
 
 foreach($objx['blocks'] as $j){
 if(!strcmp($j['pool']['name'], "SlushPool")){
-if($ss<$j['confirmations']){
+if($ss>$j['confirmations']){
 $ss = $j['confirmations']/10;
 }
 }
