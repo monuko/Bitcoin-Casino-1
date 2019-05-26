@@ -51,6 +51,7 @@ $reward =  $obj['btc']['estimated_reward'] ;
 ?>
 
 
+
 <br><br>
 <table>
   <tr>
