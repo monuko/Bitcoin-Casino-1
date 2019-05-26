@@ -16,6 +16,15 @@ $obj = json_decode($server_output, true);
 
 $cdf = $obj['btc']['round_probability'];
 
-echo $cdf;
+
+
+$obj9 = json_decode(file_get_contents("https://api.nicehash.com/api?method=orders.get&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1"), true);
+$id = $obj9['result']['orders'][0]['id'];
+
+$url2 = "https://api.nicehash.com/api?method=orders.set.limit&my&id=193027&key=9295f08b-d659-a348-7b1d-365539733937&location=0&algo=1&&order=$id&limit=$cdf" ;
+$result =  file_get_contents($url2);
+
+
+echo $result;
 
 ?>
