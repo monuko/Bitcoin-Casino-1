@@ -18,7 +18,6 @@
       <a href="#" onClick="window.location.href=window.location.href"  class="brand-logo"><i class="material-icons">dehaze</i> SKOBET</a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
         <li><a target="_blank" href="https://www.blockchain.com/btc/xpub/xpub661MyMwAqRbcFxdbMFrMK8hxKW5nKBq9rwY816XLd3zpFneQydN7An8JtEKyFe7Xc87p87N7LochEat7nvodkJAUS4GPBzGv5mvmjZEgsm7">View On Blockchain</a></li>
-       <li><a target="_blank" href="http://besoeasy.com">Contact Developer</a></li>
       </ul></div></nav>    </div></div>
 
 
